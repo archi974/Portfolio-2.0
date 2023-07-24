@@ -17,15 +17,17 @@ Pour la partie backend :
 Ouvrez un terminal
 Crée un dossier backend dans le dépôt `mkdir backend`
 Accéder au dossier backend `cd backend`
-Pour crée le package.json qui contiendra les dépendances faite la commande `npm init`
-Valider toutes les demandes par défaut
+Pour crée le package.json qui contiendra les dépendances faite la commande `npm init -y`
+Crée un fichier tsconfig.json
+Faite `npm install typescript --save-dev` pour coder en typescript transpilé
+Dans votre package.json ajouter ou modifier la ligne ` "main": "dist/index.js",` et
+`"start": "tsc && nodemon dist/index.js",` afin de rediriger vers les fichiers javaScript.
 Faire un .gitignore et y écrire node_module voir récupérer dans le frontend le contenu du .gitignore
-Créer le fichier JS correspondant au package.json (ex: index.js)
 Installer les dépendances avec la commande `npm i dotenv express mongodb mongoose`
 
 Pour la partie frontend :
 Ouvrez un nouveau terminal
-Dans le dépôt utiliser la commande `npx create-react-app my-app --template typescript`
+Dans le dépôt utiliser la commande `npx create-react-app frontend --template typescript`
 Entrer dans le dossier `cd frontend`
 Lancer le projet avec la commande `npm start`
 Corriger l'erreur de création de projet lié à Babel `npm install --save-dev @babel/plugin-proposal-private-property-in-object`
