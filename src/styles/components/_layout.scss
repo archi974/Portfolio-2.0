@@ -1,3 +1,17 @@
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+
+    .nav-menu {
+        font-weight: 700;
+        text-decoration: none;
+        &:hover {
+            color: $red;
+        }
+    }
+}
+
 footer {
     background-color: $blue;
     padding-block: 160px 65px;
@@ -47,6 +61,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+
         p {
             color: #fff;
             font-size: 13px;
