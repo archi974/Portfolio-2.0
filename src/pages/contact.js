@@ -4,7 +4,7 @@ export default function Contact() {
 
     return (
         <Layout>
-
+            <p>CONTACT</p>
         </Layout>
     )
 }

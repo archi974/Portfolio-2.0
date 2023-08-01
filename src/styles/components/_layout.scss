@@ -1,0 +1,56 @@
+footer {
+    background-color: $blue;
+    padding-block: 160px 65px;
+
+    .footer-logo {
+        display: flex;
+        justify-content: space-around;
+
+        .logo-github-bloc {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 50%;
+
+            .logo-github {
+                fill: $blue;
+            }
+
+            &:hover {
+                background-color: $gradientRed;
+
+                .logo-github {
+                    fill: #fff;
+                }
+            }
+        }
+
+        .logo-linkedin-bloc {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 50%;
+
+            .logo-linkedin {
+                fill: $blue;
+            }
+
+            &:hover {
+                background-color: $gradientRed;
+
+                .logo-linkedin {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+
+    .footer-copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            color: #fff;
+            font-size: 13px;
+            font-weight: 900;
+        }
+    }
+}

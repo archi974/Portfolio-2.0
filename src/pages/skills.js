@@ -4,7 +4,7 @@ export default function Skills() {
 
     return (
         <Layout>
-
+            <p>SKILLS</p>
         </Layout>
     )
 }
