@@ -1,0 +1,39 @@
+{
+    "projects": [
+        {
+            "name": "Projet 1",
+            "link": "http",
+            "description": "sfnsf",
+            "year": "2000",
+            "medias": {
+                "desktop": {
+                    "video": "qdqdq.mp4",
+                    "image": "http"
+                },
+                "mobile": {
+                    "video": null,
+                    "image": "http"
+                }
+            }
+        },
+        {
+            "name": "Projet 2",
+            "link": "http",
+            "description": "sfnsf",
+            "year": "2000",
+            "medias": {
+                "desktop": {
+                    "video": "qdqdq.mp4",
+                    "image": "http"
+                },
+                "mobile": {
+                    "video": null,
+                    "image": "http"
+                }
+            }
+        }
+    ],
+    "skills": [
+        
+    ]
+}
