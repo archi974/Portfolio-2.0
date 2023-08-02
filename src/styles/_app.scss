@@ -24,9 +24,24 @@ main {
     margin: 0 auto;
     width: 100%;
 }
-h1, h2, h3, h4 {
-    &::selection{
-        color: red;
+
+@mixin select-text {
+    &::selection {
+        color: $red;
         background-color: transparent;
+    }
+}
+
+@mixin custom-style-title {
+    font-size: 265px;
+    font-weight: 700;
+    color: $blue;
+    display: flex;
+    justify-content: center;
+    @include select-text;
+
+    &:after {
+        content: str-slice(".", -1);
+        color: $red;
     }
 }

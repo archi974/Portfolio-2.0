@@ -4,7 +4,7 @@ export default function Projects() {
 
     return (
         <Layout>
-            <p>PROJECTS</p>
+            <h1>Projects</h1>
         </Layout>
     )
 }

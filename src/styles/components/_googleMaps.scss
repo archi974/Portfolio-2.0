@@ -1,8 +1,3 @@
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
 .bloc-map {
     background-color: $blue;
     width: 1050px;
@@ -11,7 +6,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    margin: 50px;
+    margin: 100px;
     transform: rotate(25.057deg);
     img {
         width: 1000px;
