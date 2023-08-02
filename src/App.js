@@ -4,6 +4,7 @@ import NotFoundPage from './pages/notFoundPage';
 import Projects from './pages/projects';
 import Skills from './pages/skills';
 import Contact from './pages/contact';
+import AboutMe from './pages/aboutMe';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/project" exact element={<Projects />}/>
           <Route path="/skills" exact element={<Skills />}/>
           <Route path="/contact" exact element={<Contact />}/>
+          <Route path="/about-me" exact element={<AboutMe />}/>
           <Route path="/404" exact element={<NotFoundPage />}/>
           <Route path="*" element={<Navigate to="/404" replace />} />
         </Routes>
