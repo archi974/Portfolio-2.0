@@ -1,0 +1,283 @@
+{
+    "projects": [
+        {
+            "name": "Développez le back-end d'un site de notation de livres",
+            "link": "http",
+            "team": "Projet réalisé seul",
+            "language": [
+                "Node",
+                "Express",
+                "Mongo"
+            ],
+            "description": "Vous êtes développeur back-end en freelance depuis maintenant un an dans la région de Lille. Vous avez l’habitude de travailler avec Kévin, un développeur front-end plus expérimenté que vous, et qui a déjà un bon réseau de contacts dans le milieu. Kévin vous contacte pour vous proposer de travailler avec lui en mutualisant vos compétences front / back sur un tout nouveau projet qui lui a été proposé. Il s’agit d’une petite chaîne de librairies qui souhaite ouvrir un site de référencement et de notation de livres",
+            "year": "Juillet 2023",
+            "medias": {
+                "desktop": {
+                    "video": "qdqdq.mp4",
+                    "image": "http"
+                },
+                "mobile": {
+                    "video": null,
+                    "image": "http"
+                }
+            }
+        },
+        {
+            "name": "Créez une application web de location immobilière avec React",
+            "link": "http",
+            "team": "Projet réalisé seul",
+            "language": [
+                "React",
+                "Sass"
+            ],
+            "description": "Kasa vous recrute en tant que développeur front-end en freelance pour développer sa nouvelle plateforme web. Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.",
+            "year": "Juin 2023",
+            "medias": {
+                "desktop": {
+                    "video": "qdqdq.mp4",
+                    "image": "http"
+                },
+                "mobile": {
+                    "video": null,
+                    "image": "http"
+                }
+            }
+        },
+        {
+            "name": "Débuggez et optimisez un site de photographe",
+            "link": "http",
+            "team": "Projet réalisé seul",
+            "language": [
+                "HTML",
+                "CSS",
+                "Jquery"
+            ],
+            "description": "Vous êtes développeur freelance, et vous décidez de proposer vos services d'optimisation SEO à de nouveaux clients. Pour ce faire, vous avez analysé plusieurs sites internet. Parmi vos prospects, il y a le site de Nina Carducci, une photographe dont vous a parlé l'un de vos amis.",
+            "year": "Juin 2023",
+            "medias": {
+                "desktop": {
+                    "video": "qdqdq.mp4",
+                    "image": "http"
+                },
+                "mobile": {
+                    "video": null,
+                    "image": "http"
+                }
+            }
+        },
+        {
+            "name": "Créez une page web dynamique avec JavaScript",
+            "link": "http",
+            "team": "Projet réalisé seul",
+            "language": [
+                "JavaScript"
+            ],
+            "description": "Vous travaillez comme développeur front-end pour l’agence ArchiWebos qui comprend 50 salariés. Ayant terminé votre dernier projet avec un peu d'avance, vous êtes envoyé en renfort comme développeur front-end d’une équipe qui travaille sur la conception du site portfolio d’une architecte d’intérieur.",
+            "year": "Avril 2023",
+            "medias": {
+                "desktop": {
+                    "video": "qdqdq.mp4",
+                    "image": "http"
+                },
+                "mobile": {
+                    "video": null,
+                    "image": "http"
+                }
+            }
+        },
+        {
+            "name": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
+            "link": "http",
+            "team": "Projet réalisé seul",
+            "language": [
+                "HTML",
+                "CSS"
+            ],
+            "description": "L'entreprise souhaite développer un site internet qui permettra aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Vous êtes chargé d'intégrer l'interface du site avec du code HTML et CSS. Pour cela, vous travaillerez en étroite collaboration avec Sarah, la CTO, et Loïc, l'UI designer.",
+            "year": "Février 2023",
+            "medias": {
+                "desktop": {
+                    "video": "qdqdq.mp4",
+                    "image": "http"
+                },
+                "mobile": {
+                    "video": null,
+                    "image": "http"
+                }
+            }
+        },
+        {
+            "name": "Previously On",
+            "link": "http",
+            "team": "Groupe de 2 personnes",
+            "language": [
+                "React",
+                "Node",
+                "CSS"
+            ],
+            "description": "Un outil pour gérer les séries, les détails de chaque épisode, sur quel plateforme la voir et le status du compte.",
+            "year": "Août 2022",
+            "medias": {
+                "desktop": {
+                    "video": "qdqdq.mp4",
+                    "image": "http"
+                },
+                "mobile": {
+                    "video": null,
+                    "image": "http"
+                }
+            }
+        },
+        {
+            "name": "Framework SCSS",
+            "link": "http",
+            "team": "Projet réalisé seul",
+            "language": [
+                "HTML",
+                "SASS"
+            ],
+            "description": "Un site pour visualiser les possibilités de classe Sass et le rendu de chaque composant responsive",
+            "year": "Mars 2022",
+            "medias": {
+                "desktop": {
+                    "video": "qdqdq.mp4",
+                    "image": "http"
+                },
+                "mobile": {
+                    "video": null,
+                    "image": "http"
+                }
+            }
+        },
+        {
+            "name": "My Wysiwig",
+            "link": "http",
+            "team": "Groupe de 3 personnes",
+            "language": [
+                "Jquery",
+                "JavaScript",
+                "PHP",
+                "HTML",
+                "CSS"
+            ],
+            "description": "Editeur de texte sous forme de module JavaScript, permet de générer du code HTML de manière visuelle.",
+            "year": "Novembre 2021",
+            "medias": {
+                "desktop": {
+                    "video": "qdqdq.mp4",
+                    "image": "http"
+                },
+                "mobile": {
+                    "video": null,
+                    "image": "http"
+                }
+            }
+        },
+        {
+            "name": "Css Generator",
+            "link": "http",
+            "team": "Projet réalisé seul",
+            "language": [
+                "PHP"
+            ],
+            "description": "Créer une image en assemblant toutes les images trouver dans un dossier, génère également un fichier css qui contient toutes les modifications",
+            "year": "Novembre 2021",
+            "medias": {
+                "desktop": {
+                    "video": "qdqdq.mp4",
+                    "image": "http"
+                },
+                "mobile": {
+                    "video": null,
+                    "image": "http"
+                }
+            }
+        }
+    ],
+    "professional": [
+        {
+            "name": "Assistant pédagogique",
+            "places": "ISG / Epitech - Kremlin-Bicêtre 2021",
+            "description": "Aide à l'apprentissage du code HTML/Jquery",
+            "other": "Etudiants de 1re et 2e année"
+        },
+        {
+            "name": "Compétiteur",
+            "places": "Hackathon CDS Group - Paris 2021",
+            "description": "Objectif : améliorer le système de recherche d'hôtels",
+            "other": "Missions : Elaboration et intégration d'une maquette et découverte de l'API"
+        },
+        {
+            "name": "Stagiaire en mécanique automobile",
+            "places": "Fast Car Cachan - janvier/mars - 2020",
+            "description": "Réparation véhicules particuliers et utilitaires",
+            "other": "Accueil et relation clients"
+        },
+        {
+            "name": "Employé polyvalent en restauration rapide",
+            "places": "Mac donald's Cachan - mai/octobre - 2018",
+            "description": "Accueil et service client, Tenue de caisse, confection des livraisons (drive, guichet...), Entretien de la salle",
+            "other": null
+        }
+    ],
+    "academic": [
+        {
+            "name": "Openclassroom",
+            "description": "Développeur web 2022 - 2023",
+            "language": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Sass",
+                "React",
+                "node",
+                "express",
+                "mongo"
+            ],
+            "other": "Préparation d'une formation en ligne de validation de compétence"
+        },
+        {
+            "name": "Web@cadémie",
+            "description": "Développeur intégrateur web 2021 - 2023",
+            "language": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "TypeScript",
+                "Sass",
+                "Jquery",
+                "PHP",
+                "SQL",
+                "symfony",
+                "Laravel",
+                "React",
+                "node",
+                "express",
+                "mongo"
+            ],
+            "other": "Préparation d'un diplôme Bac+2, titre RNCP de niveau 5"
+        },
+        {
+            "name": "BTS Système numérique",
+            "description": "Lycée Roland Garros - La Réunion - 2015/2017",
+            "language": [
+                "HTML",
+                "CSS",
+                "Réseaux",
+                "C/C++ (pour la programmation d'Arduino)",
+                "Arduino IDE",
+                "Langage spécifique Arduino",
+                "Contrôle des capteurs et actionneurs avec Arduino",
+                "Prototypage de circuits électroniques",
+                "Langage pour le développement de systèmes embarqués"
+            ],
+            "other": "Préparation d'un diplôme Bac+2, titre RNCP de niveau 5"
+        },
+        {
+            "name": "Baccalauréat STI2D",
+            "description": "Lycée Roland Garros - La Réunion - 2015",
+            "language": null,
+            "other": null
+        }
+    ]
+}

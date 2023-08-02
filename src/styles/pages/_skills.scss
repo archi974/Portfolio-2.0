@@ -1,0 +1,6 @@
+.bloc-skill {
+    h1 {
+        @include custom-style-title;
+        align-items: center;
+    }
+}
