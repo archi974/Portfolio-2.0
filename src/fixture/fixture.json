@@ -1,10 +1,15 @@
 {
     "projects": [
         {
-            "name": "Projet 1",
+            "name": "Previously On",
             "link": "http",
-            "description": "sfnsf",
-            "year": "2000",
+            "language":[
+                "React",
+                "Node",
+                "CSS"
+            ],
+            "description": "Un outil pour gérer les séries, les détails de chaque épisode, sur quel plateforme la voir et le status du compte.",
+            "year": "Février 2023",
             "medias": {
                 "desktop": {
                     "video": "qdqdq.mp4",
@@ -17,10 +22,93 @@
             }
         },
         {
-            "name": "Projet 2",
+            "name": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
             "link": "http",
-            "description": "sfnsf",
-            "year": "2000",
+            "language":[
+                "HTML",
+                "CSS"
+            ],
+            "description": "L'entreprise souhaite développer un site internet qui permettra aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Vous êtes chargé d'intégrer l'interface du site avec du code HTML et CSS. Pour cela, vous travaillerez en étroite collaboration avec Sarah, la CTO, et Loïc, l'UI designer.",
+            "year": "Février 2023",
+            "medias": {
+                "desktop": {
+                    "video": "qdqdq.mp4",
+                    "image": "http"
+                },
+                "mobile": {
+                    "video": null,
+                    "image": "http"
+                }
+            }
+        },
+        {
+            "name": "Créez une page web dynamique avec JavaScript",
+            "link": "http",
+            "language":"JavaScript",
+            "description": "Vous travaillez comme développeur front-end pour l’agence ArchiWebos qui comprend 50 salariés. Ayant terminé votre dernier projet avec un peu d'avance, vous êtes envoyé en renfort comme développeur front-end d’une équipe qui travaille sur la conception du site portfolio d’une architecte d’intérieur.",
+            "year": "Avril 2023",
+            "medias": {
+                "desktop": {
+                    "video": "qdqdq.mp4",
+                    "image": "http"
+                },
+                "mobile": {
+                    "video": null,
+                    "image": "http"
+                }
+            }
+        },
+        {
+            "name": "Débuggez et optimisez un site de photographe",
+            "link": "http",
+            "language":[
+                "HTML",
+                "CSS",
+                "Jquery"
+            ],
+            "description": "Vous êtes développeur freelance, et vous décidez de proposer vos services d'optimisation SEO à de nouveaux clients. Pour ce faire, vous avez analysé plusieurs sites internet. Parmi vos prospects, il y a le site de Nina Carducci, une photographe dont vous a parlé l'un de vos amis.",
+            "year": "Juin 2023",
+            "medias": {
+                "desktop": {
+                    "video": "qdqdq.mp4",
+                    "image": "http"
+                },
+                "mobile": {
+                    "video": null,
+                    "image": "http"
+                }
+            }
+        },
+        {
+            "name": "Créez une application web de location immobilière avec React",
+            "link": "http",
+            "language":[
+                "React",
+                "Sass"
+            ],
+            "description": "Kasa vous recrute en tant que développeur front-end en freelance pour développer sa nouvelle plateforme web. Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.",
+            "year": "Juin 2023",
+            "medias": {
+                "desktop": {
+                    "video": "qdqdq.mp4",
+                    "image": "http"
+                },
+                "mobile": {
+                    "video": null,
+                    "image": "http"
+                }
+            }
+        },
+        {
+            "name": "Développez le back-end d'un site de notation de livres",
+            "link": "http",
+            "language":[
+                "Node",
+                "Express",
+                "Mongo"
+            ],
+            "description": "Vous êtes développeur back-end en freelance depuis maintenant un an dans la région de Lille. Vous avez l’habitude de travailler avec Kévin, un développeur front-end plus expérimenté que vous, et qui a déjà un bon réseau de contacts dans le milieu. Kévin vous contacte pour vous proposer de travailler avec lui en mutualisant vos compétences front / back sur un tout nouveau projet qui lui a été proposé. Il s’agit d’une petite chaîne de librairies qui souhaite ouvrir un site de référencement et de notation de livres",
+            "year": "Juillet 2023",
             "medias": {
                 "desktop": {
                     "video": "qdqdq.mp4",

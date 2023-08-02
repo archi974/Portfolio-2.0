@@ -2,6 +2,7 @@
 
 $red: #D6372E;
 $blue: #253068;
+$grey: #DFE0E9;
 $gradientRed: rgb(214, 55, 46, 0.5);
 
 * {
@@ -22,4 +23,10 @@ main {
     max-width: 1240px;
     margin: 0 auto;
     width: 100%;
+}
+h1, h2, h3, h4 {
+    &::selection{
+        color: red;
+        background-color: transparent;
+    }
 }

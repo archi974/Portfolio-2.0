@@ -1,0 +1,54 @@
+.home-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        color: $grey;
+        font-weight: 700;
+        mix-blend-mode: plus-lighter;
+        margin-block: 75px;
+
+        &::selection {
+            color: $red;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        padding-bottom: 75px;
+        font-size: 160px;
+        font-weight: 900;
+        color: $grey;
+        font-family: 'Montserrat', 'Open Sans', sans-serif;
+        mix-blend-mode: plus-lighter;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        &::selection {
+            color: $red;
+        }
+    }
+
+    &:before {
+        content: "";
+        background-color: #253068;
+        height: 100ch;
+        width: 50vw;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.copyright-home {
+    display: flex;
+    transform: rotate(270deg);
+    position: absolute;
+    bottom: 0;
+    font-weight: 900;
+    font-size: 13px;
+    color: $blue;
+}
