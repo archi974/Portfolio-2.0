@@ -1,5 +1,6 @@
 import Layout from '../components/layout';
 import GoogleMapComponent from '../components/googleMap';
+import FormMail from '../components/formMail';
 
 export default function Contact() {
 
@@ -17,6 +18,7 @@ export default function Contact() {
                     <p>vincent.k.97480@gmail.com</p>
                 </section>
                 <GoogleMapComponent />
+                <FormMail />
             </article>
         </Layout>
     )

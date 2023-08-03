@@ -1,0 +1,51 @@
+@mixin formStyle {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-weight: 700;
+    width: 750px;
+}
+
+.bloc-form {
+    background-color: $blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px;
+    border-radius: 20px;
+    margin-top: 200px;
+    transform: rotate(-13deg);
+
+    &>* {
+        transform: rotate(13deg);
+    }
+
+    .bloc-form_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            font-size: 1.5em;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+    
+        input {
+            @include formStyle;
+            height: 40px;
+        }
+    
+        .textAreaMail {
+            @include formStyle;
+        }
+    
+        .sendButtonMail {
+            @include formStyle;
+            border-radius: 25px;
+            width: 150px;
+        }
+    }
+
+}
