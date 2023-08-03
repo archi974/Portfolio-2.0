@@ -1,6 +1,6 @@
 import Layout from '../components/layout';
-import LogoCarousel from '../components/carouselLogo'
-import skills from '../fixture/skills.json'
+import skills from '../fixture/skills.json';
+import LogoCarousel from '../components/carouselLogo';
 
 export default function Skills() {
 
@@ -18,7 +18,7 @@ export default function Skills() {
                                     {professionalItem.name && <h3>{professionalItem.name}</h3>}
                                     <ul className="professional-item">
                                         {professionalItem.places && <li>{"- " + professionalItem.places}</li>}
-                                        {professionalItem.description && <li>{"- " + professionalItem.description}</li>}
+                                        {professionalItem.description && <li>{"- " + professionalItem.description+" "}</li>}
                                         {professionalItem.other && <li>{"- " + professionalItem.other}</li>}
                                     </ul>
                                 </section>
@@ -33,7 +33,7 @@ export default function Skills() {
                                     {academicItem.name && <h3>{academicItem.name}</h3>}
                                     <ul className="academic-item">
                                         {academicItem.description && <li>{"- " + academicItem.description}</li>}
-                                        {academicItem.languages && <li>{"- " + academicItem.languages}</li>}
+                                        {academicItem.languages && <li>{"- " + academicItem.languages.join(", ")}</li>}
                                         {academicItem.other && <li>{"- " + academicItem.other}</li>}
                                     </ul>
                                 </section>

@@ -1,12 +1,28 @@
-const GoogleMapComponent = () => {
-    // lat: 48.8071138, lng: 2.4761018;
+import React from "react";
+import GoogleMapReact from 'google-map-react';
 
-    return (
-        <div className="bloc-map">
-            <img src="https://cdn.discordapp.com/attachments/1081227920770596865/1135974699835346974/Capture_decran_2023-08-01_a_18.36.52.png" alt="my home" />
-        </div>
-    );
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
+export default function SimpleMap(){
+  const defaultProps = {
+    center: {
+      lat: 48.8071138,
+      lng: 2.4761018
+    },
+    zoom: 15
+  };
+
+  return (
+    <div style={{ height: '100vh', width: '100%' }}>
+      <GoogleMapReact
+        bootstrapURLKeys={{ key: "AIzaSyDkASREEkNjzHMTF0iXcp2dpP0s1bHJlpM" }}
+        defaultCenter={defaultProps.center}
+        defaultZoom={defaultProps.zoom}
+      >
+        <AnyReactComponent
+          text="I'm here"
+        />
+      </GoogleMapReact>
+    </div>
+  );
 }
-
-export default GoogleMapComponent;

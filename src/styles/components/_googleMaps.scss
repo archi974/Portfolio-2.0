@@ -1,14 +1,12 @@
 .bloc-map {
-    background-color: $blue;
-    width: 1050px;
-    height: 620px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
     margin: 100px;
-    transform: rotate(25.057deg);
+    transform: rotate(15deg);
     img {
+        border: 25px solid $blue;
         width: 1000px;
         height: auto;
         border-radius: 50px;

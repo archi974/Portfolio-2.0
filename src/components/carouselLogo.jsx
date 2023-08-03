@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logoData from '../fixture/logoData.json';
+import skills from '../fixture/skills.json';
 
 const LogoCarousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
