@@ -5,10 +5,27 @@
     border-radius: 50px;
     margin: 100px;
     transform: rotate(15deg);
-    img {
-        border: 25px solid $blue;
-        width: 1000px;
-        height: auto;
-        border-radius: 50px;
-    }
+    height: 100vh;
+    width: auto;
+}
+
+map {
+    border: 25px solid $blue;
+    border-radius: 50px;
+}
+
+.map-pointer {
+    background-color: $gradientRed;
+    height: 75px;
+    width: 75px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 900;
+    font-size: 0.75rem;
+    position: fixed;
+    top: 0;
+    left: 0;
 }

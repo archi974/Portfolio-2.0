@@ -88,8 +88,8 @@
             "other": "Préparation d'un diplôme Bac+2, titre RNCP de niveau 5"
         },
         {
-            "name": "BTS Système numérique",
-            "description": "Lycée Roland Garros - La Réunion - 2015/2017",
+            "name": "Lycée Roland Garros",
+            "description": "BTS Système numérique - La Réunion - 2015/2017",
             "languages": [
                 "HTML",
                 "CSS",
@@ -99,8 +99,8 @@
             "other": "Préparation d'un diplôme Bac+2, titre RNCP de niveau 5"
         },
         {
-            "name": "Baccalauréat STI2D",
-            "description": "Lycée Roland Garros - La Réunion - 2015",
+            "name": "Lycée Roland Garros",
+            "description": "Baccalauréat STI2D - La Réunion - 2015",
             "language": null,
             "other": null
         }
