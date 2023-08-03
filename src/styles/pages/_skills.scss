@@ -1,6 +1,64 @@
-.bloc-skill {
+@mixin blocSkills {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $blue;
+    margin: 50px;
+    border-radius: 10px;
+    padding: 30px;
+    width: 530px;
+    height: auto;
+
+    h2 {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    h3 {
+        color: $red;
+    }
+
+    .professional-bloc {
+        margin-block: 10px;
+
+        ul {
+            list-style: none;
+
+            li {
+                color: #fff;
+                overflow-wrap: break-word;
+            }
+        }
+    }
+
+}
+
+.bloc-skills {
     h1 {
         @include custom-style-title;
         align-items: center;
+    }
+
+    .bloc-skills-section {
+        display: flex;
+
+        .bloc-skills_section-professional {
+            @include blocSkills;
+        }
+
+        .bloc-skills_section-academic {
+            @include blocSkills;
+            .academic-item {
+                .academic-item-language{
+                    display: flex;
+                    width:fit-content;
+                    // overflow-wrap: break-word;
+                    height: auto;
+                    li {
+                        overflow-wrap: break-word;
+                    }
+                }
+            }
+        }
     }
 }

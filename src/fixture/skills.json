@@ -224,7 +224,7 @@
         {
             "name": "Openclassroom",
             "description": "Développeur web 2022 - 2023",
-            "language": [
+            "languages": [
                 "HTML",
                 "CSS",
                 "JavaScript",
@@ -239,7 +239,7 @@
         {
             "name": "Web@cadémie",
             "description": "Développeur intégrateur web 2021 - 2023",
-            "language": [
+            "languages": [
                 "HTML",
                 "CSS",
                 "JavaScript",
@@ -248,8 +248,6 @@
                 "Jquery",
                 "PHP",
                 "SQL",
-                "symfony",
-                "Laravel",
                 "React",
                 "node",
                 "express",
@@ -260,16 +258,11 @@
         {
             "name": "BTS Système numérique",
             "description": "Lycée Roland Garros - La Réunion - 2015/2017",
-            "language": [
+            "languages": [
                 "HTML",
                 "CSS",
                 "Réseaux",
-                "C/C++ (pour la programmation d'Arduino)",
-                "Arduino IDE",
-                "Langage spécifique Arduino",
-                "Contrôle des capteurs et actionneurs avec Arduino",
-                "Prototypage de circuits électroniques",
-                "Langage pour le développement de systèmes embarqués"
+                "C/C++ (pour la programmation d'Arduino)"
             ],
             "other": "Préparation d'un diplôme Bac+2, titre RNCP de niveau 5"
         },
