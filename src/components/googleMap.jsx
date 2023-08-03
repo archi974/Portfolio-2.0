@@ -10,9 +10,6 @@ const GoogleMapComponent = () => {
         },
         zoom: 15
     };
-    const mapOptions = {
-        borderRadius: "50px"
-    };
 
     return (
         <div className="bloc-map">
@@ -20,7 +17,6 @@ const GoogleMapComponent = () => {
                 bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY }}
                 defaultCenter={defaultProps.center}
                 defaultZoom={defaultProps.zoom}
-                defaultOptions={mapOptions}
             >
                 <AnyReactComponent
                     text="I'm here"
