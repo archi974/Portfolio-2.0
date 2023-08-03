@@ -17,7 +17,7 @@ const GoogleMapComponent = () => {
     return (
         <div className="bloc-map">
             <GoogleMapReact
-                bootstrapURLKeys={{ key: "AIzaSyDkASREEkNjzHMTF0iXcp2dpP0s1bHJlpM" }}
+                bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY }}
                 defaultCenter={defaultProps.center}
                 defaultZoom={defaultProps.zoom}
                 defaultOptions={mapOptions}

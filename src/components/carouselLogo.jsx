@@ -11,12 +11,13 @@ const LogoCarousel = () => {
     const handleNext = () => {
         setCurrentIndex((prevIndex) => (prevIndex === skills.length - 1 ? 0 : prevIndex + 1));
     };
+    const currentLogo = skills[currentIndex];
 
     return (
         <div className="logo-carousel">
             <button onClick={handlePrev}>Précédent</button>
             <div className="logo">
-                <p>LOGO</p>
+                <p>{currentLogo}</p>
             </div>
             <button onClick={handleNext}>Suivant</button>
         </div>
