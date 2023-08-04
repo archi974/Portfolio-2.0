@@ -1,7 +1,36 @@
 .bloc-projects {
+    &:before {
+        content: "";
+        height: 1500px;
+        width: 100vw;
+        background-color: $blue;
+        position: absolute;
+        top: 450px;
+        left: 0;
+        z-index: -1;
+        clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
+    }
+
     h1 {
         @include custom-style-title;
         align-items: center;
         margin-bottom: 170px;
+    }
+
+    .projet {
+        display: flex;
+
+        &.left {
+            justify-content: flex-start;
+        }
+
+        &.right {
+            justify-content: flex-end;
+        }
+
+        img {
+            width: 500px;
+            height: auto;
+        }
     }
 }
