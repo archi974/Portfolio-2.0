@@ -41,6 +41,8 @@
 
     .bloc-skills-section {
         display: flex;
+        margin-top: 500px;
+        justify-content: center;
 
         .bloc-skills_section-professional {
             @include blocSkills;

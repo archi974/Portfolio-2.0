@@ -1,0 +1,47 @@
+.logo-carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $blue;
+    margin-top: 85px;
+    padding-block: 35px;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    .logo-button {
+        background-color: transparent;
+        border: none;
+        fill: #fff;
+    }
+
+    .all-logo-title {
+        width: 100%;
+        
+        .logo-title {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+
+            h2 {
+                color: #fff;
+                font-size: 2rem;
+            }
+        }
+
+        .all-logo {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .logo {
+                svg {
+                    border-radius: 50%;
+                    width: 240px;
+                    height: 240px;
+                }
+            }
+
+        }
+    }
+}
