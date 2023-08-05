@@ -41,6 +41,9 @@
         .textAreaMail {
             @include formStyle;
         }
+        .form-recaptcha {
+            margin-bottom: 30px;
+        }
     
         .sendButtonMail {
             @include formStyle;
