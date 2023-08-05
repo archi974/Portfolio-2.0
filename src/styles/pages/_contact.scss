@@ -1,6 +1,7 @@
 .bloc-contact {
     height: 100%;
     padding-bottom: 100px;
+    margin-inline: 50px;
 
     h1 {
         @include custom-style-title;
@@ -8,8 +9,16 @@
         margin-bottom: 170px;
     }
 
-    .adress-section,
+    .adress-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
     .contact-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
         h2 {
             color: $blue;
             font-weight: 900;
@@ -23,9 +32,9 @@
         }
     }
 
-    .contact-section {
+    .email-section {
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+        justify-content: center;
     }
+
 }

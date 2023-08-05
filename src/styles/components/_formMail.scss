@@ -15,10 +15,11 @@
     padding: 75px;
     border-radius: 20px;
     margin-top: 200px;
-    transform: rotate(-13deg);
+    transform: rotate(-9deg);
+    width: 1000px;
 
     &>* {
-        transform: rotate(13deg);
+        transform: rotate(9deg);
     }
 
     .bloc-form_section {

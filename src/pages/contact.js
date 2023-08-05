@@ -18,7 +18,9 @@ export default function Contact() {
                     <p>vincent.k.97480@gmail.com</p>
                 </section>
                 <GoogleMapComponent />
-                <FormMail />
+                <section className="email-section">
+                    <FormMail />
+                </section>
             </article>
         </Layout>
     )
