@@ -43,3 +43,55 @@ main {
         color: $red;
     }
 }
+
+@mixin aboutMeText {
+    color: $blue;
+    display: flex;
+    flex-direction: column;
+
+    p {
+        width: 600px;
+        padding-bottom: 20px;
+        font-size: 12px;
+        font-weight: 700;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+}
+
+@mixin blocSkills {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $blue;
+    margin: 50px;
+    border-radius: 10px;
+    padding: 30px;
+    width: 530px;
+    height: auto;
+
+    h2 {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    h3 {
+        color: $red;
+    }
+
+    .professional-bloc {
+        margin-block: 10px;
+
+        ul {
+            list-style: none;
+
+            li {
+                color: #fff;
+                overflow-wrap: break-word;
+            }
+        }
+    }
+
+}

@@ -7,4 +7,34 @@
         align-items: center;
         margin-bottom: 170px;
     }
+
+    .about-me_img {
+        position: absolute;
+        right: 0;
+
+        img {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+        }
+    }
+
+    .about-me_content {
+        display: flex;
+        flex-direction: column;
+
+        .about-me_description-left {
+            @include aboutMeText;
+        }
+
+        .about-me_description-right {
+            align-items: flex-end;
+            @include aboutMeText;
+
+            p {
+                text-align: right;
+            }
+        }
+
+    }
 }
