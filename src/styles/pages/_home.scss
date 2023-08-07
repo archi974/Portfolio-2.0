@@ -9,6 +9,10 @@
         mix-blend-mode: plus-lighter;
         margin-block: 75px;
 
+        &:hover {
+            color: $red;
+        }
+
         &::selection {
             color: $red;
         }
@@ -23,6 +27,10 @@
         font-family: 'Montserrat', 'Open Sans', sans-serif;
         mix-blend-mode: plus-lighter;
         @include select-text;
+
+        &:hover {
+            color: $red;
+        }
 
         &:last-child {
             padding-bottom: 0;
