@@ -11,9 +11,12 @@ const ProjectModal = ({ showModal, closeModal, project }) => {
             isOpen={showModal}
             onRequestClose={closeModal}
             contentLabel="Project Modal"
+            overlayClassName="project-modal_overlay"
+            className="projet-modal_content"
         >
             <button onClick={closeModal}>Close Modal</button>
             <h2>{project?.name}</h2>
+            <p>{project?.year}</p>
             <p>{project?.description}</p>
             <p>Langages utilisés : {project?.language.join(', ')}</p>
             {
@@ -25,7 +28,6 @@ const ProjectModal = ({ showModal, closeModal, project }) => {
                     </ul>
                 ))
             }
-            <p>Year: {project?.year}</p>
         </Modal>
     );
 };
