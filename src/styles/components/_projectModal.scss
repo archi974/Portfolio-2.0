@@ -8,14 +8,37 @@
     z-index: 1;
     top: 0;
     left: 0;
-}
 
-.projet-modal_content {
-    background-color: #fff;
-    width: 1200px;
-    height: auto;
-    margin: 40px;
-    padding: 20px;
-    border: none;
-    color: $blue;
+    .projet-modal_content {
+        background-color: #fff;
+        width: 1200px;
+        height: max-content;
+        margin: 40px;
+        padding: 20px;
+        border-radius: 10px;
+        border: none;
+        color: $blue;
+
+        .modal-close-button {
+            background: none;
+            border: none;
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            color: $blue;
+            font-size: 24px;
+            cursor: pointer;
+            svg {
+                fill: $blue;
+                transition: transform 0.3s ease-in-out;
+                &:hover {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        .modal-description {
+            display: flex;
+        }
+
+    }
 }

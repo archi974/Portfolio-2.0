@@ -37,6 +37,7 @@
                 border-radius: 5px;
                 background-color: $red;
                 padding: 10px;
+                cursor: pointer;
                 h2 {
                     overflow-wrap: break-word;
                     color: #fff;
@@ -46,6 +47,9 @@
                     overflow-wrap: break-word;
                     color: #fff;
                     font-size: 1rem;
+                }
+                .GitHub-link {
+                    @include gitHubStyle;
                 }
             }
             .project-image {
