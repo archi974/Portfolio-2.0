@@ -6,18 +6,19 @@
     h1 {
         @include custom-style-title;
         align-items: center;
-        margin-bottom: 170px;
+        margin-bottom: 100px;
         display: block;
     }
 
     .about-me_img {
         position: absolute;
-        right: 0;
+        right: 20px;
+        top: 300px;
 
         img {
-            width: 100px;
+            width: 500px;
             height: auto;
-            clip-path: ellipse(50% 60% at 50% 50%);
+            border-radius: 50%;
         }
     }
 
@@ -27,11 +28,12 @@
 
         .about-me_description-left {
             @include aboutMeText;
+            margin-bottom: 150px;
         }
 
         .about-me_description-right {
-            align-items: flex-end;
             @include aboutMeText;
+            align-items: flex-end;
 
             p {
                 text-align: right;

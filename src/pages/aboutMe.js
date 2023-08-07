@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Layout from '../components/layout';
 import aboutMe from "../fixture/aboutMe.json"
 
 export default function AboutMe() {
     const [language, setLanguage] = useState("en");
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <Layout>
