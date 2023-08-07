@@ -1,7 +1,7 @@
 [
     {
         "name": "Mon vieux grimoire",
-        "link": "http",
+        "link": "https://github.com/archi974/Vieux-Grimoire",
         "team": "Projet réalisé seul",
         "language": [
             "Node",
@@ -24,17 +24,19 @@
         "medias": {
             "desktop": {
                 "video": "qdqdq.mp4",
-                "image": "https://cdn.discordapp.com/attachments/1019304376193532035/1137050729262104647/Capture_decran_2023-08-04_a_17.01.29.png"
+                "imgSrc": "https://cdn.discordapp.com/attachments/1019304376193532035/1137050729262104647/Capture_decran_2023-08-04_a_17.01.29.png",
+                "imgAlt":"home page Mon vieux grimoire"
             },
             "mobile": {
                 "video": null,
-                "image": "http"
+                "imgSrc": null,
+                "imgAlt": null
             }
         }
     },
     {
-        "name": "Créez une application web de location immobilière avec React",
-        "link": "http",
+        "name": "Location immobilière",
+        "link": "https://github.com/archi974/Location_immobiliere",
         "team": "Projet réalisé seul",
         "language": [
             "React",
@@ -56,17 +58,19 @@
         "medias": {
             "desktop": {
                 "video": "qdqdq.mp4",
-                "image": "https://cdn.discordapp.com/attachments/1019304376193532035/1137050790373101659/Capture_decran_2023-08-04_a_16.55.06.png"
+                "imgSrc": "https://cdn.discordapp.com/attachments/1019304376193532035/1137050790373101659/Capture_decran_2023-08-04_a_16.55.06.png",
+                "imgAlt":"Création d'un site de location immobilère"
             },
             "mobile": {
                 "video": null,
-                "image": "http"
+                "imgSrc": null,
+                "imgAlt": null
             }
         }
     },
     {
-        "name": "Débuggez et optimisez un site de photographe",
-        "link": "http",
+        "name": "Site photographe",
+        "link": "https://github.com/archi974/Site_photographe",
         "team": "Projet réalisé seul",
         "language": [
             "HTML",
@@ -89,17 +93,19 @@
         "medias": {
             "desktop": {
                 "video": "qdqdq.mp4",
-                "image": "https://cdn.discordapp.com/attachments/1019304376193532035/1137050844009865277/Capture_decran_2023-08-04_a_16.51.06.png"
+                "imgSrc": "https://cdn.discordapp.com/attachments/1019304376193532035/1137050844009865277/Capture_decran_2023-08-04_a_16.51.06.png",
+                "imgAlt": "Faire l'optimisation d'un site de photographe"
             },
             "mobile": {
                 "video": null,
-                "image": "http"
+                "imgSrc": null,
+                "imgAlt": null
             }
         }
     },
     {
-        "name": "Créez une page web dynamique avec JavaScript",
-        "link": "http",
+        "name": "Portfolio Architect d'intérieur",
+        "link": "https://github.com/archi974/Portfolio_Architect_Interieur",
         "team": "Projet réalisé seul",
         "language": [
             "JavaScript"
@@ -120,17 +126,19 @@
         "medias": {
             "desktop": {
                 "video": "qdqdq.mp4",
-                "image": "https://cdn.discordapp.com/attachments/1019304376193532035/1137050895423635628/Capture_decran_2023-08-04_a_16.22.46.png"
+                "imgSrc": "https://cdn.discordapp.com/attachments/1019304376193532035/1137050895423635628/Capture_decran_2023-08-04_a_16.22.46.png",
+                "imgAlt": "Réalisation de la partie dynamique d'un portfolio"
             },
             "mobile": {
                 "video": null,
-                "image": "http"
+                "imgSrc": null,
+                "imgAlt": null
             }
         }
     },
     {
-        "name": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
-        "link": "http",
+        "name": "Agence de voyage",
+        "link": "https://github.com/archi974/AgenceVoyage",
         "team": "Projet réalisé seul",
         "language": [
             "HTML",
@@ -152,17 +160,19 @@
         "medias": {
             "desktop": {
                 "video": "qdqdq.mp4",
-                "image": "https://cdn.discordapp.com/attachments/1019304376193532035/1137050948271874098/Capture_decran_2023-08-04_a_15.34.26.png"
+                "imgSrc": "https://cdn.discordapp.com/attachments/1019304376193532035/1137050948271874098/Capture_decran_2023-08-04_a_15.34.26.png",
+                "imgAlt": "site d'agence de voyage"
             },
             "mobile": {
                 "video": null,
-                "image": "http"
+                "imgSrc": null,
+                "imgAlt": null
             }
         }
     },
     {
         "name": "Framework SCSS",
-        "link": "http",
+        "link": "https://github.com/archi974/Framework-scss",
         "team": "Projet réalisé seul",
         "language": [
             "HTML",
@@ -184,17 +194,19 @@
         "medias": {
             "desktop": {
                 "video": "qdqdq.mp4",
-                "image": "https://cdn.discordapp.com/attachments/1019304376193532035/1137061337663553567/Capture_decran_2023-08-04_a_18.18.56.png"
+                "imgSrc": "https://cdn.discordapp.com/attachments/1019304376193532035/1137061337663553567/Capture_decran_2023-08-04_a_18.18.56.png",
+                "imgAlt": "création d'un framework css avec Sass"
             },
             "mobile": {
                 "video": null,
-                "image": "http"
+                "imgSrc": null,
+                "imgAlt": null
             }
         }
     },
     {
         "name": "My Wysiwig",
-        "link": "http",
+        "link": "https://github.com/archi974/My_Wysiwyg",
         "team": "Groupe de 3 personnes",
         "language": [
             "Jquery",
@@ -219,17 +231,19 @@
         "medias": {
             "desktop": {
                 "video": "qdqdq.mp4",
-                "image": "https://cdn.discordapp.com/attachments/1019304376193532035/1137061296995565618/Capture_decran_2023-08-04_a_18.24.12.png"
+                "imgSrc": "https://cdn.discordapp.com/attachments/1019304376193532035/1137061296995565618/Capture_decran_2023-08-04_a_18.24.12.png",
+                "imgAlt": "projet sur un éditeur de texte"
             },
             "mobile": {
                 "video": null,
-                "image": "http"
+                "imgSrc": null,
+                "imgAlt": null
             }
         }
     },
     {
         "name": "Css Generator",
-        "link": "http",
+        "link": "https://github.com/archi974/css_generator",
         "team": "Projet réalisé seul",
         "language": [
             "PHP"
@@ -250,11 +264,13 @@
         "medias": {
             "desktop": {
                 "video": "qdqdq.mp4",
-                "image": "https://cdn.discordapp.com/attachments/1019304376193532035/1137061395326836776/Capture_decran_2023-08-04_a_18.06.33.png"
+                "imgSrc": "https://cdn.discordapp.com/attachments/1019304376193532035/1137061395326836776/Capture_decran_2023-08-04_a_18.06.33.png",
+                "imgAlt": "exemple de création d'image"
             },
             "mobile": {
                 "video": null,
-                "image": "http"
+                "imgSrc": null,
+                "imgAlt": null
             }
         }
     }
