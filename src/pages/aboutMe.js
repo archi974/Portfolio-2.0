@@ -3,6 +3,7 @@ import Layout from '../components/layout';
 import aboutMe from "../fixture/aboutMe.json"
 
 export default function AboutMe() {
+    // eslint-disable-next-line no-unused-vars
     const [language, setLanguage] = useState("en");
 
     useEffect(() => {

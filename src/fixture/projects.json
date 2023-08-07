@@ -10,13 +10,9 @@
         ],
         "constraints": [
             {
-                "issue": [
-                    {
-                        "first": "first",
-                        "second": "second",
-                        "third": "third"
-                    }
-                ]
+                "first": "first",
+                "second": "second",
+                "third": "third"
             }
         ],
         "description": "Vous êtes développeur back-end en freelance depuis maintenant un an dans la région de Lille. Vous avez l’habitude de travailler avec Kévin, un développeur front-end plus expérimenté que vous, et qui a déjà un bon réseau de contacts dans le milieu. Kévin vous contacte pour vous proposer de travailler avec lui en mutualisant vos compétences front / back sur un tout nouveau projet qui lui a été proposé. Il s’agit d’une petite chaîne de librairies qui souhaite ouvrir un site de référencement et de notation de livres",
@@ -25,7 +21,7 @@
             "desktop": {
                 "video": "qdqdq.mp4",
                 "imgSrc": "https://cdn.discordapp.com/attachments/1019304376193532035/1137050729262104647/Capture_decran_2023-08-04_a_17.01.29.png",
-                "imgAlt":"home page Mon vieux grimoire"
+                "imgAlt": "home page Mon vieux grimoire"
             },
             "mobile": {
                 "video": null,
@@ -44,13 +40,9 @@
         ],
         "constraints": [
             {
-                "issue": [
-                    {
-                        "first": "first",
-                        "second": "second",
-                        "third": "third"
-                    }
-                ]
+                "first": "first",
+                "second": "second",
+                "third": "third"
             }
         ],
         "description": "Kasa vous recrute en tant que développeur front-end en freelance pour développer sa nouvelle plateforme web. Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.",
@@ -59,7 +51,7 @@
             "desktop": {
                 "video": "qdqdq.mp4",
                 "imgSrc": "https://cdn.discordapp.com/attachments/1019304376193532035/1137050790373101659/Capture_decran_2023-08-04_a_16.55.06.png",
-                "imgAlt":"Création d'un site de location immobilère"
+                "imgAlt": "Création d'un site de location immobilère"
             },
             "mobile": {
                 "video": null,
@@ -79,13 +71,9 @@
         ],
         "constraints": [
             {
-                "issue": [
-                    {
-                        "first": "first",
-                        "second": "second",
-                        "third": "third"
-                    }
-                ]
+                "first": "first",
+                "second": "second",
+                "third": "third"
             }
         ],
         "description": "Vous êtes développeur freelance, et vous décidez de proposer vos services d'optimisation SEO à de nouveaux clients. Pour ce faire, vous avez analysé plusieurs sites internet. Parmi vos prospects, il y a le site de Nina Carducci, une photographe dont vous a parlé l'un de vos amis.",
@@ -112,13 +100,9 @@
         ],
         "constraints": [
             {
-                "issue": [
-                    {
-                        "first": "first",
-                        "second": "second",
-                        "third": "third"
-                    }
-                ]
+                "first": "first",
+                "second": "second",
+                "third": "third"
             }
         ],
         "description": "Vous travaillez comme développeur front-end pour l’agence ArchiWebos qui comprend 50 salariés. Ayant terminé votre dernier projet avec un peu d'avance, vous êtes envoyé en renfort comme développeur front-end d’une équipe qui travaille sur la conception du site portfolio d’une architecte d’intérieur.",
@@ -146,13 +130,9 @@
         ],
         "constraints": [
             {
-                "issue": [
-                    {
-                        "first": "first",
-                        "second": "second",
-                        "third": "third"
-                    }
-                ]
+                "first": "first",
+                "second": "second",
+                "third": "third"
             }
         ],
         "description": "L'entreprise souhaite développer un site internet qui permettra aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Vous êtes chargé d'intégrer l'interface du site avec du code HTML et CSS. Pour cela, vous travaillerez en étroite collaboration avec Sarah, la CTO, et Loïc, l'UI designer.",
@@ -180,13 +160,9 @@
         ],
         "constraints": [
             {
-                "issue": [
-                    {
-                        "first": "first",
-                        "second": "second",
-                        "third": "third"
-                    }
-                ]
+                "first": "first",
+                "second": "second",
+                "third": "third"
             }
         ],
         "description": "Un site pour visualiser les possibilités de classe Sass et le rendu de chaque composant responsive",
@@ -217,13 +193,9 @@
         ],
         "constraints": [
             {
-                "issue": [
-                    {
-                        "first": "first",
-                        "second": "second",
-                        "third": "third"
-                    }
-                ]
+                "first": "first",
+                "second": "second",
+                "third": "third"
             }
         ],
         "description": "Editeur de texte sous forme de module JavaScript, permet de générer du code HTML de manière visuelle.",
@@ -250,13 +222,9 @@
         ],
         "constraints": [
             {
-                "issue": [
-                    {
-                        "first": "first",
-                        "second": "second",
-                        "third": "third"
-                    }
-                ]
+                "first": "first",
+                "second": "second",
+                "third": "third"
             }
         ],
         "description": "Créer une image en assemblant toutes les images trouver dans un dossier, génère également un fichier css qui contient toutes les modifications",
