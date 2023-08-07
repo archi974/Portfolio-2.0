@@ -1,19 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from '../components/layout';
-import projects from '../fixture/projects.json'
+import Modal from 'react-modal';
+import projects from '../fixture/projects.json';
 
 export default function Projects() {
-    const [hoveredProject, setHoveredProject] = useState(null);
-    const [showImage, setShowImage] = useState(true);
+    const [hoveredProjects, setHoveredProjects] = useState({});
+    const [showModal, setShowModal] = useState(false);
+
+    useEffect(() => {
+        Modal.setAppElement("#root");
+    }, []);
 
     const handleDescriptionMouseEnter = (project) => {
-        setHoveredProject(project);
-        setShowImage(false);
+        setHoveredProjects((prevHoveredProjects) => ({
+            ...prevHoveredProjects,
+            [project.name]: true,
+        }));
     };
 
-    const handleDescriptionMouseLeave = () => {
-        setHoveredProject(null);
-        setShowImage(true);
+    const handleDescriptionMouseLeave = (project) => {
+        setHoveredProjects((prevHoveredProjects) => ({
+            ...prevHoveredProjects,
+            [project.name]: false,
+        }));
+    };
+
+    const openModal = () => {
+        setShowModal(true);
+    };
+
+    const closeModal = () => {
+        setShowModal(false);
     };
 
     return (
@@ -23,16 +40,15 @@ export default function Projects() {
                 <div className="bloc-projects-container">
                     {projects.map((project, i) => (
                         <section
-                            className={`projet ${i % 2 === 0 ? 'left' : 'right'} ${hoveredProject === project ? 'hovered' : ''
+                            className={`projet ${i % 2 === 0 ? 'left' : 'right'} ${hoveredProjects[project.name] ? 'hovered' : ''
                                 }`}
                             key={i}
-                            onMouseEnter={() => setHoveredProject(project)}
-                            onMouseLeave={() => setHoveredProject(null)}
                         >
-                            {hoveredProject === project ? (
+                            {hoveredProjects[project.name] ? (
                                 <article
                                     className="project-description"
-                                    onMouseLeave={handleDescriptionMouseLeave}
+                                    onMouseLeave={() => handleDescriptionMouseLeave(project)}
+                                    onClick={openModal}
                                 >
                                     <h2>{project.name}</h2>
                                     <p>{project.description}</p>
@@ -42,15 +58,22 @@ export default function Projects() {
                                     className="project-image"
                                     onMouseEnter={() => handleDescriptionMouseEnter(project)}
                                 >
-                                    {showImage && (
-                                        <img src={project.medias.desktop.image} alt="home page" />
-                                    )}
+                                    <img src={project.medias.desktop.image} alt="home page" />
                                 </article>
                             )}
                         </section>
                     ))}
                 </div>
             </article>
+            <Modal
+                isOpen={showModal}
+                onRequestClose={closeModal}
+                contentLabel="Project Modal"
+            >
+                <h2>{hoveredProjects?.name}</h2>
+                <p>{hoveredProjects?.description}</p>
+                <button onClick={closeModal}>Close Modal</button>
+            </Modal>
         </Layout>
     )
 }
