@@ -16,7 +16,6 @@
         margin: 40px;
         padding: 20px;
         border-radius: 10px;
-        border: none;
         color: $blue;
 
         .modal-close-button {
@@ -28,17 +27,43 @@
             color: $blue;
             font-size: 24px;
             cursor: pointer;
+
             svg {
                 fill: $blue;
                 transition: transform 0.3s ease-in-out;
+
                 &:hover {
                     transform: rotate(180deg);
                 }
             }
         }
-        .modal-description {
-            display: flex;
+
+        .modal-video {
+            background-color: $red;
+            // width: 1160px;
+            // height: 400px;
         }
 
+        .modal-description {
+            display: flex;
+            flex-direction: column;
+
+            .modal-contraints {
+                list-style: none;
+                width: 100%;
+                justify-content: center;
+                li {
+                    margin-right: 10px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
     }
+
+    .gitHub-bloc {
+        @include gitHubStyle;
+    }
+
 }

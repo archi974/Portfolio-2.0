@@ -116,5 +116,15 @@ main {
         svg {
             fill: $blue;
         }
+
+        &:hover {
+            p {
+                color: $red;
+            }
+
+            svg {
+                fill: $red;
+            }
+        }
     }
 }
