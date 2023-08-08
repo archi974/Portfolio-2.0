@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import skills from '../fixture/skills.json';
 
 const chunkArray = (array, size) => {
@@ -23,6 +23,14 @@ const LogoCarousel = () => {
     const handleNext = () => {
         setCurrentIndex((prevIndex) => (prevIndex === chunkedLogos.length - 1 ? 0 : prevIndex + 1));
     };
+
+    useEffect(() => {
+        const interval = setInterval(handleNext, 5000);
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, []);
 
     return (
         <div className="logo-carousel">
