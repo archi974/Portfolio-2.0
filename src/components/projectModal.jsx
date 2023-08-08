@@ -18,17 +18,17 @@ const ProjectModal = ({ showModal, closeModal, project }) => {
             <button onClick={closeModal} className="modal-close-button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z" /></svg>
             </button>
+            <h2 className="modal-title">{project?.name}</h2>
             {
                 project?.medias.desktop.video && (
-                    <div className="modal-video" dangerouslySetInnerHTML={{ __html: project?.medias.desktop.video }} />
+                    <iframe width='560' height='320' src={project?.medias.desktop.video} title={project?.name} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
                 )
             }
             <article className="modal-description">
-                <h2>{project?.name}</h2>
                 <p>{project?.year}</p>
                 <p>{project?.description}</p>
                 <p>Langages utilisés : {project?.language.join(', ')}</p>
-                <h2>Contrainte rencontrée</h2>
+                <h3>Contrainte rencontrée</h3>
                 {
                     project?.constraints.map((issue, j) => (
                         <ul className="modal-contraints" key={j}>

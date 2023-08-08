@@ -38,10 +38,16 @@
             }
         }
 
+        .modal-title {
+            text-align: center;
+            font-weight: 900;
+            text-transform:uppercase;
+            font-size: 3rem;
+        }
+
         .modal-video {
-            background-color: $red;
-            // width: 1160px;
-            // height: 400px;
+            width: 1160px;
+            height: 400px;
         }
 
         .modal-description {
