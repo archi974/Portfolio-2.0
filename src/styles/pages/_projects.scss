@@ -38,23 +38,33 @@
                 background-color: $red;
                 padding: 10px;
                 cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
                 h2 {
                     overflow-wrap: break-word;
                     color: #fff;
                     font-size: 2rem;
+                    text-align: center;
                 }
+
                 p {
                     overflow-wrap: break-word;
                     color: #fff;
-                    font-size: 1rem;
+                    font-size: 0.75rem;
+                    text-align: center;
                 }
-                .GitHub-link {
+
+                .gitHub-bloc {
                     @include gitHubStyle;
                 }
             }
+
             .project-image {
                 width: 500px;
                 height: 275px;
+
                 img {
                     border-radius: 5px;
                     width: 100%;
