@@ -4,7 +4,7 @@
     margin-inline: 50px;
 
     h1 {
-        @include custom-style-title;
+        @include custom-style-title(250px);
         align-items: center;
         margin-bottom: 170px;
     }
@@ -37,4 +37,12 @@
         justify-content: center;
     }
 
+}
+
+@media only screen and (max-width: 1184px) {
+    .bloc-contact {
+        h1 {
+            @include custom-style-title(200px);
+        }
+    }
 }

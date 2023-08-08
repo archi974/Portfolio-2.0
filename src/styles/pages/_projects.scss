@@ -12,7 +12,7 @@
     }
 
     h1 {
-        @include custom-style-title;
+        @include custom-style-title(250px);
         align-items: center;
         margin-bottom: 170px;
     }
@@ -73,6 +73,14 @@
                 }
             }
 
+        }
+    }
+}
+
+@media only screen and (max-width: 1184px) {
+    .bloc-projects {
+        h1 {
+            @include custom-style-title(200px);
         }
     }
 }

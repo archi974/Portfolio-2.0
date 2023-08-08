@@ -30,8 +30,8 @@ main {
     }
 }
 
-@mixin custom-style-title {
-    font-size: 250px;
+@mixin custom-style-title($font-size) {
+    font-size: $font-size;
     font-weight: 700;
     color: $blue;
     display: flex;

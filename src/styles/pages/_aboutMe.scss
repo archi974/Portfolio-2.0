@@ -4,7 +4,7 @@
     padding-bottom: 100px;
 
     h1 {
-        @include custom-style-title;
+        @include custom-style-title(250px);
         align-items: center;
         margin-bottom: 100px;
         display: block;
@@ -40,5 +40,14 @@
             }
         }
 
+    }
+}
+
+@media only screen and (max-width: 1184px) {
+    .bloc-about-me {
+        h1 {
+            @include custom-style-title(200px);
+            display: block;
+        }
     }
 }

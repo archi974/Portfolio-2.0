@@ -1,7 +1,10 @@
 .bloc-notfound {
     align-items: center;
+    display: flex;
+    flex-direction: column;
+
     h1 {
-        @include custom-style-title;
+        @include custom-style-title(250px);
         margin-bottom: 10px;
     }
 
@@ -10,5 +13,13 @@
         font-size: 25px;
         font-weight: 900;
         color: $blue;
+    }
+}
+
+@media only screen and (max-width: 1184px) {
+    .bloc-notfound {
+        h1 {
+            @include custom-style-title(200px);
+        }
     }
 }

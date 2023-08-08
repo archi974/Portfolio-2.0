@@ -1,7 +1,7 @@
 
 .bloc-skills {
     h1 {
-        @include custom-style-title;
+        @include custom-style-title(250px);
         align-items: center;
     }
 
@@ -27,6 +27,14 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 1184px) {
+    .bloc-skills {
+        h1 {
+            @include custom-style-title(200px);
         }
     }
 }
