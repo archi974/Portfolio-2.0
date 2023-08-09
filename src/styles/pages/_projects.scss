@@ -15,6 +15,17 @@
         @include custom-style-title($font-size-large);
         align-items: center;
         margin-bottom: 170px;
+        @media only screen and (max-width: 1184px) {
+            @include custom-style-title($font-size-medium);
+        }
+        
+        @media only screen and (max-width: 720px) {
+            @include custom-style-title($font-size-small);
+        }
+        
+        @media only screen and (max-width: 380px) {
+            @include custom-style-title($font-size-xs);
+        }
     }
 
     .bloc-projects-container {
@@ -52,6 +63,17 @@
                     color: #fff;
                     font-size: 2rem;
                     text-align: center;
+                    @media only screen and (max-width: 1184px) {
+                        font-size: 1.75rem;
+                    }
+                    
+                    @media only screen and (max-width: 720px) {
+                        font-size: 1.5rem;
+                    }
+                    
+                    @media only screen and (max-width: 380px) {
+                        font-size: 1rem;
+                    }
                 }
 
                 p {
@@ -59,6 +81,9 @@
                     color: #fff;
                     font-size: 0.75rem;
                     text-align: center;
+                    @media only screen and (max-width: 380px) {
+                        font-size: .65rem;
+                    }
                 }
 
                 .gitHub-bloc {
@@ -80,30 +105,6 @@
                 }
             }
 
-        }
-    }
-}
-
-@media only screen and (max-width: 1184px) {
-    .bloc-projects {
-        h1 {
-            @include custom-style-title($font-size-medium);
-        }
-    }
-}
-
-@media only screen and (max-width: 720px) {
-    .bloc-projects {
-        h1 {
-            @include custom-style-title($font-size-small);
-        }
-    }
-}
-
-@media only screen and (max-width: 380px) {
-    .bloc-projects {
-        h1 {
-            @include custom-style-title($font-size-xs);
         }
     }
 }
