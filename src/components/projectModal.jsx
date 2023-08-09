@@ -27,11 +27,11 @@ const ProjectModal = ({ showModal, closeModal, project }) => {
                 }
             </div>
             <article className="modal-content-text">
-                <p>{project?.year}</p>
+                <p className="modal-year">{project?.year}</p>
                 <section className="modal-description">
                     <h3>Description :</h3>
                     <p>{project?.description}</p>
-                    <p>Langages utilisés : {project?.language.join(', ')}</p>
+                    <p>Languages used : {project?.language.join(', ')}</p>
                 </section>
                 <section className="modal-contraints">
                     <h3>{project?.titleConstraints} :</h3>

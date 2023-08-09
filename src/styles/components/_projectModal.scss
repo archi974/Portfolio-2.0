@@ -12,7 +12,7 @@
 
     .projet-modal_content {
         background-color: #fff;
-        width: 1200px;
+        width: 950px;
         height: max-content;
         margin: 40px;
         padding: 20px;
@@ -42,9 +42,19 @@
         .modal-title {
             text-align: center;
             font-weight: 900;
-            text-transform:uppercase;
-            font-size: 3rem;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+
+            @media only screen and (max-width: 768px) {
+                font-size: 2rem;
+            }
+
+            @media only screen and (max-width: 545px) {
+                font-size: 1rem;
+            }
         }
+
         .modal-content-video {
             width: 100%;
             height: auto;
@@ -53,21 +63,100 @@
                 border: none;
                 width: 100%;
                 height: 400px;
+
+                @media only screen and (max-width: 768px) {
+                    height: 200px;
+                }
+
+                @media only screen and (max-width: 545px) {
+                    height: 100px;
+                }
             }
         }
 
         .modal-content-text {
             display: flex;
             flex-direction: column;
+
+            .modal-year {
+                font-weight: 700;
+                margin-bottom: 10px;
+                @media only screen and (max-width: 768px) {
+                    font-size: 1rem;
+                }
+
+                @media only screen and (max-width: 545px) {
+                    font-size: .75rem;
+                }
+            }
+
             .modal-description {
                 margin-bottom: 10px;
+
+                h3 {
+                    margin-bottom: 10px;
+                    @media only screen and (max-width: 768px) {
+                        font-size: 1.5rem;
+                    }
+
+                    @media only screen and (max-width: 545px) {
+                        font-size: 1rem;
+                    }
+                }
+
+                p {
+                    font-size: 1rem;
+                    margin-bottom: 5px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    @media only screen and (max-width: 768px) {
+                        font-size: .75rem;
+                    }
+
+                    @media only screen and (max-width: 545px) {
+                        font-size: .5rem;
+                    }
+                }
             }
 
             .modal-contraints {
                 margin-bottom: 10px;
+
+                h3 {
+                    margin-bottom: 10px;
+                    @media only screen and (max-width: 768px) {
+                        font-size: 1.5rem;
+                    }
+
+                    @media only screen and (max-width: 545px) {
+                        font-size: 1rem;
+                    }
+                }
+
                 ul {
                     list-style: url("https://api.iconify.design/mdi:close-circle-outline.svg");
                     list-style-position: inside;
+
+                    li {
+                        font-size: 1rem;
+                        margin-bottom: 5px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        @media only screen and (max-width: 768px) {
+                            font-size: .75rem;
+                        }
+
+                        @media only screen and (max-width: 545px) {
+                            list-style: none;
+                            font-size: .5rem;
+                        }
+                    }
                 }
             }
         }
@@ -77,28 +166,4 @@
         @include gitHubStyle($red, $blue);
     }
 
-}
-
-@media only screen and (max-width: 1184px) {
-    .bloc-projects {
-        h1 {
-            @include custom-style-title($font-size-medium);
-        }
-    }
-}
-
-@media only screen and (max-width: 720px) {
-    .bloc-projects {
-        h1 {
-            @include custom-style-title($font-size-small);
-        }
-    }
-}
-
-@media only screen and (max-width: 380px) {
-    .bloc-projects {
-        h1 {
-            @include custom-style-title($font-size-xs);
-        }
-    }
 }
