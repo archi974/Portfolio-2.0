@@ -8,6 +8,7 @@
     z-index: 1;
     top: 0;
     left: 0;
+    overflow-y: scroll;
 
     .projet-modal_content {
         background-color: #fff;
@@ -55,19 +56,18 @@
             }
         }
 
-        .modal-description {
+        .modal-content-text {
             display: flex;
             flex-direction: column;
+            .modal-description {
+                margin-bottom: 10px;
+            }
 
             .modal-contraints {
-                list-style: none;
-                width: 100%;
-                margin-bottom: 5px;
-                li {
-                    margin-right: 10px;
-                    &:last-child {
-                        margin-right: 0;
-                    }
+                margin-bottom: 10px;
+                ul {
+                    list-style: url("https://api.iconify.design/mdi:close-circle-outline.svg");
+                    list-style-position: inside;
                 }
             }
         }
@@ -77,4 +77,28 @@
         @include gitHubStyle($red, $blue);
     }
 
+}
+
+@media only screen and (max-width: 1184px) {
+    .bloc-projects {
+        h1 {
+            @include custom-style-title($font-size-medium);
+        }
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .bloc-projects {
+        h1 {
+            @include custom-style-title($font-size-small);
+        }
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .bloc-projects {
+        h1 {
+            @include custom-style-title($font-size-xs);
+        }
+    }
 }

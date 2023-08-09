@@ -10,7 +10,7 @@
                     "Express",
                     "Mongo"
                 ],
-                "titleConstraints":"Challenges encountered",
+                "titleConstraints":"Encountered problem",
                 "constraints": [
                     {
                         "first": "Understanding errors and identifying the source of breakdowns",
@@ -40,6 +40,7 @@
                     "React",
                     "Sass"
                 ],
+                "titleConstraints":"Encountered problem",
                 "constraints": [
                     {
                         "first": "Organizing the cards in the main menu properly",
@@ -70,6 +71,7 @@
                     "CSS",
                     "Jquery"
                 ],
+                "titleConstraints":"Encountered problem",
                 "constraints": [
                     {
                         "first": "Find where the error in the jQuery code filter originates",
@@ -98,6 +100,7 @@
                 "language": [
                     "JavaScript"
                 ],
+                "titleConstraints":"Encountered problem",
                 "constraints": [
                     {
                         "first": "Improvement of Filter Logic",
@@ -127,6 +130,7 @@
                     "HTML",
                     "CSS"
                 ],
+                "titleConstraints":"Encountered problem",
                 "constraints": [
                     {
                         "first": "Struggles with making the website responsive.",
@@ -156,6 +160,7 @@
                     "HTML",
                     "SASS"
                 ],
+                "titleConstraints":"Encountered problem",
                 "constraints": [
                     {
                         "first": "Difficulty in creating consistent and intuitive class names.",
@@ -188,6 +193,7 @@
                     "HTML",
                     "CSS"
                 ],
+                "titleConstraints":"Encountered problem",
                 "constraints": [
                     {
                         "first": "Encountered significant challenges while creating certain parts, such as retrieving videos or links.",
@@ -216,6 +222,7 @@
                 "language": [
                     "PHP"
                 ],
+                "titleConstraints":"Encountered problem",
                 "constraints": [
                     {
                         "first": "Challenges in understanding recursion.",
@@ -248,6 +255,7 @@
                     "Express",
                     "Mongo"
                 ],
+                "titleConstraints":"Problème rencontrés",
                 "constraints": [
                     {
                         "first": "Comprendre les erreurs et trouver d'où viennent les pannes",
@@ -277,6 +285,7 @@
                     "React",
                     "Sass"
                 ],
+                "titleConstraints":"Problème rencontrés",
                 "constraints": [
                     {
                         "first": "Ranger les cartes du menu principal correctement",
@@ -307,6 +316,7 @@
                     "CSS",
                     "Jquery"
                 ],
+                "titleConstraints":"Problème rencontrés",
                 "constraints": [
                     {
                         "first": "Trouvez d'où vient l'erreur du filtre dans le code Jquery",
@@ -335,6 +345,7 @@
                 "language": [
                     "JavaScript"
                 ],
+                "titleConstraints":"Problème rencontrés",
                 "constraints": [
                     {
                         "first": "L'amélioration de la logique de mon filtre",
@@ -364,6 +375,7 @@
                     "HTML",
                     "CSS"
                 ],
+                "titleConstraints":"Problème rencontrés",
                 "constraints": [
                     {
                         "first": "Difficultés à rendre le site responsive",
@@ -393,6 +405,7 @@
                     "HTML",
                     "SASS"
                 ],
+                "titleConstraints":"Problème rencontrés",
                 "constraints": [
                     {
                         "first": "Des difficulté à crée des nom de classe cohérente et intuitive",
@@ -425,6 +438,7 @@
                     "HTML",
                     "CSS"
                 ],
+                "titleConstraints":"Problème rencontrés",
                 "constraints": [
                     {
                         "first": "Beaucoup de difficulté à crée certaine partie comme la récupération de vidéo ou les liens",
@@ -453,6 +467,7 @@
                 "language": [
                     "PHP"
                 ],
+                "titleConstraints":"Problème rencontrés",
                 "constraints": [
                     {
                         "first": "Difficultés à comprendre la récursive",

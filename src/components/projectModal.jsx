@@ -26,21 +26,24 @@ const ProjectModal = ({ showModal, closeModal, project }) => {
                     )
                 }
             </div>
-            <article className="modal-description">
+            <article className="modal-content-text">
                 <p>{project?.year}</p>
-                <h3>Description</h3>
-                <p>{project?.description}</p>
-                <p>Langages utilisés : {project?.language.join(', ')}</p>
-                <h3>{project?.titleConstraints}</h3>
-                {
-                    project?.constraints.map((issue, j) => (
-                        <ul className="modal-contraints" key={j}>
-                            <li>{issue.first && issue.first}</li>
-                            <li>{issue.second && issue.second}</li>
-                            <li>{issue.third && issue.third}</li>
-                        </ul>
-                    ))
-                }
+                <section className="modal-description">
+                    <h3>Description :</h3>
+                    <p>{project?.description}</p>
+                    <p>Langages utilisés : {project?.language.join(', ')}</p>
+                </section>
+                <section className="modal-contraints">
+                    <h3>{project?.titleConstraints} :</h3>
+                    {
+                        project?.constraints.map((issue, j) => (
+                            <ul key={j}>
+                                <li>{issue.first && issue.first}</li>
+                                <li>{issue.second && issue.second}</li>
+                            </ul>
+                        ))
+                    }
+                </section>
             </article>
             <div className="gitHub-bloc">
                 <a href={project?.link} className="gitHub-link" target="_blank" rel="noreferrer">
