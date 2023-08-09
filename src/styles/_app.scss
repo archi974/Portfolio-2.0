@@ -96,7 +96,7 @@ main {
 
 }
 
-@mixin gitHubStyle {
+@mixin gitHubStyle($color, $hoverColor) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,21 +109,21 @@ main {
         p {
             font-size: 1rem;
             font-weight: 900;
-            color: $blue;
+            color: $color;
             padding-right: 5px;
         }
 
         svg {
-            fill: $blue;
+            fill: $color;
         }
 
         &:hover {
             p {
-                color: $red;
+                color: $hoverColor;
             }
 
             svg {
-                fill: $red;
+                fill: $hoverColor;
             }
         }
     }
