@@ -14,8 +14,7 @@
                 "constraints": [
                     {
                         "first": "first",
-                        "second": "second",
-                        "third": "third"
+                        "second": "second"
                     }
                 ],
                 "description": "You have been working as a freelance back-end developer for a year now in the Lille region. You are accustomed to collaborating with Kévin, a more experienced front-end developer who already has a strong network of contacts in the industry. Kévin reaches out to you to propose working together, combining your front-end and back-end skills on a brand new project that he has been offered. The project involves a small chain of bookstores looking to launch a website for book referencing and ratings.",
@@ -44,11 +43,10 @@
                 "constraints": [
                     {
                         "first": "first",
-                        "second": "second",
-                        "third": "third"
+                        "second": "second"
                     }
                 ],
-                "description": "Kasa vous recrute en tant que développeur front-end en freelance pour développer sa nouvelle plateforme web. Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.",
+                "description": "Kasa is recruiting you as a freelance front-end developer to develop its new web platform. Kasa has been in the business of apartment rentals between individuals for almost 10 years now. With over 500 listings posted every day, Kasa is a leader in apartment rentals between individuals in France.",
                 "year": "June 2023",
                 "medias": {
                     "desktop": {
@@ -75,11 +73,10 @@
                 "constraints": [
                     {
                         "first": "first",
-                        "second": "second",
-                        "third": "third"
+                        "second": "second"
                     }
                 ],
-                "description": "Vous êtes développeur freelance, et vous décidez de proposer vos services d'optimisation SEO à de nouveaux clients. Pour ce faire, vous avez analysé plusieurs sites internet. Parmi vos prospects, il y a le site de Nina Carducci, une photographe dont vous a parlé l'un de vos amis.",
+                "description": "You are a freelance developer, and you decide to offer your SEO optimization services to new clients. To do this, you have analyzed several websites. Among your prospects is the website of Nina Carducci, a photographer whom one of your friends has mentioned to you.",
                 "year": "June 2023",
                 "medias": {
                     "desktop": {
@@ -104,11 +101,10 @@
                 "constraints": [
                     {
                         "first": "first",
-                        "second": "second",
-                        "third": "third"
+                        "second": "second"
                     }
                 ],
-                "description": "Vous travaillez comme développeur front-end pour l’agence ArchiWebos qui comprend 50 salariés. Ayant terminé votre dernier projet avec un peu d'avance, vous êtes envoyé en renfort comme développeur front-end d’une équipe qui travaille sur la conception du site portfolio d’une architecte d’intérieur.",
+                "description": "You work as a front-end developer for the agency ArchiWebos, which has 50 employees. Having finished your last project ahead of schedule, you are sent to assist as a front-end developer on a team working on the design of the portfolio website for an interior architect.",
                 "year": "April 2023",
                 "medias": {
                     "desktop": {
@@ -133,12 +129,11 @@
                 ],
                 "constraints": [
                     {
-                        "first": "Difficultés à rendre le site responsive",
-                        "second": "",
-                        "third": "third"
+                        "first": "Struggles with making the website responsive.",
+                        "second": "Issue with sizing the cards that contain stars."
                     }
                 ],
-                "description": "L'entreprise souhaite développer un site internet qui permettra aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Vous êtes chargé d'intégrer l'interface du site avec du code HTML et CSS. Pour cela, vous travaillerez en étroite collaboration avec Sarah, la CTO, et Loïc, l'UI designer.",
+                "description": "The company aims to develop a website that will allow users to find accommodations and activities in the city of their choice. You are tasked with integrating the interface of the site using HTML and CSS code. For this, you will work closely with Sarah, the CTO, and Loïc, the UI designer.",
                 "year": "February 2023",
                 "medias": {
                     "desktop": {
@@ -163,12 +158,11 @@
                 ],
                 "constraints": [
                     {
-                        "first": "Des difficulté à crée des nom de classe cohérente et intuitive",
-                        "second": "Rendre le tableau responsive voir les images adapté à la taille de l'écran",
-                        "third": null
+                        "first": "Difficulty in creating consistent and intuitive class names.",
+                        "second": "Make the table responsive and adjust the images to the screen size."
                     }
                 ],
-                "description": "Un site pour visualiser les possibilités de classe Sass et le rendu de chaque composant responsive",
+                "description": "A website to showcase the capabilities of Sass classes and the responsive rendering of each component.",
                 "year": "March 2022",
                 "medias": {
                     "desktop": {
@@ -196,12 +190,11 @@
                 ],
                 "constraints": [
                     {
-                        "first": "Beaucoup de difficulté à crée certaine partie comme la récupération de vidéo ou les liens",
-                        "second": "Etant un module Jquery on a eu du mal à pouvoir l'intégrer dans d'autre page",
-                        "third": null
+                        "first": "Encountered significant challenges while creating certain parts, such as retrieving videos or links.",
+                        "second": "As it's a jQuery module, we faced challenges integrating it into other pages."
                     }
                 ],
-                "description": "Editeur de texte sous forme de module JavaScript, permet de générer du code HTML de manière visuelle.",
+                "description": "A JavaScript module-based text editor that allows you to visually generate HTML code.",
                 "year": "November 2021",
                 "medias": {
                     "desktop": {
@@ -225,12 +218,11 @@
                 ],
                 "constraints": [
                     {
-                        "first": "Difficultés à comprendre la récursive",
-                        "second": "Beaucoup de mal à intégrer la logique d'objet",
-                        "third": null
+                        "first": "Challenges in understanding recursion.",
+                        "second": "Struggling to grasp object-oriented logic."
                     }
                 ],
-                "description": "Créer une image en assemblant toutes les images trouver dans un dossier, génère également un fichier css qui contient toutes les modifications",
+                "description": "Create an image by assembling all the images found in a folder, and also generate a CSS file that contains all the modifications.",
                 "year": "November 2021",
                 "medias": {
                     "desktop": {
@@ -259,8 +251,7 @@
                 "constraints": [
                     {
                         "first": "first",
-                        "second": "second",
-                        "third": "third"
+                        "second": "second"
                     }
                 ],
                 "description": "Vous êtes développeur back-end en freelance depuis maintenant un an dans la région de Lille. Vous avez l’habitude de travailler avec Kévin, un développeur front-end plus expérimenté que vous, et qui a déjà un bon réseau de contacts dans le milieu. Kévin vous contacte pour vous proposer de travailler avec lui en mutualisant vos compétences front / back sur un tout nouveau projet qui lui a été proposé. Il s’agit d’une petite chaîne de librairies qui souhaite ouvrir un site de référencement et de notation de livres",
@@ -289,8 +280,7 @@
                 "constraints": [
                     {
                         "first": "first",
-                        "second": "second",
-                        "third": "third"
+                        "second": "second"
                     }
                 ],
                 "description": "Kasa vous recrute en tant que développeur front-end en freelance pour développer sa nouvelle plateforme web. Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.",
@@ -320,8 +310,7 @@
                 "constraints": [
                     {
                         "first": "first",
-                        "second": "second",
-                        "third": "third"
+                        "second": "second"
                     }
                 ],
                 "description": "Vous êtes développeur freelance, et vous décidez de proposer vos services d'optimisation SEO à de nouveaux clients. Pour ce faire, vous avez analysé plusieurs sites internet. Parmi vos prospects, il y a le site de Nina Carducci, une photographe dont vous a parlé l'un de vos amis.",
@@ -349,8 +338,7 @@
                 "constraints": [
                     {
                         "first": "first",
-                        "second": "second",
-                        "third": "third"
+                        "second": "second"
                     }
                 ],
                 "description": "Vous travaillez comme développeur front-end pour l’agence ArchiWebos qui comprend 50 salariés. Ayant terminé votre dernier projet avec un peu d'avance, vous êtes envoyé en renfort comme développeur front-end d’une équipe qui travaille sur la conception du site portfolio d’une architecte d’intérieur.",
@@ -379,8 +367,7 @@
                 "constraints": [
                     {
                         "first": "Difficultés à rendre le site responsive",
-                        "second": "",
-                        "third": "third"
+                        "second": "Problème de dimensionnement des cartes qui contiennent des étoiles"
                     }
                 ],
                 "description": "L'entreprise souhaite développer un site internet qui permettra aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Vous êtes chargé d'intégrer l'interface du site avec du code HTML et CSS. Pour cela, vous travaillerez en étroite collaboration avec Sarah, la CTO, et Loïc, l'UI designer.",
@@ -409,8 +396,7 @@
                 "constraints": [
                     {
                         "first": "Des difficulté à crée des nom de classe cohérente et intuitive",
-                        "second": "Rendre le tableau responsive voir les images adapté à la taille de l'écran",
-                        "third": null
+                        "second": "Rendre le tableau responsive voir les images adapté à la taille de l'écran"
                     }
                 ],
                 "description": "Un site pour visualiser les possibilités de classe Sass et le rendu de chaque composant responsive",
@@ -442,8 +428,7 @@
                 "constraints": [
                     {
                         "first": "Beaucoup de difficulté à crée certaine partie comme la récupération de vidéo ou les liens",
-                        "second": "Etant un module Jquery on a eu du mal à pouvoir l'intégrer dans d'autre page",
-                        "third": null
+                        "second": "Etant un module Jquery on a eu du mal à pouvoir l'intégrer dans d'autre page"
                     }
                 ],
                 "description": "Editeur de texte sous forme de module JavaScript, permet de générer du code HTML de manière visuelle.",
@@ -471,8 +456,7 @@
                 "constraints": [
                     {
                         "first": "Difficultés à comprendre la récursive",
-                        "second": "Beaucoup de mal à intégrer la logique d'objet",
-                        "third": null
+                        "second": "Beaucoup de mal à intégrer la logique d'objet"
                     }
                 ],
                 "description": "Créer une image en assemblant toutes les images trouver dans un dossier, génère également un fichier css qui contient toutes les modifications",
