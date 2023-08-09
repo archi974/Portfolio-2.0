@@ -13,8 +13,8 @@
                 "titleConstraints":"Challenges encountered",
                 "constraints": [
                     {
-                        "first": "first",
-                        "second": "second"
+                        "first": "Understanding errors and identifying the source of breakdowns",
+                        "second": "Rating a book by other users"
                     }
                 ],
                 "description": "You have been working as a freelance back-end developer for a year now in the Lille region. You are accustomed to collaborating with Kévin, a more experienced front-end developer who already has a strong network of contacts in the industry. Kévin reaches out to you to propose working together, combining your front-end and back-end skills on a brand new project that he has been offered. The project involves a small chain of bookstores looking to launch a website for book referencing and ratings.",
@@ -42,8 +42,8 @@
                 ],
                 "constraints": [
                     {
-                        "first": "first",
-                        "second": "second"
+                        "first": "Organizing the cards in the main menu properly",
+                        "second": "Adding animation to collapse components"
                     }
                 ],
                 "description": "Kasa is recruiting you as a freelance front-end developer to develop its new web platform. Kasa has been in the business of apartment rentals between individuals for almost 10 years now. With over 500 listings posted every day, Kasa is a leader in apartment rentals between individuals in France.",
@@ -72,8 +72,8 @@
                 ],
                 "constraints": [
                     {
-                        "first": "first",
-                        "second": "second"
+                        "first": "Find where the error in the jQuery code filter originates",
+                        "second": "Improving Image Performance"
                     }
                 ],
                 "description": "You are a freelance developer, and you decide to offer your SEO optimization services to new clients. To do this, you have analyzed several websites. Among your prospects is the website of Nina Carducci, a photographer whom one of your friends has mentioned to you.",
@@ -100,8 +100,8 @@
                 ],
                 "constraints": [
                     {
-                        "first": "first",
-                        "second": "second"
+                        "first": "Improvement of Filter Logic",
+                        "second": "Creation of a New Image through Either Drag and Drop from Another Page or Retrieval from the Computer"
                     }
                 ],
                 "description": "You work as a front-end developer for the agency ArchiWebos, which has 50 employees. Having finished your last project ahead of schedule, you are sent to assist as a front-end developer on a team working on the design of the portfolio website for an interior architect.",
@@ -250,8 +250,8 @@
                 ],
                 "constraints": [
                     {
-                        "first": "first",
-                        "second": "second"
+                        "first": "Comprendre les erreurs et trouver d'où viennent les pannes",
+                        "second": "La notation d'un livre par d'autre utilisateur"
                     }
                 ],
                 "description": "Vous êtes développeur back-end en freelance depuis maintenant un an dans la région de Lille. Vous avez l’habitude de travailler avec Kévin, un développeur front-end plus expérimenté que vous, et qui a déjà un bon réseau de contacts dans le milieu. Kévin vous contacte pour vous proposer de travailler avec lui en mutualisant vos compétences front / back sur un tout nouveau projet qui lui a été proposé. Il s’agit d’une petite chaîne de librairies qui souhaite ouvrir un site de référencement et de notation de livres",
@@ -279,8 +279,8 @@
                 ],
                 "constraints": [
                     {
-                        "first": "first",
-                        "second": "second"
+                        "first": "Ranger les cartes du menu principal correctement",
+                        "second": "Donner une animation aux composants collapse"
                     }
                 ],
                 "description": "Kasa vous recrute en tant que développeur front-end en freelance pour développer sa nouvelle plateforme web. Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.",
@@ -309,8 +309,8 @@
                 ],
                 "constraints": [
                     {
-                        "first": "first",
-                        "second": "second"
+                        "first": "Trouvez d'où vient l'erreur du filtre dans le code Jquery",
+                        "second": "Améliorer les performances des images"
                     }
                 ],
                 "description": "Vous êtes développeur freelance, et vous décidez de proposer vos services d'optimisation SEO à de nouveaux clients. Pour ce faire, vous avez analysé plusieurs sites internet. Parmi vos prospects, il y a le site de Nina Carducci, une photographe dont vous a parlé l'un de vos amis.",
@@ -337,8 +337,8 @@
                 ],
                 "constraints": [
                     {
-                        "first": "first",
-                        "second": "second"
+                        "first": "L'amélioration de la logique de mon filtre",
+                        "second": "Création d'une nouvelle image avec soit le drag and drop depuis une autre page, soit la récupération depuis l'ordinateur, soit le drag and drop depuis l'ordinateur"
                     }
                 ],
                 "description": "Vous travaillez comme développeur front-end pour l’agence ArchiWebos qui comprend 50 salariés. Ayant terminé votre dernier projet avec un peu d'avance, vous êtes envoyé en renfort comme développeur front-end d’une équipe qui travaille sur la conception du site portfolio d’une architecte d’intérieur.",
