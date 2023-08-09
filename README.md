@@ -24,6 +24,11 @@ Accéder au frontend `cd frontend`
 Installer les dépendances `npm i`
 Lancer le serveur frontend `npm start`
 
+## Lien utile :
+
+[package reCAPTCHA](https://www.npmjs.com/package/react-google-recaptcha?activeTab=readme)
+[package google maps react](https://www.npmjs.com/package/google-map-react)
+
 ## Future ajout :
 
 - Ajout de TypeScript
