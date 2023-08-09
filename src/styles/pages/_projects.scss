@@ -12,13 +12,13 @@
     }
 
     h1 {
-        @include custom-style-title(250px);
+        @include custom-style-title($font-size-large);
         align-items: center;
         margin-bottom: 170px;
     }
 
     .bloc-projects-container {
-        margin: 100px;
+        margin: 10%;
 
         .projet {
             display: flex;
@@ -69,6 +69,7 @@
             .project-image {
                 width: 500px;
                 height: 286px;
+                cursor: pointer;
 
                 img {
                     border-radius: 5px;
@@ -85,7 +86,23 @@
 @media only screen and (max-width: 1184px) {
     .bloc-projects {
         h1 {
-            @include custom-style-title(200px);
+            @include custom-style-title($font-size-medium);
+        }
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .bloc-projects {
+        h1 {
+            @include custom-style-title($font-size-small);
+        }
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .bloc-projects {
+        h1 {
+            @include custom-style-title($font-size-xs);
         }
     }
 }

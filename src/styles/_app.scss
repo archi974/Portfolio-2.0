@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+/* COLOR */
 $red: #D6372E;
 $blue: #253068;
 $grey: #DFE0E9;
 $gradientRed: rgb(214, 55, 46, 0.5);
+
+/* TITLE SIZE */
+$font-size-large: 250px;
+$font-size-medium: 150px;
+$font-size-small: 75px;
+$font-size-xs: 50px;
 
 * {
     margin: 0;
