@@ -13,7 +13,7 @@ export default function Skills() {
                     <section className="bloc-skills_section-professional">
                         <h2>Professional</h2>
                         {
-                            skills.professional.map((professionalItem, i) => (
+                            skills.en[0].professional.map((professionalItem, i) => (
                                 <section className="professional-bloc" key={i}>
                                     {professionalItem.name && <h3>{professionalItem.name}</h3>}
                                     <ul className="professional-item">
@@ -28,7 +28,7 @@ export default function Skills() {
                     <section className="bloc-skills_section-academic">
                         <h2>Academic</h2>
                         {
-                            skills.academic.map((academicItem, i) => (
+                            skills.en[0].academic.map((academicItem, i) => (
                                 <section className="professional-bloc" key={i}>
                                     {academicItem.name && <h3>{academicItem.name}</h3>}
                                     <ul className="academic-item">
