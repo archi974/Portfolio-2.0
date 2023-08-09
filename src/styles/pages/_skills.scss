@@ -1,7 +1,7 @@
 
 .bloc-skills {
     h1 {
-        @include custom-style-title(250px);
+        @include custom-style-title($font-size-large);
         align-items: center;
     }
 
@@ -9,6 +9,7 @@
         display: flex;
         margin-top: 500px;
         justify-content: center;
+        flex-wrap: wrap;
 
         .bloc-skills_section-professional {
             @include blocSkills;
@@ -20,7 +21,6 @@
                 .academic-item-language{
                     display: flex;
                     width:fit-content;
-                    // overflow-wrap: break-word;
                     height: auto;
                     li {
                         overflow-wrap: break-word;

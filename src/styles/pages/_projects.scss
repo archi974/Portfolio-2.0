@@ -15,17 +15,7 @@
         @include custom-style-title($font-size-large);
         align-items: center;
         margin-bottom: 170px;
-        @media only screen and (max-width: 1184px) {
-            @include custom-style-title($font-size-medium);
-        }
         
-        @media only screen and (max-width: 720px) {
-            @include custom-style-title($font-size-small);
-        }
-        
-        @media only screen and (max-width: 380px) {
-            @include custom-style-title($font-size-xs);
-        }
     }
 
     .bloc-projects-container {

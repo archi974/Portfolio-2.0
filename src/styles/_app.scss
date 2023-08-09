@@ -44,6 +44,17 @@ main {
     display: flex;
     justify-content: center;
     @include select-text;
+    @media only screen and (max-width: 1184px) {
+        font-size:$font-size-medium;
+    }
+    
+    @media only screen and (max-width: 720px) {
+        font-size:$font-size-small;
+    }
+    
+    @media only screen and (max-width: 380px) {
+        font-size:$font-size-xs;
+    }
 
     &:after {
         content: str-slice(".", -1);
