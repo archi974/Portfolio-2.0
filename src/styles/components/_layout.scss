@@ -19,6 +19,9 @@ footer {
     .footer-logo {
         display: flex;
         justify-content: space-around;
+        @media only screen and (max-width: 425px) {
+            margin-bottom: 20px;
+        }
 
         .logo-github-bloc {
             background-color: #fff;
@@ -34,6 +37,13 @@ footer {
 
                 .logo-github {
                     fill: #fff;
+                }
+            }
+            @media only screen and (max-width: 425px) {
+                padding: 15px;
+                .logo-github {
+                    height: 35px;
+                    width: 35px;
                 }
             }
         }
@@ -52,6 +62,13 @@ footer {
 
                 .logo-linkedin {
                     fill: #fff;
+                }
+            }
+            @media only screen and (max-width: 425px) {
+                padding: 15px;
+                .logo-linkedin {
+                    height: 35px;
+                    width: 35px;
                 }
             }
         }
