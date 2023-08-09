@@ -31,7 +31,7 @@ const ProjectModal = ({ showModal, closeModal, project }) => {
                 <h3>Description</h3>
                 <p>{project?.description}</p>
                 <p>Langages utilisés : {project?.language.join(', ')}</p>
-                <h3>Contrainte rencontrée</h3>
+                <h3>{project?.titleConstraints}</h3>
                 {
                     project?.constraints.map((issue, j) => (
                         <ul className="modal-contraints" key={j}>

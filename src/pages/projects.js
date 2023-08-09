@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Layout from '../components/layout';
 import ProjectModal from '../components/projectModal';
-import projects from '../fixture/projects.json';
+import projectsFixture from '../fixture/projects.json';
 
 export default function Projects() {
     const [hoveredProjects, setHoveredProjects] = useState({});
@@ -36,7 +36,7 @@ export default function Projects() {
             <article className="bloc-projects">
                 <h1>Projects</h1>
                 <div className="bloc-projects-container">
-                    {projects.map((project, i) => (
+                    {projectsFixture[0].en.map((project, i) => (
                         <section
                             className={`projet ${i % 2 === 0 ? 'left' : 'right'} ${hoveredProjects[project.name] ? 'hovered' : ''
                                 }`}
@@ -64,7 +64,7 @@ export default function Projects() {
                                 className="project-image"
                                 onMouseEnter={() => handleDescriptionMouseEnter(project)}
                             >
-                                <img src={project.medias.desktop.imgSrc} alt={project.medias.desktop.imgAlt} width={500} height={286}/>
+                                <img src={project.medias.desktop.imgSrc} alt={project.medias.desktop.imgAlt} srcSet={project.medias.mobile.imgSrc} width={500} height={286}/>
                             </article>
                             )}
                         </section>
