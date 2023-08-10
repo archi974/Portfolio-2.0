@@ -9,7 +9,7 @@ export default function Skills() {
             <article className="bloc-skills">
                 <h1>Skills</h1>
                 <LogoCarousel />
-                <div className="bloc-skills-section">
+                <div className="skills-section-content">
                     <section className="bloc-skills_section">
                         <h2  className="skills-professional">Professional</h2>
                         {

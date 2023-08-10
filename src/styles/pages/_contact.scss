@@ -12,6 +12,9 @@
         @include custom-style-title($font-size-large);
         align-items: center;
         margin-bottom: 170px;
+        @media only screen and (max-width: 425px) {
+            margin-bottom: 100px;
+        }
     }
 
     .adress-section-bloc {

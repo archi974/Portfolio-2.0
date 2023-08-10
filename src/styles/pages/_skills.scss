@@ -4,7 +4,7 @@
         align-items: center;
     }
 
-    .bloc-skills-section {
+    .skills-section-content {
         display: flex;
         margin-top: 500px;
         justify-content: center;
@@ -34,13 +34,14 @@
                 }
             }
 
-            h3 {
-                color: $red;
-            }
-
             .professional-bloc,
             .academic-bloc {
-                margin-block: 10px;
+                margin-block: 15px;
+
+                h3 {
+                    color: $red;
+                    margin-bottom: 10px;
+                }
 
                 ul {
                     list-style: none;
@@ -49,11 +50,16 @@
                         color: #fff;
                         overflow-wrap: break-word;
 
+                    }
+                }
+            }
+
+            .academic-bloc {
+                ul {
+                    li {
                         @media only screen and (max-width: 620px) {
-                            &:last-child {
-                                color: $blue;
-                                font-weight: 700;
-                            }
+                            color: $blue;
+                            font-weight: 700;
                         }
                     }
                 }
