@@ -1,6 +1,6 @@
 # Portfolio-2.0
 
-Le site rassemble la base de mes compétences en tant que développeur web
+Ce projet a pour but de préparer au mieux votre recherche d’emploi de développeur. Vous allez commencer par faire un bilan de vos compétences, puis identifier les postes sur lesquels vous souhaitez postuler. Enfin, et le plus important, vous allez créer votre portfolio en ligne pour mettre en avant votre profil auprès des recruteurs.
 
 ## Création du projet 
 
@@ -26,6 +26,8 @@ Lancer le serveur frontend `npm start`
 
 ## Lien utile :
 
+[Optimisation des images](https://squoosh.app/)
+[Hébergeur du site](https://vercel.com/)
 [package reCAPTCHA](https://www.npmjs.com/package/react-google-recaptcha?activeTab=readme)
 [package google maps react](https://www.npmjs.com/package/google-map-react)
 
