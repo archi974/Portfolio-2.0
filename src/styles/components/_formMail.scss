@@ -6,6 +6,7 @@
     font-weight: 700;
     width: 100%;
     height: auto;
+    background-color: #fff;
 }
 
 .bloc-form {
@@ -73,6 +74,12 @@
             @include formStyle;
             border-radius: 25px;
             width: 150px;
+            cursor: pointer;
+            color: $blue;
+            &:hover{
+                background-color: #dfe0e9;
+                color: $red;
+            }
         }
     }
 
