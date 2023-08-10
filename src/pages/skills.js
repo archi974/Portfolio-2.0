@@ -10,8 +10,8 @@ export default function Skills() {
                 <h1>Skills</h1>
                 <LogoCarousel />
                 <div className="bloc-skills-section">
-                    <section className="bloc-skills_section-professional">
-                        <h2>Professional</h2>
+                    <section className="bloc-skills_section">
+                        <h2  className="skills-professional">Professional</h2>
                         {
                             skills.en[0].professional.map((professionalItem, i) => (
                                 <section className="professional-bloc" key={i}>
@@ -25,8 +25,8 @@ export default function Skills() {
                             ))
                         }
                     </section>
-                    <section className="bloc-skills_section-academic">
-                        <h2>Academic</h2>
+                    <section className="bloc-skills_section">
+                        <h2 className="skills-academic">Academic</h2>
                         {
                             skills.en[0].academic.map((academicItem, i) => (
                                 <section className="academic-bloc" key={i}>
