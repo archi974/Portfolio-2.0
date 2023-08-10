@@ -68,13 +68,29 @@ main {
     flex-direction: column;
 
     p {
-        width: 600px;
+        width: 650px;
         padding-bottom: 20px;
-        font-size: 12px;
+        font-size: 1rem;
         font-weight: 700;
 
         &:last-child {
             padding-bottom: 0;
+        }
+        @media only screen and (max-width: 1184px) {
+            width: 500px;
+        }
+        @media only screen and (max-width: 1104px) {
+            width: 450px;
+        }
+        @media only screen and (max-width: 740px) {
+            width: 350px;
+            text-align: justify;
+        }
+        @media only screen and (max-width: 740px) {
+            width: 100%;
+        }
+        @media only screen and (max-width: 510px) {
+            font-size: .75rem;
         }
     }
 }
