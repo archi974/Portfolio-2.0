@@ -1,4 +1,3 @@
-
 .bloc-skills {
     h1 {
         @include custom-style-title($font-size-large);
@@ -13,28 +12,35 @@
 
         .bloc-skills_section-professional {
             @include blocSkills;
-        }
-
-        .bloc-skills_section-academic {
-            @include blocSkills;
-            .academic-item {
-                .academic-item-language{
-                    display: flex;
-                    width:fit-content;
-                    height: auto;
+            .professional-bloc {
+                margin-block: 10px;
+        
+                ul {
+                    list-style: none;
+        
                     li {
+                        color: #fff;
                         overflow-wrap: break-word;
                     }
                 }
             }
         }
-    }
-}
 
-@media only screen and (max-width: 1184px) {
-    .bloc-skills {
-        h1 {
-            @include custom-style-title(200px);
+        .bloc-skills_section-academic {
+            @include blocSkills;
+
+            .academic-bloc {
+                margin-block: 10px;
+        
+                ul {
+                    list-style: none;
+        
+                    li {
+                        color: #fff;
+                        overflow-wrap: break-word;
+                    }
+                }
+            }
         }
     }
 }

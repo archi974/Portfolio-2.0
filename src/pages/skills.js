@@ -16,7 +16,7 @@ export default function Skills() {
                             skills.en[0].professional.map((professionalItem, i) => (
                                 <section className="professional-bloc" key={i}>
                                     {professionalItem.name && <h3>{professionalItem.name}</h3>}
-                                    <ul className="professional-item">
+                                    <ul>
                                         {professionalItem.places && <li>{"- " + professionalItem.places}</li>}
                                         {professionalItem.description && <li>{"- " + professionalItem.description+" "}</li>}
                                         {professionalItem.other && <li>{"- " + professionalItem.other}</li>}
@@ -29,9 +29,9 @@ export default function Skills() {
                         <h2>Academic</h2>
                         {
                             skills.en[0].academic.map((academicItem, i) => (
-                                <section className="professional-bloc" key={i}>
+                                <section className="academic-bloc" key={i}>
                                     {academicItem.name && <h3>{academicItem.name}</h3>}
-                                    <ul className="academic-item">
+                                    <ul>
                                         {academicItem.description && <li>{"- " + academicItem.description}</li>}
                                         {academicItem.languages && <li>{"- " + academicItem.languages.join(", ")}</li>}
                                         {academicItem.other && <li>{"- " + academicItem.other}</li>}

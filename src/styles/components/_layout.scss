@@ -15,11 +15,12 @@ header {
 footer {
     background-color: $blue;
     padding-block: 160px 65px;
+    z-index: 100;
 
     .footer-logo {
         display: flex;
         justify-content: space-around;
-        @media only screen and (max-width: 425px) {
+        @media only screen and (max-width: 500px) {
             margin-bottom: 20px;
         }
 
@@ -39,7 +40,7 @@ footer {
                     fill: #fff;
                 }
             }
-            @media only screen and (max-width: 425px) {
+            @media only screen and (max-width: 500px) {
                 padding: 15px;
                 .logo-github {
                     height: 35px;
@@ -64,7 +65,7 @@ footer {
                     fill: #fff;
                 }
             }
-            @media only screen and (max-width: 425px) {
+            @media only screen and (max-width: 500px) {
                 padding: 15px;
                 .logo-linkedin {
                     height: 35px;

@@ -2,9 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin: 20px 50px 0 50px;
     height: 100vh;
     width: auto;
+    @media only screen and (max-width: 875px) {
+        margin: 75px 0 0 0;
+        height: 750px;
+    }
 }
 
 .map-pointer {

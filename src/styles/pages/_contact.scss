@@ -1,39 +1,63 @@
 .bloc-contact {
     height: 100%;
     padding-bottom: 100px;
-    margin-inline: 50px;
+
+    @media only screen and (max-width: 1100px) {
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
 
     h1 {
-        @include custom-style-title(250px);
+        @include custom-style-title($font-size-large);
         align-items: center;
         margin-bottom: 170px;
     }
 
-    .adress-section {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        h2 {
-            color: $blue;
+    .adress-section-bloc {
+        margin-inline: 50px;
+
+        .adress-section,
+        .contact-section {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                color: $blue;
+            }
+
+            p {
+                color: $blue;
+                font-size: 1.25rem;
+            }
+
+            @media only screen and (max-width: 425px) {
+                align-items: center;
+
+                h2 {
+                    font-size: 1.25rem;
+                }
+
+                p {
+                    font-size: .75rem;
+                }
+            }
         }
 
-        p {
-            color: $blue;
-            font-size: 20px;
-        }
-    }
-    .contact-section {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-
-        h2 {
-            color: $blue;
+        .adress-section {
+            margin-bottom: 15px;
         }
 
-        p {
-            color: $blue;
-            font-size: 20px;
+        .contact-section {
+            align-items: flex-end;
+
+            @media only screen and (max-width: 425px) {
+                align-items: center;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            margin-inline: 35px;
         }
     }
 
@@ -42,12 +66,4 @@
         justify-content: center;
     }
 
-}
-
-@media only screen and (max-width: 1184px) {
-    .bloc-contact {
-        h1 {
-            @include custom-style-title(200px);
-        }
-    }
 }

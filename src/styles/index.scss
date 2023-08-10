@@ -1,13 +1,5 @@
 @import "./app";
 
-// COMPONENTS
-
-@import "./components/carouselLogo";
-@import "./components/formMail";
-@import "./components/googleMaps";
-@import "./components/layout";
-@import "./components/projectModal";
-
 // PAGES
 
 @import "./pages/aboutMe";
@@ -16,3 +8,11 @@
 @import "./pages/notFoundPage";
 @import "./pages/projects";
 @import "./pages/skills";
+
+// COMPONENTS
+
+@import "./components/carouselLogo";
+@import "./components/formMail";
+@import "./components/googleMaps";
+@import "./components/layout";
+@import "./components/projectModal";

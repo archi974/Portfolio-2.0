@@ -4,7 +4,8 @@
     border: none;
     padding: 10px;
     font-weight: 700;
-    width: 750px;
+    width: 100%;
+    height: auto;
 }
 
 .bloc-form {
@@ -18,33 +19,56 @@
     transform: rotate(-9deg);
     width: 1000px;
 
+    @media only screen and (max-width: 1100px) {
+        width: 100%;
+        transform: rotate(0deg);
+        border-radius: 0;
+    }
+
+    @media only screen and (max-width: 875px) {
+        margin-top: 0;
+        padding-top: 200px;
+    }
+
     &>* {
         transform: rotate(9deg);
+
+        @media only screen and (max-width: 1100px) {
+            transform: rotate(0deg);
+        }
     }
+
 
     .bloc-form_section {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 70%;
+
+        @media only screen and (max-width: 575px) {
+            width: 300px;
+        }
+
         h2 {
             font-size: 1.5em;
             font-weight: 900;
             color: #fff;
             margin-bottom: 30px;
         }
-    
+
         input {
             @include formStyle;
             height: 40px;
         }
-    
+
         .textAreaMail {
             @include formStyle;
         }
+
         .form-recaptcha {
             margin-bottom: 30px;
         }
-    
+
         .sendButtonMail {
             @include formStyle;
             border-radius: 25px;

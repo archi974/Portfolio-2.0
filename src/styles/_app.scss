@@ -99,19 +99,6 @@ main {
         color: $red;
     }
 
-    .professional-bloc {
-        margin-block: 10px;
-
-        ul {
-            list-style: none;
-
-            li {
-                color: #fff;
-                overflow-wrap: break-word;
-            }
-        }
-    }
-
 }
 
 @mixin gitHubStyle($color, $hoverColor) {
