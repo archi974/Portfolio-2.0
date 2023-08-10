@@ -16,6 +16,11 @@ footer {
     background-color: $blue;
     padding-block: 160px 65px;
 
+    @media only screen and (max-width: 768px) {
+        padding-block: 100px 65px;
+    }
+    
+
     .footer-logo {
         display: flex;
         justify-content: space-around;
