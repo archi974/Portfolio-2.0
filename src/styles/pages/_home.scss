@@ -8,7 +8,7 @@
         p {
             color: $red;
             font-weight: 700;
-            mix-blend-mode: plus-lighter;
+            mix-blend-mode: exclusion;
             margin-block: 75px;
 
             &:hover {
@@ -89,7 +89,7 @@
             bottom: 0;
             margin-top: 50px;
             justify-content: center;
-            mix-blend-mode: plus-lighter;
+            mix-blend-mode: exclusion;
             color: $red;
         }
     }
