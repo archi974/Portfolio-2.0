@@ -25,9 +25,9 @@
             padding-bottom: 75px;
             font-size: 160px;
             font-weight: 900;
-            color: $grey;
+            color: #DFE0E9;
             font-family: 'Montserrat', 'Open Sans', sans-serif;
-            mix-blend-mode: plus-lighter;
+            mix-blend-mode: luminosity;
             @include select-text;
 
             @media only screen and (max-width: 1305px) {
