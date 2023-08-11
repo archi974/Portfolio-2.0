@@ -22,6 +22,7 @@ Ce projet a pour but de préparer au mieux votre recherche d’emploi de dévelo
 
 #### Modification prévu :
 
+- L'ajout de reCAPTCHA pour la sécurité
 - Le choix de langue (Fr-En)
 - Amélioration de l'animation (parallax)
 - Ajout de TypeScript
