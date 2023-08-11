@@ -10,19 +10,3 @@
         height: 750px;
     }
 }
-
-.map-pointer {
-    background-color: $gradientRed;
-    height: 75px;
-    width: 75px;
-    display: flex;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-weight: 900;
-    font-size: 0.75rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-}

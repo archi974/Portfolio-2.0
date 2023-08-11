@@ -1,31 +1,54 @@
-import GoogleMapReact from 'google-map-react';
+import React, { useState, useCallback } from 'react'
+import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 
-const AnyReactComponent = ({ text }) => <div className="map-pointer">{text}</div>;
+const containerStyle = {
+    width: '100%',
+    height: '100%'
+};
 
-const GoogleMapComponent = () => {
-    const defaultProps = {
-        center: {
-            lat: 48.8071138,
-            lng: 2.4761018
-        },
-        zoom: 15
-    };
+const center = {
+    lat: 48.8071174,
+    lng: 2.4783609
+};
 
-    return (
+const defaultZoom = 15;
+
+function GoogleMapComponent() {
+    const { isLoaded } = useJsApiLoader({
+        id: 'google-map-script',
+        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
+    })
+
+    // eslint-disable-next-line
+    const [map, setMap] = useState(null)
+
+    const onLoad = useCallback(function callback(map) {
+
+        const bounds = new window.google.maps.LatLngBounds(center);
+        map.fitBounds(bounds);
+
+        setMap(map)
+    }, [])
+
+    const onUnmount = useCallback(function callback() {
+        setMap(null)
+    }, [])
+
+    return isLoaded ? (
         <div className="bloc-map">
-            <GoogleMapReact
-                bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY }}
-                defaultCenter={defaultProps.center}
-                defaultZoom={defaultProps.zoom}
+            <GoogleMap
+                mapContainerStyle={containerStyle}
+                center={center}
+                zoom={defaultZoom}
+                onLoad={onLoad}
+                onUnmount={onUnmount}
             >
-                <AnyReactComponent
-                    text="I'm here"
-                    lat={48.8071138}
-                    lng={2.4761018}
+                <Marker
+                    position={{ lat: 48.8071174, lng: 2.4783609 }}
                 />
-            </GoogleMapReact>
+            </GoogleMap>
         </div>
-    );
+    ) : null;
 }
 
-export default GoogleMapComponent;
+export default React.memo(GoogleMapComponent)
