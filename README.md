@@ -49,7 +49,7 @@ Ce projet a pour but de préparer au mieux votre recherche d’emploi de dévelo
 ## Liste des packages utilisés :
 
 - L'envoi d'email avec emailjs [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser)
-- La récupération de google maps [google-map-react](https://www.npmjs.com/package/google-map-react)
+- La récupération de google maps [@react-google-maps/api](https://www.npmjs.com/package/@react-google-maps/api)
 - Pour plus de sécurité pour les emails [react-google-recaptcha](https://www.npmjs.com/package/react-google-recaptcha)
 - L'affichage des projets en vidéo [react-modal](https://www.npmjs.com/package/react-modal)
 - Les routes entre chaque pages [react-router-dom](https://www.npmjs.com/package/react-router-dom)
@@ -68,7 +68,7 @@ Ce projet a pour but de préparer au mieux votre recherche d’emploi de dévelo
 
 [package reCAPTCHA](https://www.npmjs.com/package/react-google-recaptcha?activeTab=readme)
 
-[package google maps react](https://www.npmjs.com/package/google-map-react)
+[package react google maps api](https://www.npmjs.com/package/@react-google-maps/api)
 
 [Effet parallax img](https://simpleparallax.com/)
 
