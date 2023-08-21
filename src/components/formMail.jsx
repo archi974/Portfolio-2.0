@@ -30,10 +30,10 @@ const FormMail = () => {
         <form className="bloc-form" ref={form} onSubmit={sendEmail}>
             <section className="bloc-form_section">
                 <h2>Mail</h2>
-                <input type="email" name="from_email" placeholder="Email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required />
+                <input type="email" name="from_email" placeholder="E-mail" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required />
                 <input type="text" name="from_subject" placeholder="Subject" required />
                 <textarea className="textAreaMail" placeholder="Message" name="message" cols="30" rows="10" required></textarea>
-                <ReCAPTCHA className="form-recaptcha" sitekey={process.env.REACT_APP_RECAPTCHA_KEY} />
+                <ReCAPTCHA className="form-recaptcha" hl="en" sitekey={process.env.REACT_APP_RECAPTCHA_KEY} />
                 <button className="sendButtonMail" type="submit">Send</button>
             </section>
         </form>

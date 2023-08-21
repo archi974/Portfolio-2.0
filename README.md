@@ -61,6 +61,8 @@ Ce projet a pour but de préparer au mieux votre recherche d’emploi de dévelo
 
 [Api Google](https://console.cloud.google.com/)
 
+[reCAPTCHA console](https://www.google.com/recaptcha/about/)
+
 [Optimisation des images](https://squoosh.app/)
 
 [Hébergeur du site](https://vercel.com/)

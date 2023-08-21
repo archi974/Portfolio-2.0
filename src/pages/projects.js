@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from '../components/layout';
 import ProjectModal from '../components/projectModal';
 import projectsFixture from '../fixture/projects.json';
@@ -30,6 +30,10 @@ export default function Projects() {
     const closeModal = () => {
         setShowModal(false);
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <Layout>

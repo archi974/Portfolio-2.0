@@ -1,8 +1,13 @@
+import React, { useEffect } from 'react';
 import Layout from '../components/layout';
 import skills from '../fixture/skills.json';
 import LogoCarousel from '../components/carouselLogo';
 
 export default function Skills() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <Layout>
