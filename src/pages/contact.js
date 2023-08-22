@@ -16,7 +16,7 @@ export default function Contact() {
                 <h1>Contact</h1>
                 <div className="adress-section-bloc">
                     <section className="adress-section">
-                        <h2>ADDRESS</h2>
+                        <h2>{other.en.titleAdressContact}</h2>
                         <p>saint maur-des-fossées</p>
                         <p>94100</p>
                     </section>
@@ -27,7 +27,7 @@ export default function Contact() {
                 </div>
                 <GoogleMapComponent />
                 <section className="email-section">
-                    <FormMail />
+                    <FormMail subject={other.en.formSubjectContact} button={other.en.formButtonContact} />
                 </section>
             </article>
         </Layout>

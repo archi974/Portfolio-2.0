@@ -1,494 +1,494 @@
-[
-    {
-        "en": [
-            {
-                "name": "Mon vieux grimoire",
-                "link": "https://github.com/archi974/Vieux-Grimoire",
-                "team": "Project completed individually",
-                "language": [
-                    "Node",
-                    "Express",
-                    "Mongo"
-                ],
-                "titleConstraints":"Encountered problem",
-                "constraints": [
-                    {
-                        "first": "Understanding errors and identifying the source of breakdowns",
-                        "second": "Rating a book by other users"
-                    }
-                ],
-                "description": "You have been working as a freelance back-end developer for a year now in the Lille region. You are accustomed to collaborating with Kévin, a more experienced front-end developer who already has a strong network of contacts in the industry. Kévin reaches out to you to propose working together, combining your front-end and back-end skills on a brand new project that he has been offered. The project involves a small chain of bookstores looking to launch a website for book referencing and ratings.",
-                "year": "July 2023",
-                "medias": {
-                    "desktop": {
-                        "video": "https://www.youtube.com/embed/Fft9X0S-GGM?showinfo=0&rel=0&autoplay=1&mute=1",
-                        "imgSrc": "/images/img-mon-vieux-grimoire.webp",
-                        "imgAlt": "home page Mon vieux grimoire"
-                    },
-                    "mobile": {
-                        "video": null,
-                        "imgSrc": null,
-                        "imgAlt": null
-                    }
+{
+    "en": [
+        {
+            "title": "Project",
+            "name": "Mon vieux grimoire",
+            "link": "https://github.com/archi974/Vieux-Grimoire",
+            "team": "Project completed individually",
+            "language": [
+                "Node",
+                "Express",
+                "Mongo"
+            ],
+            "titleConstraints": "Encountered problem",
+            "constraints": [
+                {
+                    "first": "Understanding errors and identifying the source of breakdowns",
+                    "second": "Rating a book by other users"
                 }
-            },
-            {
-                "name": "Location immobilière",
-                "link": "https://github.com/archi974/Location_immobiliere",
-                "team": "Project completed individually",
-                "language": [
-                    "React",
-                    "Sass"
-                ],
-                "titleConstraints":"Encountered problem",
-                "constraints": [
-                    {
-                        "first": "Organizing the cards in the main menu properly",
-                        "second": "Adding animation to collapse components"
-                    }
-                ],
-                "description": "Kasa is recruiting you as a freelance front-end developer to develop its new web platform. Kasa has been in the business of apartment rentals between individuals for almost 10 years now. With over 500 listings posted every day, Kasa is a leader in apartment rentals between individuals in France.",
-                "year": "June 2023",
-                "medias": {
-                    "desktop": {
-                        "video": "https://www.youtube.com/embed/edBAQN8gEvA?showinfo=0&rel=0&autoplay=1&mute=1",
-                        "imgSrc": "https://cdn.discordapp.com/attachments/1019304376193532035/1137050790373101659/Capture_decran_2023-08-04_a_16.55.06.png",
-                        "imgAlt": "/images/img-location-immobiliere.webp"
-                    },
-                    "mobile": {
-                        "video": null,
-                        "imgSrc": null,
-                        "imgAlt": null
-                    }
-                }
-            },
-            {
-                "name": "Site photographe",
-                "link": "https://github.com/archi974/Site_photographe",
-                "team": "Project completed individually",
-                "language": [
-                    "HTML",
-                    "CSS",
-                    "Jquery"
-                ],
-                "titleConstraints":"Encountered problem",
-                "constraints": [
-                    {
-                        "first": "Find where the error in the jQuery code filter originates",
-                        "second": "Improving Image Performance"
-                    }
-                ],
-                "description": "You are a freelance developer, and you decide to offer your SEO optimization services to new clients. To do this, you have analyzed several websites. Among your prospects is the website of Nina Carducci, a photographer whom one of your friends has mentioned to you.",
-                "year": "June 2023",
-                "medias": {
-                    "desktop": {
-                        "video": "https://www.youtube.com/embed/D88fIfemEAM?showinfo=0&rel=0&autoplay=1&mute=1",
-                        "imgSrc": "/images/img-photographe.webp",
-                        "imgAlt": "Faire l'optimisation d'un site de photographe"
-                    },
-                    "mobile": {
-                        "video": null,
-                        "imgSrc": null,
-                        "imgAlt": null
-                    }
-                }
-            },
-            {
-                "name": "Portfolio Architect d'intérieur",
-                "link": "https://github.com/archi974/Portfolio_Architect_Interieur",
-                "team": "Project completed individually",
-                "language": [
-                    "JavaScript"
-                ],
-                "titleConstraints":"Encountered problem",
-                "constraints": [
-                    {
-                        "first": "Improvement of Filter Logic",
-                        "second": "Creation of a New Image through Either Drag and Drop from Another Page or Retrieval from the Computer"
-                    }
-                ],
-                "description": "You work as a front-end developer for the agency ArchiWebos, which has 50 employees. Having finished your last project ahead of schedule, you are sent to assist as a front-end developer on a team working on the design of the portfolio website for an interior architect.",
-                "year": "April 2023",
-                "medias": {
-                    "desktop": {
-                        "video": "https://www.youtube.com/embed/S6MUQ6-q-5g?showinfo=0&rel=0&autoplay=1&mute=1",
-                        "imgSrc": "/images/img-portfolio-decoratrice-interieur.webp",
-                        "imgAlt": "Réalisation de la partie dynamique d'un portfolio"
-                    },
-                    "mobile": {
-                        "video": null,
-                        "imgSrc": null,
-                        "imgAlt": null
-                    }
-                }
-            },
-            {
-                "name": "Agence de voyage",
-                "link": "https://github.com/archi974/AgenceVoyage",
-                "team": "Project completed individually",
-                "language": [
-                    "HTML",
-                    "CSS"
-                ],
-                "titleConstraints":"Encountered problem",
-                "constraints": [
-                    {
-                        "first": "Struggles with making the website responsive.",
-                        "second": "Issue with sizing the cards that contain stars."
-                    }
-                ],
-                "description": "The company aims to develop a website that will allow users to find accommodations and activities in the city of their choice. You are tasked with integrating the interface of the site using HTML and CSS code. For this, you will work closely with Sarah, the CTO, and Loïc, the UI designer.",
-                "year": "February 2023",
-                "medias": {
-                    "desktop": {
-                        "video": "https://www.youtube.com/embed/CZSlUr0OVyI?showinfo=0&rel=0&autoplay=1&mute=1",
-                        "imgSrc": "/images/img-agence-de-voyage.webp",
-                        "imgAlt": "site d'agence de voyage"
-                    },
-                    "mobile": {
-                        "video": null,
-                        "imgSrc": null,
-                        "imgAlt": null
-                    }
-                }
-            },
-            {
-                "name": "Framework SCSS",
-                "link": "https://github.com/archi974/Framework-scss",
-                "team": "Project completed individually",
-                "language": [
-                    "HTML",
-                    "SASS"
-                ],
-                "titleConstraints":"Encountered problem",
-                "constraints": [
-                    {
-                        "first": "Difficulty in creating consistent and intuitive class names.",
-                        "second": "Make the table responsive and adjust the images to the screen size."
-                    }
-                ],
-                "description": "A website to showcase the capabilities of Sass classes and the responsive rendering of each component.",
-                "year": "March 2022",
-                "medias": {
-                    "desktop": {
-                        "video": "https://www.youtube.com/embed/kZPax7wqC-Q?showinfo=0&rel=0&autoplay=1&mute=1",
-                        "imgSrc": "/images/img-framework-scss.webp",
-                        "imgAlt": "création d'un framework css avec Sass"
-                    },
-                    "mobile": {
-                        "video": null,
-                        "imgSrc": null,
-                        "imgAlt": null
-                    }
-                }
-            },
-            {
-                "name": "My Wysiwig",
-                "link": "https://github.com/archi974/My_Wysiwyg",
-                "team": "Groupe de 3 personnes",
-                "language": [
-                    "Jquery",
-                    "JavaScript",
-                    "PHP",
-                    "HTML",
-                    "CSS"
-                ],
-                "titleConstraints":"Encountered problem",
-                "constraints": [
-                    {
-                        "first": "Encountered significant challenges while creating certain parts, such as retrieving videos or links.",
-                        "second": "As it's a jQuery module, we faced challenges integrating it into other pages."
-                    }
-                ],
-                "description": "A JavaScript module-based text editor that allows you to visually generate HTML code.",
-                "year": "November 2021",
-                "medias": {
-                    "desktop": {
-                        "video": "https://www.youtube.com/embed/PUDCfMc4Jc8?showinfo=0&rel=0&autoplay=1&mute=1",
-                        "imgSrc": "/images/img-my-wysiwyg.webp",
-                        "imgAlt": "projet sur un éditeur de texte"
-                    },
-                    "mobile": {
-                        "video": null,
-                        "imgSrc": null,
-                        "imgAlt": null
-                    }
-                }
-            },
-            {
-                "name": "Css Generator",
-                "link": "https://github.com/archi974/css_generator",
-                "team": "Project completed individually",
-                "language": [
-                    "PHP"
-                ],
-                "titleConstraints":"Encountered problem",
-                "constraints": [
-                    {
-                        "first": "Challenges in understanding recursion.",
-                        "second": "Struggling to grasp object-oriented logic."
-                    }
-                ],
-                "description": "Create an image by assembling all the images found in a folder, and also generate a CSS file that contains all the modifications.",
-                "year": "November 2021",
-                "medias": {
-                    "desktop": {
-                        "video": "https://www.youtube.com/embed/HBnGedrllAw?showinfo=0&rel=0&autoplay=1&mute=1",
-                        "imgSrc": "/images/img-Css-generator.webp",
-                        "imgAlt": "logiciel de création d'image"
-                    },
-                    "mobile": {
-                        "video": null,
-                        "imgSrc": null,
-                        "imgAlt": null
-                    }
+            ],
+            "description": "You have been working as a freelance back-end developer for a year now in the Lille region. You are accustomed to collaborating with Kévin, a more experienced front-end developer who already has a strong network of contacts in the industry. Kévin reaches out to you to propose working together, combining your front-end and back-end skills on a brand new project that he has been offered. The project involves a small chain of bookstores looking to launch a website for book referencing and ratings.",
+            "year": "July 2023",
+            "medias": {
+                "desktop": {
+                    "video": "https://www.youtube.com/embed/Fft9X0S-GGM?showinfo=0&rel=0&autoplay=1&mute=1",
+                    "imgSrc": "/images/img-mon-vieux-grimoire.webp",
+                    "imgAlt": "home page Mon vieux grimoire"
+                },
+                "mobile": {
+                    "video": null,
+                    "imgSrc": null,
+                    "imgAlt": null
                 }
             }
-        ],
-        "fr": [
-            {
-                "name": "Mon vieux grimoire",
-                "link": "https://github.com/archi974/Vieux-Grimoire",
-                "team": "Projet réalisé seul",
-                "language": [
-                    "Node",
-                    "Express",
-                    "Mongo"
-                ],
-                "titleConstraints":"Problème rencontrés",
-                "constraints": [
-                    {
-                        "first": "Comprendre les erreurs et trouver d'où viennent les pannes",
-                        "second": "La notation d'un livre par d'autre utilisateur"
-                    }
-                ],
-                "description": "Vous êtes développeur back-end en freelance depuis maintenant un an dans la région de Lille. Vous avez l’habitude de travailler avec Kévin, un développeur front-end plus expérimenté que vous, et qui a déjà un bon réseau de contacts dans le milieu. Kévin vous contacte pour vous proposer de travailler avec lui en mutualisant vos compétences front / back sur un tout nouveau projet qui lui a été proposé. Il s’agit d’une petite chaîne de librairies qui souhaite ouvrir un site de référencement et de notation de livres",
-                "year": "Juillet 2023",
-                "medias": {
-                    "desktop": {
-                        "video": "https://www.youtube.com/embed/Fft9X0S-GGM?showinfo=0&rel=0&autoplay=1&mute=1",
-                        "imgSrc": "/images/img-mon-vieux-grimoire.webp",
-                        "imgAlt": "home page Mon vieux grimoire"
-                    },
-                    "mobile": {
-                        "video": null,
-                        "imgSrc": null,
-                        "imgAlt": null
-                    }
+        },
+        {
+            "name": "Location immobilière",
+            "link": "https://github.com/archi974/Location_immobiliere",
+            "team": "Project completed individually",
+            "language": [
+                "React",
+                "Sass"
+            ],
+            "titleConstraints": "Encountered problem",
+            "constraints": [
+                {
+                    "first": "Organizing the cards in the main menu properly",
+                    "second": "Adding animation to collapse components"
                 }
-            },
-            {
-                "name": "Location immobilière",
-                "link": "https://github.com/archi974/Location_immobiliere",
-                "team": "Projet réalisé seul",
-                "language": [
-                    "React",
-                    "Sass"
-                ],
-                "titleConstraints":"Problème rencontrés",
-                "constraints": [
-                    {
-                        "first": "Ranger les cartes du menu principal correctement",
-                        "second": "Donner une animation aux composants collapse"
-                    }
-                ],
-                "description": "Kasa vous recrute en tant que développeur front-end en freelance pour développer sa nouvelle plateforme web. Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.",
-                "year": "Juin 2023",
-                "medias": {
-                    "desktop": {
-                        "video": "https://www.youtube.com/embed/edBAQN8gEvA?showinfo=0&rel=0&autoplay=1&mute=1",
-                        "imgSrc": "https://cdn.discordapp.com/attachments/1019304376193532035/1137050790373101659/Capture_decran_2023-08-04_a_16.55.06.png",
-                        "imgAlt": "/images/img-location-immobiliere.webp"
-                    },
-                    "mobile": {
-                        "video": null,
-                        "imgSrc": null,
-                        "imgAlt": null
-                    }
-                }
-            },
-            {
-                "name": "Site photographe",
-                "link": "https://github.com/archi974/Site_photographe",
-                "team": "Projet réalisé seul",
-                "language": [
-                    "HTML",
-                    "CSS",
-                    "Jquery"
-                ],
-                "titleConstraints":"Problème rencontrés",
-                "constraints": [
-                    {
-                        "first": "Trouvez d'où vient l'erreur du filtre dans le code Jquery",
-                        "second": "Améliorer les performances des images"
-                    }
-                ],
-                "description": "Vous êtes développeur freelance, et vous décidez de proposer vos services d'optimisation SEO à de nouveaux clients. Pour ce faire, vous avez analysé plusieurs sites internet. Parmi vos prospects, il y a le site de Nina Carducci, une photographe dont vous a parlé l'un de vos amis.",
-                "year": "Juin 2023",
-                "medias": {
-                    "desktop": {
-                        "video": "https://www.youtube.com/embed/D88fIfemEAM?showinfo=0&rel=0&autoplay=1&mute=1",
-                        "imgSrc": "/images/img-photographe.webp",
-                        "imgAlt": "Faire l'optimisation d'un site de photographe"
-                    },
-                    "mobile": {
-                        "video": null,
-                        "imgSrc": null,
-                        "imgAlt": null
-                    }
-                }
-            },
-            {
-                "name": "Portfolio Architect d'intérieur",
-                "link": "https://github.com/archi974/Portfolio_Architect_Interieur",
-                "team": "Projet réalisé seul",
-                "language": [
-                    "JavaScript"
-                ],
-                "titleConstraints":"Problème rencontrés",
-                "constraints": [
-                    {
-                        "first": "L'amélioration de la logique de mon filtre",
-                        "second": "Création d'une nouvelle image avec soit le drag and drop depuis une autre page, soit la récupération depuis l'ordinateur, soit le drag and drop depuis l'ordinateur"
-                    }
-                ],
-                "description": "Vous travaillez comme développeur front-end pour l’agence ArchiWebos qui comprend 50 salariés. Ayant terminé votre dernier projet avec un peu d'avance, vous êtes envoyé en renfort comme développeur front-end d’une équipe qui travaille sur la conception du site portfolio d’une architecte d’intérieur.",
-                "year": "Avril 2023",
-                "medias": {
-                    "desktop": {
-                        "video": "https://www.youtube.com/embed/S6MUQ6-q-5g?showinfo=0&rel=0&autoplay=1&mute=1",
-                        "imgSrc": "/images/img-portfolio-decoratrice-interieur.webp",
-                        "imgAlt": "Réalisation de la partie dynamique d'un portfolio"
-                    },
-                    "mobile": {
-                        "video": null,
-                        "imgSrc": null,
-                        "imgAlt": null
-                    }
-                }
-            },
-            {
-                "name": "Agence de voyage",
-                "link": "https://github.com/archi974/AgenceVoyage",
-                "team": "Projet réalisé seul",
-                "language": [
-                    "HTML",
-                    "CSS"
-                ],
-                "titleConstraints":"Problème rencontrés",
-                "constraints": [
-                    {
-                        "first": "Difficultés à rendre le site responsive",
-                        "second": "Problème de dimensionnement des cartes qui contiennent des étoiles"
-                    }
-                ],
-                "description": "L'entreprise souhaite développer un site internet qui permettra aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Vous êtes chargé d'intégrer l'interface du site avec du code HTML et CSS. Pour cela, vous travaillerez en étroite collaboration avec Sarah, la CTO, et Loïc, l'UI designer.",
-                "year": "Février 2023",
-                "medias": {
-                    "desktop": {
-                        "video": "https://www.youtube.com/embed/CZSlUr0OVyI?showinfo=0&rel=0&autoplay=1&mute=1",
-                        "imgSrc": "/images/img-agence-de-voyage.webp",
-                        "imgAlt": "site d'agence de voyage"
-                    },
-                    "mobile": {
-                        "video": null,
-                        "imgSrc": null,
-                        "imgAlt": null
-                    }
-                }
-            },
-            {
-                "name": "Framework SCSS",
-                "link": "https://github.com/archi974/Framework-scss",
-                "team": "Projet réalisé seul",
-                "language": [
-                    "HTML",
-                    "SASS"
-                ],
-                "titleConstraints":"Problème rencontrés",
-                "constraints": [
-                    {
-                        "first": "Des difficulté à crée des nom de classe cohérente et intuitive",
-                        "second": "Rendre le tableau responsive voir les images adapté à la taille de l'écran"
-                    }
-                ],
-                "description": "Un site pour visualiser les possibilités de classe Sass et le rendu de chaque composant responsive",
-                "year": "Mars 2022",
-                "medias": {
-                    "desktop": {
-                        "video": "https://www.youtube.com/embed/kZPax7wqC-Q?showinfo=0&rel=0&autoplay=1&mute=1",
-                        "imgSrc": "/images/img-framework-scss.webp",
-                        "imgAlt": "création d'un framework css avec Sass"
-                    },
-                    "mobile": {
-                        "video": null,
-                        "imgSrc": null,
-                        "imgAlt": null
-                    }
-                }
-            },
-            {
-                "name": "My Wysiwig",
-                "link": "https://github.com/archi974/My_Wysiwyg",
-                "team": "Groupe de 3 personnes",
-                "language": [
-                    "Jquery",
-                    "JavaScript",
-                    "PHP",
-                    "HTML",
-                    "CSS"
-                ],
-                "titleConstraints":"Problème rencontrés",
-                "constraints": [
-                    {
-                        "first": "Beaucoup de difficulté à crée certaine partie comme la récupération de vidéo ou les liens",
-                        "second": "Etant un module Jquery on a eu du mal à pouvoir l'intégrer dans d'autre page"
-                    }
-                ],
-                "description": "Editeur de texte sous forme de module JavaScript, permet de générer du code HTML de manière visuelle.",
-                "year": "Novembre 2021",
-                "medias": {
-                    "desktop": {
-                        "video": "https://www.youtube.com/embed/PUDCfMc4Jc8?showinfo=0&rel=0&autoplay=1&mute=1",
-                        "imgSrc": "/images/img-my-wysiwyg.webp",
-                        "imgAlt": "projet sur un éditeur de texte"
-                    },
-                    "mobile": {
-                        "video": null,
-                        "imgSrc": null,
-                        "imgAlt": null
-                    }
-                }
-            },
-            {
-                "name": "Css Generator",
-                "link": "https://github.com/archi974/css_generator",
-                "team": "Projet réalisé seul",
-                "language": [
-                    "PHP"
-                ],
-                "titleConstraints":"Problème rencontrés",
-                "constraints": [
-                    {
-                        "first": "Difficultés à comprendre la récursive",
-                        "second": "Beaucoup de mal à intégrer la logique d'objet"
-                    }
-                ],
-                "description": "Créer une image en assemblant toutes les images trouver dans un dossier, génère également un fichier css qui contient toutes les modifications",
-                "year": "Novembre 2021",
-                "medias": {
-                    "desktop": {
-                        "video": "https://www.youtube.com/embed/HBnGedrllAw?showinfo=0&rel=0&autoplay=1&mute=1",
-                        "imgSrc": "/images/img-Css-generator.webp",
-                        "imgAlt": "logiciel de création d'image"
-                    },
-                    "mobile": {
-                        "video": null,
-                        "imgSrc": null,
-                        "imgAlt": null
-                    }
+            ],
+            "description": "Kasa is recruiting you as a freelance front-end developer to develop its new web platform. Kasa has been in the business of apartment rentals between individuals for almost 10 years now. With over 500 listings posted every day, Kasa is a leader in apartment rentals between individuals in France.",
+            "year": "June 2023",
+            "medias": {
+                "desktop": {
+                    "video": "https://www.youtube.com/embed/edBAQN8gEvA?showinfo=0&rel=0&autoplay=1&mute=1",
+                    "imgSrc": "https://cdn.discordapp.com/attachments/1019304376193532035/1137050790373101659/Capture_decran_2023-08-04_a_16.55.06.png",
+                    "imgAlt": "/images/img-location-immobiliere.webp"
+                },
+                "mobile": {
+                    "video": null,
+                    "imgSrc": null,
+                    "imgAlt": null
                 }
             }
-        ]
-    }
-]
+        },
+        {
+            "name": "Site photographe",
+            "link": "https://github.com/archi974/Site_photographe",
+            "team": "Project completed individually",
+            "language": [
+                "HTML",
+                "CSS",
+                "Jquery"
+            ],
+            "titleConstraints": "Encountered problem",
+            "constraints": [
+                {
+                    "first": "Find where the error in the jQuery code filter originates",
+                    "second": "Improving Image Performance"
+                }
+            ],
+            "description": "You are a freelance developer, and you decide to offer your SEO optimization services to new clients. To do this, you have analyzed several websites. Among your prospects is the website of Nina Carducci, a photographer whom one of your friends has mentioned to you.",
+            "year": "June 2023",
+            "medias": {
+                "desktop": {
+                    "video": "https://www.youtube.com/embed/D88fIfemEAM?showinfo=0&rel=0&autoplay=1&mute=1",
+                    "imgSrc": "/images/img-photographe.webp",
+                    "imgAlt": "Faire l'optimisation d'un site de photographe"
+                },
+                "mobile": {
+                    "video": null,
+                    "imgSrc": null,
+                    "imgAlt": null
+                }
+            }
+        },
+        {
+            "name": "Portfolio Architect d'intérieur",
+            "link": "https://github.com/archi974/Portfolio_Architect_Interieur",
+            "team": "Project completed individually",
+            "language": [
+                "JavaScript"
+            ],
+            "titleConstraints": "Encountered problem",
+            "constraints": [
+                {
+                    "first": "Improvement of Filter Logic",
+                    "second": "Creation of a New Image through Either Drag and Drop from Another Page or Retrieval from the Computer"
+                }
+            ],
+            "description": "You work as a front-end developer for the agency ArchiWebos, which has 50 employees. Having finished your last project ahead of schedule, you are sent to assist as a front-end developer on a team working on the design of the portfolio website for an interior architect.",
+            "year": "April 2023",
+            "medias": {
+                "desktop": {
+                    "video": "https://www.youtube.com/embed/S6MUQ6-q-5g?showinfo=0&rel=0&autoplay=1&mute=1",
+                    "imgSrc": "/images/img-portfolio-decoratrice-interieur.webp",
+                    "imgAlt": "Réalisation de la partie dynamique d'un portfolio"
+                },
+                "mobile": {
+                    "video": null,
+                    "imgSrc": null,
+                    "imgAlt": null
+                }
+            }
+        },
+        {
+            "name": "Agence de voyage",
+            "link": "https://github.com/archi974/AgenceVoyage",
+            "team": "Project completed individually",
+            "language": [
+                "HTML",
+                "CSS"
+            ],
+            "titleConstraints": "Encountered problem",
+            "constraints": [
+                {
+                    "first": "Struggles with making the website responsive.",
+                    "second": "Issue with sizing the cards that contain stars."
+                }
+            ],
+            "description": "The company aims to develop a website that will allow users to find accommodations and activities in the city of their choice. You are tasked with integrating the interface of the site using HTML and CSS code. For this, you will work closely with Sarah, the CTO, and Loïc, the UI designer.",
+            "year": "February 2023",
+            "medias": {
+                "desktop": {
+                    "video": "https://www.youtube.com/embed/CZSlUr0OVyI?showinfo=0&rel=0&autoplay=1&mute=1",
+                    "imgSrc": "/images/img-agence-de-voyage.webp",
+                    "imgAlt": "site d'agence de voyage"
+                },
+                "mobile": {
+                    "video": null,
+                    "imgSrc": null,
+                    "imgAlt": null
+                }
+            }
+        },
+        {
+            "name": "Framework SCSS",
+            "link": "https://github.com/archi974/Framework-scss",
+            "team": "Project completed individually",
+            "language": [
+                "HTML",
+                "SASS"
+            ],
+            "titleConstraints": "Encountered problem",
+            "constraints": [
+                {
+                    "first": "Difficulty in creating consistent and intuitive class names.",
+                    "second": "Make the table responsive and adjust the images to the screen size."
+                }
+            ],
+            "description": "A website to showcase the capabilities of Sass classes and the responsive rendering of each component.",
+            "year": "March 2022",
+            "medias": {
+                "desktop": {
+                    "video": "https://www.youtube.com/embed/kZPax7wqC-Q?showinfo=0&rel=0&autoplay=1&mute=1",
+                    "imgSrc": "/images/img-framework-scss.webp",
+                    "imgAlt": "création d'un framework css avec Sass"
+                },
+                "mobile": {
+                    "video": null,
+                    "imgSrc": null,
+                    "imgAlt": null
+                }
+            }
+        },
+        {
+            "name": "My Wysiwig",
+            "link": "https://github.com/archi974/My_Wysiwyg",
+            "team": "Groupe de 3 personnes",
+            "language": [
+                "Jquery",
+                "JavaScript",
+                "PHP",
+                "HTML",
+                "CSS"
+            ],
+            "titleConstraints": "Encountered problem",
+            "constraints": [
+                {
+                    "first": "Encountered significant challenges while creating certain parts, such as retrieving videos or links.",
+                    "second": "As it's a jQuery module, we faced challenges integrating it into other pages."
+                }
+            ],
+            "description": "A JavaScript module-based text editor that allows you to visually generate HTML code.",
+            "year": "November 2021",
+            "medias": {
+                "desktop": {
+                    "video": "https://www.youtube.com/embed/PUDCfMc4Jc8?showinfo=0&rel=0&autoplay=1&mute=1",
+                    "imgSrc": "/images/img-my-wysiwyg.webp",
+                    "imgAlt": "projet sur un éditeur de texte"
+                },
+                "mobile": {
+                    "video": null,
+                    "imgSrc": null,
+                    "imgAlt": null
+                }
+            }
+        },
+        {
+            "name": "Css Generator",
+            "link": "https://github.com/archi974/css_generator",
+            "team": "Project completed individually",
+            "language": [
+                "PHP"
+            ],
+            "titleConstraints": "Encountered problem",
+            "constraints": [
+                {
+                    "first": "Challenges in understanding recursion.",
+                    "second": "Struggling to grasp object-oriented logic."
+                }
+            ],
+            "description": "Create an image by assembling all the images found in a folder, and also generate a CSS file that contains all the modifications.",
+            "year": "November 2021",
+            "medias": {
+                "desktop": {
+                    "video": "https://www.youtube.com/embed/HBnGedrllAw?showinfo=0&rel=0&autoplay=1&mute=1",
+                    "imgSrc": "/images/img-Css-generator.webp",
+                    "imgAlt": "logiciel de création d'image"
+                },
+                "mobile": {
+                    "video": null,
+                    "imgSrc": null,
+                    "imgAlt": null
+                }
+            }
+        }
+    ],
+    "fr": [
+        {
+            "title": "Project",
+            "name": "Mon vieux grimoire",
+            "link": "https://github.com/archi974/Vieux-Grimoire",
+            "team": "Projet réalisé seul",
+            "language": [
+                "Node",
+                "Express",
+                "Mongo"
+            ],
+            "titleConstraints": "Problème rencontrés",
+            "constraints": [
+                {
+                    "first": "Comprendre les erreurs et trouver d'où viennent les pannes",
+                    "second": "La notation d'un livre par d'autre utilisateur"
+                }
+            ],
+            "description": "Vous êtes développeur back-end en freelance depuis maintenant un an dans la région de Lille. Vous avez l’habitude de travailler avec Kévin, un développeur front-end plus expérimenté que vous, et qui a déjà un bon réseau de contacts dans le milieu. Kévin vous contacte pour vous proposer de travailler avec lui en mutualisant vos compétences front / back sur un tout nouveau projet qui lui a été proposé. Il s’agit d’une petite chaîne de librairies qui souhaite ouvrir un site de référencement et de notation de livres",
+            "year": "Juillet 2023",
+            "medias": {
+                "desktop": {
+                    "video": "https://www.youtube.com/embed/Fft9X0S-GGM?showinfo=0&rel=0&autoplay=1&mute=1",
+                    "imgSrc": "/images/img-mon-vieux-grimoire.webp",
+                    "imgAlt": "home page Mon vieux grimoire"
+                },
+                "mobile": {
+                    "video": null,
+                    "imgSrc": null,
+                    "imgAlt": null
+                }
+            }
+        },
+        {
+            "name": "Location immobilière",
+            "link": "https://github.com/archi974/Location_immobiliere",
+            "team": "Projet réalisé seul",
+            "language": [
+                "React",
+                "Sass"
+            ],
+            "titleConstraints": "Problème rencontrés",
+            "constraints": [
+                {
+                    "first": "Ranger les cartes du menu principal correctement",
+                    "second": "Donner une animation aux composants collapse"
+                }
+            ],
+            "description": "Kasa vous recrute en tant que développeur front-end en freelance pour développer sa nouvelle plateforme web. Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.",
+            "year": "Juin 2023",
+            "medias": {
+                "desktop": {
+                    "video": "https://www.youtube.com/embed/edBAQN8gEvA?showinfo=0&rel=0&autoplay=1&mute=1",
+                    "imgSrc": "https://cdn.discordapp.com/attachments/1019304376193532035/1137050790373101659/Capture_decran_2023-08-04_a_16.55.06.png",
+                    "imgAlt": "/images/img-location-immobiliere.webp"
+                },
+                "mobile": {
+                    "video": null,
+                    "imgSrc": null,
+                    "imgAlt": null
+                }
+            }
+        },
+        {
+            "name": "Site photographe",
+            "link": "https://github.com/archi974/Site_photographe",
+            "team": "Projet réalisé seul",
+            "language": [
+                "HTML",
+                "CSS",
+                "Jquery"
+            ],
+            "titleConstraints": "Problème rencontrés",
+            "constraints": [
+                {
+                    "first": "Trouvez d'où vient l'erreur du filtre dans le code Jquery",
+                    "second": "Améliorer les performances des images"
+                }
+            ],
+            "description": "Vous êtes développeur freelance, et vous décidez de proposer vos services d'optimisation SEO à de nouveaux clients. Pour ce faire, vous avez analysé plusieurs sites internet. Parmi vos prospects, il y a le site de Nina Carducci, une photographe dont vous a parlé l'un de vos amis.",
+            "year": "Juin 2023",
+            "medias": {
+                "desktop": {
+                    "video": "https://www.youtube.com/embed/D88fIfemEAM?showinfo=0&rel=0&autoplay=1&mute=1",
+                    "imgSrc": "/images/img-photographe.webp",
+                    "imgAlt": "Faire l'optimisation d'un site de photographe"
+                },
+                "mobile": {
+                    "video": null,
+                    "imgSrc": null,
+                    "imgAlt": null
+                }
+            }
+        },
+        {
+            "name": "Portfolio Architect d'intérieur",
+            "link": "https://github.com/archi974/Portfolio_Architect_Interieur",
+            "team": "Projet réalisé seul",
+            "language": [
+                "JavaScript"
+            ],
+            "titleConstraints": "Problème rencontrés",
+            "constraints": [
+                {
+                    "first": "L'amélioration de la logique de mon filtre",
+                    "second": "Création d'une nouvelle image avec soit le drag and drop depuis une autre page, soit la récupération depuis l'ordinateur, soit le drag and drop depuis l'ordinateur"
+                }
+            ],
+            "description": "Vous travaillez comme développeur front-end pour l’agence ArchiWebos qui comprend 50 salariés. Ayant terminé votre dernier projet avec un peu d'avance, vous êtes envoyé en renfort comme développeur front-end d’une équipe qui travaille sur la conception du site portfolio d’une architecte d’intérieur.",
+            "year": "Avril 2023",
+            "medias": {
+                "desktop": {
+                    "video": "https://www.youtube.com/embed/S6MUQ6-q-5g?showinfo=0&rel=0&autoplay=1&mute=1",
+                    "imgSrc": "/images/img-portfolio-decoratrice-interieur.webp",
+                    "imgAlt": "Réalisation de la partie dynamique d'un portfolio"
+                },
+                "mobile": {
+                    "video": null,
+                    "imgSrc": null,
+                    "imgAlt": null
+                }
+            }
+        },
+        {
+            "name": "Agence de voyage",
+            "link": "https://github.com/archi974/AgenceVoyage",
+            "team": "Projet réalisé seul",
+            "language": [
+                "HTML",
+                "CSS"
+            ],
+            "titleConstraints": "Problème rencontrés",
+            "constraints": [
+                {
+                    "first": "Difficultés à rendre le site responsive",
+                    "second": "Problème de dimensionnement des cartes qui contiennent des étoiles"
+                }
+            ],
+            "description": "L'entreprise souhaite développer un site internet qui permettra aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Vous êtes chargé d'intégrer l'interface du site avec du code HTML et CSS. Pour cela, vous travaillerez en étroite collaboration avec Sarah, la CTO, et Loïc, l'UI designer.",
+            "year": "Février 2023",
+            "medias": {
+                "desktop": {
+                    "video": "https://www.youtube.com/embed/CZSlUr0OVyI?showinfo=0&rel=0&autoplay=1&mute=1",
+                    "imgSrc": "/images/img-agence-de-voyage.webp",
+                    "imgAlt": "site d'agence de voyage"
+                },
+                "mobile": {
+                    "video": null,
+                    "imgSrc": null,
+                    "imgAlt": null
+                }
+            }
+        },
+        {
+            "name": "Framework SCSS",
+            "link": "https://github.com/archi974/Framework-scss",
+            "team": "Projet réalisé seul",
+            "language": [
+                "HTML",
+                "SASS"
+            ],
+            "titleConstraints": "Problème rencontrés",
+            "constraints": [
+                {
+                    "first": "Des difficulté à crée des nom de classe cohérente et intuitive",
+                    "second": "Rendre le tableau responsive voir les images adapté à la taille de l'écran"
+                }
+            ],
+            "description": "Un site pour visualiser les possibilités de classe Sass et le rendu de chaque composant responsive",
+            "year": "Mars 2022",
+            "medias": {
+                "desktop": {
+                    "video": "https://www.youtube.com/embed/kZPax7wqC-Q?showinfo=0&rel=0&autoplay=1&mute=1",
+                    "imgSrc": "/images/img-framework-scss.webp",
+                    "imgAlt": "création d'un framework css avec Sass"
+                },
+                "mobile": {
+                    "video": null,
+                    "imgSrc": null,
+                    "imgAlt": null
+                }
+            }
+        },
+        {
+            "name": "My Wysiwig",
+            "link": "https://github.com/archi974/My_Wysiwyg",
+            "team": "Groupe de 3 personnes",
+            "language": [
+                "Jquery",
+                "JavaScript",
+                "PHP",
+                "HTML",
+                "CSS"
+            ],
+            "titleConstraints": "Problème rencontrés",
+            "constraints": [
+                {
+                    "first": "Beaucoup de difficulté à crée certaine partie comme la récupération de vidéo ou les liens",
+                    "second": "Etant un module Jquery on a eu du mal à pouvoir l'intégrer dans d'autre page"
+                }
+            ],
+            "description": "Editeur de texte sous forme de module JavaScript, permet de générer du code HTML de manière visuelle.",
+            "year": "Novembre 2021",
+            "medias": {
+                "desktop": {
+                    "video": "https://www.youtube.com/embed/PUDCfMc4Jc8?showinfo=0&rel=0&autoplay=1&mute=1",
+                    "imgSrc": "/images/img-my-wysiwyg.webp",
+                    "imgAlt": "projet sur un éditeur de texte"
+                },
+                "mobile": {
+                    "video": null,
+                    "imgSrc": null,
+                    "imgAlt": null
+                }
+            }
+        },
+        {
+            "name": "Css Generator",
+            "link": "https://github.com/archi974/css_generator",
+            "team": "Projet réalisé seul",
+            "language": [
+                "PHP"
+            ],
+            "titleConstraints": "Problème rencontrés",
+            "constraints": [
+                {
+                    "first": "Difficultés à comprendre la récursive",
+                    "second": "Beaucoup de mal à intégrer la logique d'objet"
+                }
+            ],
+            "description": "Créer une image en assemblant toutes les images trouver dans un dossier, génère également un fichier css qui contient toutes les modifications",
+            "year": "Novembre 2021",
+            "medias": {
+                "desktop": {
+                    "video": "https://www.youtube.com/embed/HBnGedrllAw?showinfo=0&rel=0&autoplay=1&mute=1",
+                    "imgSrc": "/images/img-Css-generator.webp",
+                    "imgAlt": "logiciel de création d'image"
+                },
+                "mobile": {
+                    "video": null,
+                    "imgSrc": null,
+                    "imgAlt": null
+                }
+            }
+        }
+    ]
+}

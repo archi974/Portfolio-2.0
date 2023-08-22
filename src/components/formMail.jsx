@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
 
-const FormMail = () => {
+const FormMail = ({subject, button}) => {
     const form = useRef();
 
     const sendEmail = async (e) => {
@@ -31,10 +31,10 @@ const FormMail = () => {
             <section className="bloc-form_section">
                 <h2>Mail</h2>
                 <input type="email" name="from_email" placeholder="E-mail" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required />
-                <input type="text" name="from_subject" placeholder="Subject" required />
+                <input type="text" name="from_subject" placeholder={subject} required />
                 <textarea className="textAreaMail" placeholder="Message" name="message" cols="30" rows="10" required></textarea>
                 <ReCAPTCHA className="form-recaptcha" hl="en" sitekey={process.env.REACT_APP_RECAPTCHA_KEY} />
-                <button className="sendButtonMail" type="submit">Send</button>
+                <button className="sendButtonMail" type="submit">{button}</button>
             </section>
         </form>
     );

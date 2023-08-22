@@ -38,9 +38,9 @@ export default function Projects() {
     return (
         <Layout>
             <article className="bloc-projects">
-                <h1>Projects</h1>
+                <h1>{projectsFixture.en[0].title}</h1>
                 <div className="bloc-projects-container">
-                    {projectsFixture[0].en.map((project, i) => (
+                    {projectsFixture.en.map((project, i) => (
                         <section
                             className={`projet ${i % 2 === 0 ? 'left' : 'right'} ${hoveredProjects[project.name] ? 'hovered' : ''
                                 }`}
