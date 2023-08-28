@@ -1,8 +1,12 @@
 {
     "descriptionHome": "Portfolio",
+    "photoAboutMe": {
+        "src": "https://cdn.discordapp.com/attachments/1019304376193532035/1138062099701043270/IMG_7468.jpg",
+        "alt": "my profile picture"
+    },
     "en": {
         "titleHome": [
-            "Project",
+            "Projects",
             "Skills",
             "Contact",
             "About me"
@@ -12,12 +16,6 @@
         "formSubjectContact": "Subject",
         "formButtonContact": "Send",
         "titleAboutMe": "About me",
-        "photoAboutMe": [
-            {
-                "src": "https://cdn.discordapp.com/attachments/1019304376193532035/1138062099701043270/IMG_7468.jpg",
-                "alt": "my profile picture"
-            }
-        ],
         "descriptionAboutMe": [
             "My name is Vincent K/BIDI, and I am a passionate junior web developer intrigued by the world of development and technologies. My professional journey began with a 2-year BTS (Advanced Technician's Certificate) in the field of networking, where I gained substantial knowledge in connectivity and infrastructure matters.",
             "However, my enthusiasm for web development steered me towards embarking on an extensive training journey in this domain. I eagerly enrolled in a 1 and a half-year program at the Web@cadémie, where I acquired practical skills in HTML, CSS, PHP, SQL, JQuery, JavaScript, React, React Native, Sass, Symfony, Vue, MongoDB, Express, Node, and TypeScript. This experience flung open the gates to a captivating realm where I could breathe life into creative ideas through code.",
@@ -30,8 +28,8 @@
     },
     "fr": {
         "titleHome": [
-            "Projet",
-            "Aptitude",
+            "Projets",
+            "Aptitudes",
             "Contact",
             "A propos"
         ],
@@ -40,12 +38,6 @@
         "formSubjectContact": "Sujet",
         "formButtonContact": "Envoyer",
         "titleAboutMe": "A propos",
-        "photoAboutMe": [
-            {
-                "src": "http://",
-                "alt": "ma photo de profil"
-            }
-        ],
         "descriptionAboutMe": [
             "Je m'appelle Vincent K/BIDI, et je suis un développeur web junior passionné par le monde du développement et des technologies. Mon parcours professionnel a débuté par un BTS de 2 ans dans le domaine du réseaux, où j'ai pu acquérir de solides connaissances en matière de connectivité et d'infrastructures.",
             "Cependant, ma passion pour le développement web m'a conduit à entreprendre une formation approfondie dans ce domaine. J'ai suivi avec enthousiasme une formation de 1 an et demi à  la Web@cadémie, où j'ai acquis des compétences pratiques en HTML, CSS, PHP, SQL, JQuery, JavaScript,  React, React Native, Sass, Symfony, Vue, MongoDB, Express, Node, TypeScript. Cette expérience m'a ouvert les portes d'un univers fascinant où je pouvais donner vie à des idées créatives à travers le code.",

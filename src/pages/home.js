@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import other from "../fixture/other.json";
 
-export default function Home() {
+export default function Home({ language }) {
     const routeArray = ["/project", "/skills", "/contact", "/about-me"];
 
     return (
@@ -10,7 +10,7 @@ export default function Home() {
                 <p>{other.descriptionHome}</p>
                 {
                     routeArray.map((route, i) => (
-                        <NavLink to={route}>{other.en.titleHome[i]}</NavLink>
+                        <NavLink key={i} to={route}>{other[language].titleHome[i]}</NavLink>
                     ))
                 }
             </section>

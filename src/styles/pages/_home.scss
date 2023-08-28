@@ -1,5 +1,16 @@
-.bloc-home {
+.headerHome {
+    z-index: 1;
 
+    a {
+        display: none;
+    }
+}
+
+.footerHome {
+    display: none;
+}
+
+.bloc-home {
     .home-menu {
         display: flex;
         flex-direction: column;
@@ -58,7 +69,7 @@
         &:before {
             content: "";
             background-color: #253068;
-            height: 1174.5px;
+            height: 1300px;
             width: 50vw;
             position: absolute;
             right: 0;

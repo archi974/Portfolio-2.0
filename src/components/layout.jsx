@@ -1,15 +1,23 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, toggleLanguage, language }) => {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+  const headerStyle = isHomePage ? "headerHome" : "";
+  const footerStyle = isHomePage ? "footerHome" : "";
+
   return (
     <>
-      <header>
+      <header className={`header ${headerStyle}`}>
+        <button onClick={toggleLanguage} className="language-toggle">
+          {language}
+        </button>
         <NavLink to="/" className="nav-menu">
           Menu //
         </NavLink>
       </header>
-      <main>{children}</main>
-      <footer>
+      <main className="main">{children}</main>
+      <footer className={`footer ${footerStyle}`}>
         <div className="footer-logo">
           <a href="https://github.com/archi974" target="_blank" rel="noreferrer" aria-label="GitHub Profile">
             <div className="logo-github-bloc">
