@@ -84,3 +84,17 @@
         }
     }
 }
+
+.french-bloc_skills {
+    h1 {
+        @media only screen and (max-width: 1400px) {
+            font-size: $font-size-medium;
+        }
+        @media only screen and (max-width: 875px) {
+            font-size: $font-size-small;
+        }
+        @media only screen and (max-width: 475px) {
+            font-size:$font-size-xs;
+        }
+    }
+}

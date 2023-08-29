@@ -3,18 +3,19 @@ import skills from '../fixture/skills.json';
 import LogoCarousel from '../components/carouselLogo';
 
 export default function Skills({ language }) {
+    const frenchBloc = language === "fr" ? "french-bloc_skills" : "";
 
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
 
     return (
-        <article className="bloc-skills">
+        <article className={`bloc-skills ${frenchBloc}`}>
             <h1>{skills[language].titlePage}</h1>
             <LogoCarousel />
             <div className="skills-section-content">
                 <section className="bloc-skills_section">
-                    <h2 className="skills-professional">Professional</h2>
+                    <h2 className="skills-professional">{skills[language].titleProfessional}</h2>
                     {
                         skills[language].professional.map((professionalItem, i) => (
                             <section className="professional-bloc" key={i}>
@@ -29,7 +30,7 @@ export default function Skills({ language }) {
                     }
                 </section>
                 <section className="bloc-skills_section">
-                    <h2 className="skills-academic">Academic</h2>
+                    <h2 className="skills-academic">{skills[language].titleAcademic}</h2>
                     {
                         skills[language].academic.map((academicItem, i) => (
                             <section className="academic-bloc" key={i}>

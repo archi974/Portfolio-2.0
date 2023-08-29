@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import other from "../fixture/other.json";
 
 export default function AboutMe({ language }) {
-    const frenchBloc = language === "fr" ? "frenchBloc" : ""; 
+    const frenchBloc = language === "fr" ? "french-bloc_aboutMe" : ""; 
 
     useEffect(() => {
         window.scrollTo(0, 0)
