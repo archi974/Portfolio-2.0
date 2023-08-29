@@ -2,6 +2,7 @@
     height: 100%;
     margin-inline: 50px;
     padding-bottom: 100px;
+
     @media only screen and (max-width: 425px) {
         margin-inline: 20px;
     }
@@ -11,11 +12,13 @@
         align-items: center;
         margin-bottom: 100px;
         display: block;
+
         @media only screen and (max-width: 660px) {
             text-align: center;
         }
+
         @media only screen and (max-width: 510px) {
-            font-size:$font-size-xs;
+            font-size: $font-size-xs;
             margin-bottom: 50px;
         }
     }
@@ -62,6 +65,7 @@
             @media only screen and (max-width: 720px) {
                 width: 225px;
             }
+
             @media only screen and (max-width: 510px) {
                 width: 200px;
             }
@@ -75,6 +79,7 @@
         .about-me_description-left {
             @include aboutMeText;
             margin-bottom: 150px;
+
             @media only screen and (max-width: 660px) {
                 margin-bottom: 50px;
             }
@@ -95,5 +100,70 @@
             }
         }
 
+    }
+}
+
+.frenchBloc {
+
+    h1 {
+        @media only screen and (max-width: 1339px) {
+            font-size: $font-size-medium;
+        }
+
+        @media only screen and (max-width: 844px) {
+            font-size: $font-size-small;
+        }
+
+        @media only screen and (max-width: 829px) {
+            text-align: center;
+        }
+    }
+
+    .about-me_img {
+        @media only screen and (max-width: 1339px) {
+            top: 320px;
+        }
+
+        @media only screen and (max-width: 919px) {
+            top: 350px;
+        }
+
+        @media only screen and (max-width: 829px) {
+            position: relative;
+            text-align: center;
+            width: 100%;
+            right: 0;
+            top: 0;
+            margin-bottom: 40px;
+        }
+    }
+
+
+    .about-me_content {
+        @media only screen and (max-width: 919px) {
+            p {
+                text-align: justify;
+            }
+
+            .about-me_description-right {
+                p {
+                    text-align: justify;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 829px) {
+            .about-me_description-left {
+                p {
+                    width: 100%;
+                }
+            }
+
+            .about-me_description-right {
+                p {
+                    width: 100%;
+                }
+            }
+        }
     }
 }

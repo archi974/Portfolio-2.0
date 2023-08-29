@@ -2,13 +2,14 @@ import React, { useEffect } from 'react';
 import other from "../fixture/other.json";
 
 export default function AboutMe({ language }) {
+    const frenchBloc = language === "fr" ? "frenchBloc" : ""; 
 
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
 
     return (
-        <article className="bloc-about-me">
+        <article className={`bloc-about-me ${frenchBloc}`}>
             <h1>{other[language].titleAboutMe}</h1>
             <div className="about-me_img">
                 <img src={other.photoAboutMe.src} alt={other.photoAboutMe.alt} />
