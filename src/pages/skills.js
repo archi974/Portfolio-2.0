@@ -10,7 +10,7 @@ export default function Skills({ language }) {
 
     return (
         <article className="bloc-skills">
-            <h1>Skills</h1>
+            <h1>{skills[language].titlePage}</h1>
             <LogoCarousel />
             <div className="skills-section-content">
                 <section className="bloc-skills_section">

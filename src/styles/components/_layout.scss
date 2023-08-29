@@ -1,11 +1,44 @@
 header {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding: 30px;
+
+    .language-toggle {
+        display: flex;
+        padding: 5px;
+        margin-left: 5px;
+        background-color: $red;
+        color: #fff;
+        border-radius: 20px;
+        width: 60px;
+        cursor: pointer;
+
+        .language-button {
+            display: flex;
+            justify-content: center;
+            border: none;
+            font-size: 1rem;
+            font-weight: 900;
+            background-color: #fff;
+            border-radius: 50%;
+            padding: 5px;
+            width: 27.5px;
+            color: $blue;
+        }
+
+    }
+    .button-fr {
+        justify-content: end;
+    }
+    .button-en {
+        justify-content: start;
+    }
 
     .nav-menu {
         font-weight: 700;
         text-decoration: none;
+
         &:hover {
             color: $red;
         }
@@ -19,11 +52,12 @@ footer {
     @media only screen and (max-width: 768px) {
         padding-block: 100px 65px;
     }
-    
+
 
     .footer-logo {
         display: flex;
         justify-content: space-around;
+
         @media only screen and (max-width: 500px) {
             margin-bottom: 20px;
         }
@@ -44,8 +78,10 @@ footer {
                     fill: #fff;
                 }
             }
+
             @media only screen and (max-width: 500px) {
                 padding: 15px;
+
                 .logo-github {
                     height: 35px;
                     width: 35px;
@@ -69,8 +105,10 @@ footer {
                     fill: #fff;
                 }
             }
+
             @media only screen and (max-width: 500px) {
                 padding: 15px;
+
                 .logo-linkedin {
                     height: 35px;
                     width: 35px;

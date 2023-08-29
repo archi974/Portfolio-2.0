@@ -1,6 +1,6 @@
 import { NavLink, useLocation } from "react-router-dom";
 
-const Layout = ({ children, toggleLanguage, language }) => {
+const Layout = ({ children, toggleLanguage, language, styleButton }) => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   const headerStyle = isHomePage ? "headerHome" : "";
@@ -9,12 +9,14 @@ const Layout = ({ children, toggleLanguage, language }) => {
   return (
     <>
       <header className={`header ${headerStyle}`}>
-        <button onClick={toggleLanguage} className="language-toggle">
-          {language}
-        </button>
         <NavLink to="/" className="nav-menu">
           Menu //
         </NavLink>
+        <div onClick={toggleLanguage} className={`language-toggle ${styleButton}`}>
+          <button className="language-button">
+            {language}
+          </button>
+        </div>
       </header>
       <main className="main">{children}</main>
       <footer className={`footer ${footerStyle}`}>
