@@ -4,6 +4,15 @@ header {
     align-items: center;
     padding: 30px;
 
+    .nav-menu {
+        font-weight: 700;
+        text-decoration: none;
+
+        &:hover {
+            color: $red;
+        }
+    }
+
     .language-toggle {
         display: flex;
         margin-left: 5px;
@@ -42,15 +51,6 @@ header {
                 width: 27.5px;
                 color: $blue;
             }
-        }
-    }
-
-    .nav-menu {
-        font-weight: 700;
-        text-decoration: none;
-
-        &:hover {
-            color: $red;
         }
     }
 
