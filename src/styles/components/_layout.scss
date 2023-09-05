@@ -6,33 +6,43 @@ header {
 
     .language-toggle {
         display: flex;
-        padding: 5px;
         margin-left: 5px;
         background-color: $red;
         color: #fff;
         border-radius: 20px;
-        width: 60px;
+        width: 65px;
+        padding-right: 5px;
         cursor: pointer;
 
-        .language-button {
-            display: flex;
-            justify-content: center;
-            border: none;
-            font-size: 1rem;
-            font-weight: 900;
-            background-color: #fff;
-            border-radius: 50%;
-            padding: 5px;
-            width: 27.5px;
-            color: $blue;
+        &.button-fr {
+            .animate-translate {
+                transform: translateX(0);
+            }
         }
-
-    }
-    .button-fr {
-        justify-content: end;
-    }
-    .button-en {
-        justify-content: start;
+        
+        &.button-en {
+            .animate-translate {
+                transform: translateX(100%);
+            }
+        }
+        
+        .animate-translate {
+            transition: transform .7s ease;
+            margin: 5px;
+            
+            .language-button {
+                display: flex;
+                justify-content: center;
+                border: none;
+                font-size: 1rem;
+                font-weight: 900;
+                background-color: #fff;
+                border-radius: 50%;
+                padding: 5px;
+                width: 27.5px;
+                color: $blue;
+            }
+        }
     }
 
     .nav-menu {

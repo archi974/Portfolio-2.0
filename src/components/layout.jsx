@@ -13,9 +13,11 @@ const Layout = ({ children, toggleLanguage, language, styleButton }) => {
           Menu //
         </NavLink>
         <div onClick={toggleLanguage} className={`language-toggle ${styleButton}`}>
-          <button className="language-button">
-            {language}
-          </button>
+          <div className={`animate-translate`}>
+            <button className="language-button">
+              {language}
+            </button>
+          </div>
         </div>
       </header>
       <main className="main">{children}</main>
