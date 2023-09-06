@@ -22,6 +22,7 @@ Ce projet a pour but de préparer au mieux votre recherche d’emploi de dévelo
 
 #### Modification prévu :
 
+- Rendre le carouselle plus design
 - Amélioration de l'animation (parallax)
 - Ajout de TypeScript
 
