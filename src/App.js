@@ -20,10 +20,11 @@ function App() {
     setLanguage(language === 'fr' ? 'en' : 'fr');
   };
   const languageButtonStyle = language === 'fr' ? 'button-fr' : 'button-en';
+  const languageButtonText = language === 'fr' ? 'en' : 'fr';
 
   return (
     <Router>
-      <Layout language={language} toggleLanguage={toggleLanguage} styleButton={languageButtonStyle}>
+      <Layout language={languageButtonText} toggleLanguage={toggleLanguage} styleButton={languageButtonStyle}>
         <Routes>
           <Route path="/" exact element={<Home language={language} />} />
           <Route path="/project" exact element={<Projects language={language} />} />
