@@ -72,24 +72,32 @@ footer {
     .footer-logo {
         display: flex;
         justify-content: space-around;
+        align-items: flex-end;
+        height: 175px;
+
+        .footer-logo-cv {
+            display: flex;
+            align-items: flex-start;
+            height: 100%;
+        }
 
         @media only screen and (max-width: 500px) {
             margin-bottom: 20px;
         }
 
-        .logo-github-bloc {
+        .logo-bloc {
             background-color: #fff;
             padding: 25px;
             border-radius: 50%;
 
-            .logo-github {
+            .logo {
                 fill: $blue;
             }
 
             &:hover {
                 background-color: $gradientRed;
 
-                .logo-github {
+                .logo {
                     fill: #fff;
                 }
             }
@@ -97,7 +105,7 @@ footer {
             @media only screen and (max-width: 500px) {
                 padding: 15px;
 
-                .logo-github {
+                .logo {
                     height: 35px;
                     width: 35px;
                 }
