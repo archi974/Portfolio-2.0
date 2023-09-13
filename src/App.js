@@ -14,6 +14,7 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem('language', language);
+    document.querySelector('html').lang = language;
   }, [language]);
 
   const toggleLanguage = () => {

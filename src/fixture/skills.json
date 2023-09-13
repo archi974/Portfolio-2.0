@@ -61,6 +61,12 @@
         "titleAcademic": "Academic",
         "professional": [
             {
+                "name": "Web developer",
+                "places": "Openclassroom - Paris 2023",
+                "description": "Objective: learn languages HTML, Css, Sass, JavaScript, MongoDB, Express.js, React.js, Node.js",
+                "other": "I completed 7 projects to update my skills"
+            },
+            {
                 "name": "Educational Assistant",
                 "places": "ISG / Epitech - Kremlin-Bicêtre 2021",
                 "description": "Assistance in Learning HTML/JQuery Code",
@@ -148,6 +154,12 @@
         "titleProfessional": "Professionnelle",
         "titleAcademic": "Académique",
         "professional": [
+            {
+                "name": "Développeur web",
+                "places": "Openclassroom - Paris 2023",
+                "description": "Objectif: apprendre les langages HTML, Css, Sass, JavaScript, MongoDB, Express.js, React.js, Node.js",
+                "other": "J'ai réalisé 7 projets pour mettre à jour mes compétences"
+            },
             {
                 "name": "Assistant pédagogique",
                 "places": "ISG / Epitech - Kremlin-Bicêtre 2021",
