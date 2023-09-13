@@ -16,6 +16,8 @@ export default function Skills({ language }) {
             <div className="skills-section-content">
                 <section className="bloc-skills_section">
                     <h2 className="skills-professional">{skills[language].titleProfessional}</h2>
+                    <div className="nail-top left"></div>
+                    <div className="nail-top right"></div>
                     {
                         skills[language].professional.map((professionalItem, i) => (
                             <section className="professional-bloc" key={i}>
@@ -28,9 +30,14 @@ export default function Skills({ language }) {
                             </section>
                         ))
                     }
+                    <div className="nail-bottom left"></div>
+                    <div className="nail-bottom right"></div>
+
                 </section>
                 <section className="bloc-skills_section">
                     <h2 className="skills-academic">{skills[language].titleAcademic}</h2>
+                    <div className="nail-top left"></div>
+                    <div className="nail-top right"></div>
                     {
                         skills[language].academic.map((academicItem, i) => (
                             <section className="academic-bloc" key={i}>
@@ -43,6 +50,8 @@ export default function Skills({ language }) {
                             </section>
                         ))
                     }
+                    <div className="nail-bottom left"></div>
+                    <div className="nail-bottom right"></div>
                 </section>
             </div>
         </article>

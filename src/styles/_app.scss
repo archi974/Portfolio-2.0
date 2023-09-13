@@ -29,6 +29,8 @@ main {
     width: 100%;
 }
 
+/* MIXIN */
+
 @mixin select-text {
     &::selection {
         color: $red;
@@ -43,16 +45,17 @@ main {
     display: flex;
     justify-content: center;
     @include select-text;
+
     @media only screen and (max-width: 1184px) {
-        font-size:$font-size-medium;
+        font-size: $font-size-medium;
     }
-    
+
     @media only screen and (max-width: 845px) {
-        font-size:$font-size-small;
+        font-size: $font-size-small;
     }
-    
+
     @media only screen and (max-width: 430px) {
-        font-size:$font-size-xs;
+        font-size: $font-size-xs;
     }
 
     &:after {
@@ -75,19 +78,24 @@ main {
         &:last-child {
             padding-bottom: 0;
         }
+
         @media only screen and (max-width: 1184px) {
             width: 500px;
         }
+
         @media only screen and (max-width: 1104px) {
             width: 450px;
         }
+
         @media only screen and (max-width: 740px) {
             width: 350px;
             text-align: justify;
         }
+
         @media only screen and (max-width: 660px) {
             width: 100%;
         }
+
         @media only screen and (max-width: 510px) {
             font-size: .75rem;
         }
@@ -125,4 +133,12 @@ main {
             }
         }
     }
+}
+
+@mixin nail {
+    height: 15px;
+    width: 15px;
+    background-color: lightgray;
+    border-radius: 50%;
+    position: absolute;
 }

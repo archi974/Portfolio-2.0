@@ -16,11 +16,30 @@
             flex-direction: column;
             text-align: center;
             background-color: $blue;
-            border-radius: 10px;
+            border-radius: 15px;
             padding: 30px;
             height: fit-content;
             margin: 50px;
             width: 530px;
+            position: relative;
+
+            .nail-top {
+                @include nail;
+                top: 10px;
+            }
+
+            .nail-bottom {
+                @include nail;
+                bottom: 10px;
+            }
+
+            .left {
+                left: 10px;
+            }
+
+            .right {
+                right: 10px;
+            }
 
             .skills-professional,
             .skills-academic {
@@ -50,6 +69,7 @@
                     li {
                         color: #fff;
                         overflow-wrap: break-word;
+
                         @media only screen and (max-width: 425px) {
                             font-size: .75rem;
                         }
@@ -91,11 +111,13 @@
         @media only screen and (max-width: 1400px) {
             font-size: $font-size-medium;
         }
+
         @media only screen and (max-width: 875px) {
             font-size: $font-size-small;
         }
+
         @media only screen and (max-width: 475px) {
-            font-size:$font-size-xs;
+            font-size: $font-size-xs;
         }
     }
 }
