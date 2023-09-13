@@ -9,6 +9,7 @@
         margin-top: 500px;
         justify-content: center;
         flex-wrap: wrap;
+        align-items: center;
 
         .bloc-skills_section {
             display: flex;
@@ -17,7 +18,7 @@
             background-color: $blue;
             border-radius: 10px;
             padding: 30px;
-            height: auto;
+            height: fit-content;
             margin: 50px;
             width: 530px;
 
