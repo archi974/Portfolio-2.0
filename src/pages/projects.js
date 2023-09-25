@@ -41,13 +41,13 @@ export default function Projects({ language }) {
                 <div className="bloc-projects-container">
                     {projectsFixture[language].map((project, i) => (
                         <section
-                            className={`projet ${i % 2 === 0 ? 'left' : 'right'} ${hoveredProjects[project.name] ? 'hovered' : ''
+                            className={`projet-card ${i % 2 === 0 ? 'left' : 'right'} ${hoveredProjects[project.name] ? 'hovered' : ''
                                 }`}
                             key={i}
                         >
                             {hoveredProjects[project.name] ? (
                                 <article
-                                    className="project-description"
+                                    className={`project-description ${hoveredProjects[project.name] ? 'hovered' : ''}`}
                                     onMouseLeave={() => handleDescriptionMouseLeave(project)}
                                     onClick={() => openModal(project)}
                                 >
@@ -64,7 +64,7 @@ export default function Projects({ language }) {
                                 </article>
                             ) : (
                                 <article
-                                    className="project-image"
+                                    className={`project-image ${hoveredProjects[project.name] ? 'hovered' : ''}`}
                                     onMouseEnter={() => handleDescriptionMouseEnter(project)}
                                 >
                                     <img src={project.medias.desktop.imgSrc} alt={project.medias.desktop.imgAlt} srcSet={project.medias.mobile.imgSrc} width={500} height={286} />
