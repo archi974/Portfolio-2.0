@@ -5,7 +5,7 @@ import projectsFixture from '../fixture/projects.json';
 export default function Projects({ language }) {
     const [hoveredProjects, setHoveredProjects] = useState({});
     const [showModal, setShowModal] = useState(false);
-    const [selectedProject, setSelectedProject] = useState(null);
+    // const [selectedProject, setSelectedProject] = useState(null);
 
     const handleDescriptionMouseEnter = (project) => {
         setHoveredProjects((prevHoveredProjects) => ({
@@ -21,10 +21,10 @@ export default function Projects({ language }) {
         }));
     };
 
-    const openModal = (project) => {
-        setShowModal(true);
-        setSelectedProject(project)
-    };
+    // const openModal = (project) => {
+    //     setShowModal(true);
+    //     setSelectedProject(project)
+    // };
 
     const closeModal = () => {
         setShowModal(false);
@@ -49,7 +49,7 @@ export default function Projects({ language }) {
                                 <article
                                     className={`project-description ${hoveredProjects[project.name] ? 'hovered' : ''}`}
                                     onMouseLeave={() => handleDescriptionMouseLeave(project)}
-                                    onClick={() => openModal(project)}
+                                    // onClick={() => openModal(project)}
                                 >
                                     <h2>{project.name}</h2>
                                     <p>{project.description}</p>
@@ -77,7 +77,7 @@ export default function Projects({ language }) {
             <ProjectModal
                 showModal={showModal}
                 closeModal={closeModal}
-                project={selectedProject}
+                // project={selectedProject}
             />
         </>
     )
