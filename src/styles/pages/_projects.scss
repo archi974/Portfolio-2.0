@@ -53,6 +53,7 @@
                 .project-date {
                     display: flex;
                     justify-content: flex-end;
+                    margin-bottom: 20px;
                 }
 
                 h2 {
@@ -60,6 +61,7 @@
                     color: $blue;
                     font-size: 2rem;
                     text-align: center;
+                    margin-bottom: 40px;
 
                     @media only screen and (max-width: 1184px) {
                         font-size: 1.75rem;
@@ -78,13 +80,15 @@
                     color: $blue;
                     margin-bottom: 5px;
                     font-size: 1rem;
+                    margin-bottom: 10px;
                 }
 
-                p {
+                .project-description-text {
                     overflow-wrap: break-word;
                     color: $blue;
                     font-size: 0.75rem;
                     text-align: justify;
+                    margin-bottom: 10px;
 
                     @media only screen and (max-width: 380px) {
                         font-size: .65rem;
@@ -93,7 +97,6 @@
 
                 .project-logo {
                     display: flex;
-                    padding-inline: 10px;
 
                     .project-logo-svg {
                         display: flex;
@@ -119,6 +122,7 @@
                 justify-content: flex-end;
                 align-items: flex-end;
                 position: relative;
+                cursor: pointer;
 
                 .btn-play-modal {
                     display: flex;

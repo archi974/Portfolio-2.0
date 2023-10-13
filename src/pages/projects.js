@@ -32,15 +32,17 @@ export default function Projects({ language }) {
                             <article
                                 className={`project-description`}
                             >
-                                <p className='project-date'>{project.year}</p>
-                                <h2>{project.name}</h2>
-                                <h3>Description :</h3>
-                                <p>{project.description}</p>
-                                <h3>{projectsFixture[language][0].languageTitle} :</h3>
-                                <div className="project-logo">
-                                    {project.language.map((logo, index) => (
-                                        <div key={index} className="project-logo-svg" dangerouslySetInnerHTML={{ __html: logo }} />
-                                    ))}
+                                <div>
+                                    <p className='project-date'>{project.year}</p>
+                                    <h2>{project.name}</h2>
+                                    <h3>Description :</h3>
+                                    <p className='project-description-text'>{project.description}</p>
+                                    <h3>{projectsFixture[language][0].languageTitle} :</h3>
+                                    <div className="project-logo">
+                                        {project.language.map((logo, index) => (
+                                            <div key={index} className="project-logo-svg" dangerouslySetInnerHTML={{ __html: logo }} />
+                                        ))}
+                                    </div>
                                 </div>
                                 <div className="gitHub-bloc">
                                     <a href={project?.link} className="gitHub-link" target="_blank" rel="noreferrer">
@@ -53,8 +55,9 @@ export default function Projects({ language }) {
                             </article>
                             <article
                                 className={`project-image`}
+                                onClick={() => openModal(project)}
                             >
-                                <button className="btn-play-modal" onClick={() => openModal(project)}>
+                                <button className="btn-play-modal">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
                                         <path d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82z" />
                                     </svg>
