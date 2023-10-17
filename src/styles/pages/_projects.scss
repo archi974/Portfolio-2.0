@@ -29,6 +29,8 @@
             justify-content: center;
             width: 1000px;
             height: 450px;
+            position: relative;
+            transition: transform 2s ease;
 
             &:last-child {
                 margin-bottom: 0;
@@ -160,6 +162,10 @@
                 }
             }
 
+        }
+
+        .project-card-hidden {
+            transform: translateY(100%);
         }
     }
 }
