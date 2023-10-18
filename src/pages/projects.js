@@ -36,7 +36,7 @@ export default function Projects({ language }) {
                 <div className="bloc-projects-container">
                     {projectsFixture[language].map((project, i) => (
                         <section
-                            className={`projet-card ${i === 0 && scrollPosition > 500 ? "project-card-hidden" : ""}`}
+                            className={`project-card ${i === 0 && scrollPosition > 500 ? "project-card-hidden" : ""}`}
                             key={i}
                         >
                             <article

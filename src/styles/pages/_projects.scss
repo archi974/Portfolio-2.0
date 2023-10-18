@@ -23,14 +23,20 @@
         flex-direction: column;
         align-items: center;
 
-        .projet-card {
+        .project-card {
             display: flex;
             margin-bottom: 50px;
             justify-content: center;
-            width: 1000px;
             height: 450px;
+            width: 100%;
             position: relative;
             transition: transform 2s ease;
+            @media only screen and (max-width: 1023px) {
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 80px;
+                height: auto;
+            }
 
             &:last-child {
                 margin-bottom: 0;
@@ -46,6 +52,11 @@
                 flex-direction: column;
                 justify-content: space-between;
                 box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+
+                @media only screen and (max-width: 1023px) {
+                    border-radius: 5px 5px 0 0;
+                    width: 100%;
+                }
 
                 &.hovered {
                     transform: rotateY(180deg) scaleX(-1);
@@ -100,8 +111,16 @@
                 .project-logo {
                     display: flex;
 
+                    @media only screen and (max-width: 1023px) {
+                        display: block;
+                    }
+
                     .project-logo-svg {
                         display: flex;
+
+                        @media only screen and (max-width: 1023px) {
+                            margin-bottom: 10px;
+                        }
 
                         svg {
                             height: 25px;
@@ -125,6 +144,11 @@
                 align-items: flex-end;
                 position: relative;
                 cursor: pointer;
+
+                @media only screen and (max-width: 1023px) {
+                    width: 100%;
+                    border-radius: 0 0 5px 5px;
+                }
 
                 .btn-play-modal {
                     display: flex;
@@ -159,13 +183,21 @@
                     width: 90%;
                     height: 90%;
                     object-fit: cover;
+
+                    @media only screen and (max-width: 1023px) {
+                        border-radius: 5px 0 5px 0;
+                    }
                 }
             }
 
         }
 
         .project-card-hidden {
-            transform: translateY(100%);
+            transform: translateY(104%);
+            
+            // @media only screen and (max-width: 1023px) {
+            //     transform: translateY(110%);
+            // }
         }
     }
 }
