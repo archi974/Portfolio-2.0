@@ -31,6 +31,7 @@
             width: 100%;
             position: relative;
             transition: transform 2s ease;
+
             @media only screen and (max-width: 1023px) {
                 flex-direction: column;
                 align-items: center;
@@ -165,6 +166,16 @@
                     background-color: #fff;
                     box-shadow: 0px 10px 20px rgba(0, 0, 0, .5);
 
+                    @media only screen and (max-width: 720px) {
+                        width: 45px;
+                        height: 45px;
+                    }
+
+                    @media only screen and (max-width: 380px) {
+                        width: 35px;
+                        height: 35px;
+                    }
+
                     &:hover {
                         background-color: $gradientRed;
 
@@ -175,6 +186,16 @@
 
                     svg {
                         fill: $red;
+
+                        @media only screen and (max-width: 720px) {
+                            width: 25px;
+                            height: 25px;
+                        }
+
+                        @media only screen and (max-width: 380px) {
+                            width: 15px;
+                            height: 15px;
+                        }
                     }
                 }
 
@@ -194,10 +215,10 @@
 
         .project-card-hidden {
             transform: translateY(104%);
-            
-            // @media only screen and (max-width: 1023px) {
-            //     transform: translateY(110%);
-            // }
+
+            @media only screen and (max-width: 1023px) {
+                transform: translateY(0);
+            }
         }
     }
 }

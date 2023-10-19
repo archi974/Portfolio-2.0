@@ -7,7 +7,7 @@ export default function Projects({ language }) {
     const [selectedProject, setSelectedProject] = useState(null);
     const [scrollPosition, setScrollPosition] = useState(0);
 
-    // const scrollPoints = projectsFixture[language].map((_, index) => index * 450);
+    const breakPoints = projectsFixture[language].map((_, index) => (index + 1) * 500);
 
     const openModal = (project) => {
         setShowModal(true);
@@ -36,7 +36,7 @@ export default function Projects({ language }) {
                 <div className="bloc-projects-container">
                     {projectsFixture[language].map((project, i) => (
                         <section
-                            className={`project-card ${i === 0 && scrollPosition > 500 ? "project-card-hidden" : ""}`}
+                            className={`project-card ${scrollPosition > breakPoints[i] ? "project-card-hidden" : ""}`}
                             key={i}
                         >
                             <article
