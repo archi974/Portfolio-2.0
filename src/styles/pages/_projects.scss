@@ -131,6 +131,9 @@
 
                 .gitHub-bloc {
                     @include gitHubStyle($red, $blue);
+                    @media only screen and (max-width: 1023px) {
+                        margin-bottom: 15px;
+                    }
                 }
             }
 
@@ -211,14 +214,6 @@
                 }
             }
 
-        }
-
-        .project-card-hidden {
-            transform: translateY(104%);
-
-            @media only screen and (max-width: 1023px) {
-                transform: translateY(0);
-            }
         }
     }
 }
