@@ -36,9 +36,9 @@
         }
 
         .modal-content-video {
-            margin: 20px 45px 45px 45px;
             display: flex;
             justify-content: center;
+            height: 100%;
 
             .modal-video {
                 border: none;
@@ -46,11 +46,11 @@
                 height: 700px;
 
                 @media only screen and (max-width: 768px) {
-                    height: 200px;
+                    height: 400px;
                 }
 
                 @media only screen and (max-width: 545px) {
-                    height: 146px;
+                    height: 200px;
                 }
             }
         }
