@@ -7,11 +7,11 @@ const containerStyle = {
 };
 
 const center = {
-    lat: 48.8071174,
-    lng: 2.4783609
+    lat: 48.806972051465536,
+    lng: 2.4809297328105595
 };
 
-const defaultZoom = 15;
+const defaultZoom = 13;
 
 function GoogleMapComponent() {
     const { isLoaded } = useJsApiLoader({
@@ -23,9 +23,7 @@ function GoogleMapComponent() {
     const [map, setMap] = useState(null)
 
     const onLoad = useCallback(function callback(map) {
-
-        const bounds = new window.google.maps.LatLngBounds(center);
-        map.fitBounds(bounds);
+        map.setZoom(defaultZoom)
 
         setMap(map)
     }, [])
@@ -44,7 +42,7 @@ function GoogleMapComponent() {
                 onUnmount={onUnmount}
             >
                 <Marker
-                    position={{ lat: 48.8071174, lng: 2.4783609 }}
+                    position={{ lat: center.lat, lng: center.lng }}
                 />
             </GoogleMap>
         </div>
