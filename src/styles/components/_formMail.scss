@@ -64,6 +64,9 @@
 
         .textAreaMail {
             @include formStyle;
+            resize: vertical;
+            border-end-end-radius: 0;
+            min-height: 280px;
         }
 
         .form-recaptcha {
@@ -76,7 +79,8 @@
             width: 150px;
             cursor: pointer;
             color: $blue;
-            &:hover{
+
+            &:hover {
                 background-color: #dfe0e9;
                 color: $red;
             }

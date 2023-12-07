@@ -2,6 +2,7 @@
     "en": [
         {
             "title": "Project",
+            "ariaLabelButton":"Play Video",
             "name": "Mon vieux grimoire",
             "link": "https://github.com/archi974/Vieux-Grimoire",
             "team": "Project completed individually",
@@ -228,6 +229,7 @@
     "fr": [
         {
             "title": "Projet",
+            "ariaLabelButton":"Lire la Vidéo",
             "name": "Mon vieux grimoire",
             "link": "https://github.com/archi974/Vieux-Grimoire",
             "team": "Projet réalisé seul",
