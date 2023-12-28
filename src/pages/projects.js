@@ -5,7 +5,10 @@ import projectsFixture from '../fixture/projects.json';
 export default function Projects({ language }) {
     const [showModal, setShowModal] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
-    console.log(projectsFixture[language][0].ariaLabelButton);
+    // eslint-disable-next-line
+    const [scrollY, setScrollY] = useState(0);
+    const [springs, setSprings] = useState([]);
+
     const openModal = (project) => {
         setShowModal(true);
         setSelectedProject(project)
@@ -16,8 +19,16 @@ export default function Projects({ language }) {
     };
 
     useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [])
+        const handleScroll = () => {
+            setScrollY(window.scrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <>
@@ -28,6 +39,21 @@ export default function Projects({ language }) {
                         <section
                             className="project-card"
                             key={i}
+                            style={springs[i]}
+                            onMouseEnter={() => {
+                                setSprings((prevSprings) => {
+                                    const updatedSprings = [...prevSprings];
+                                    updatedSprings[i] = { transform: 'translateY(-30px)' };
+                                    return updatedSprings;
+                                });
+                            }}
+                            onMouseLeave={() => {
+                                setSprings((prevSprings) => {
+                                    const updatedSprings = [...prevSprings];
+                                    updatedSprings[i] = { transform: 'translateY(0px)' };
+                                    return updatedSprings;
+                                });
+                            }}
                         >
                             <article
                                 className={`project-description`}
