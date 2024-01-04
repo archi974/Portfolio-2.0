@@ -43,7 +43,7 @@
 
             .skills-professional,
             .skills-academic {
-                color: #fff;
+                color: $color1;
                 font-size: 2rem;
 
             }
@@ -67,7 +67,7 @@
                     list-style: none;
 
                     li {
-                        color: #fff;
+                        color: $color1;
                         overflow-wrap: break-word;
 
                         @media only screen and (max-width: 425px) {
@@ -95,7 +95,7 @@
                 padding: 100px 30px 30px 30px;
 
                 &:last-child {
-                    background-color: #fff;
+                    background-color: $color1;
                 }
             }
         }

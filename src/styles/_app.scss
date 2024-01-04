@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+// @import './color;'
 
 /* COLOR */
 $red: #D6372E;
 $blue: #253068;
+$color1: #fff;
 $gradientRed: rgb(214, 55, 46, 0.5);
 
 /* TITLE SIZE */
@@ -29,116 +31,4 @@ main {
     width: 100%;
 }
 
-/* MIXIN */
-
-@mixin select-text {
-    &::selection {
-        color: $red;
-        background-color: transparent;
-    }
-}
-
-@mixin custom-style-title($font-size) {
-    font-size: $font-size;
-    font-weight: 700;
-    color: $blue;
-    display: flex;
-    justify-content: center;
-    @include select-text;
-
-    @media only screen and (max-width: 1184px) {
-        font-size: $font-size-medium;
-    }
-
-    @media only screen and (max-width: 845px) {
-        font-size: $font-size-small;
-    }
-
-    @media only screen and (max-width: 430px) {
-        font-size: $font-size-xs;
-    }
-
-    &:after {
-        content: str-slice(".", -1);
-        color: $red;
-    }
-}
-
-@mixin aboutMeText {
-    color: $blue;
-    display: flex;
-    flex-direction: column;
-
-    p {
-        width: 650px;
-        padding-bottom: 20px;
-        font-size: 1rem;
-        font-weight: 700;
-
-        &:last-child {
-            padding-bottom: 0;
-        }
-
-        @media only screen and (max-width: 1184px) {
-            width: 500px;
-        }
-
-        @media only screen and (max-width: 1104px) {
-            width: 450px;
-        }
-
-        @media only screen and (max-width: 740px) {
-            width: 350px;
-            text-align: justify;
-        }
-
-        @media only screen and (max-width: 660px) {
-            width: 100%;
-        }
-
-        @media only screen and (max-width: 510px) {
-            font-size: .75rem;
-        }
-    }
-}
-
-@mixin gitHubStyle($color, $hoverColor) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .gitHub-link {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-
-        p {
-            font-size: 1rem;
-            font-weight: 900;
-            color: $color;
-            padding-right: 5px;
-        }
-
-        svg {
-            fill: $color;
-        }
-
-        &:hover {
-            p {
-                color: $hoverColor;
-            }
-
-            svg {
-                fill: $hoverColor;
-            }
-        }
-    }
-}
-
-@mixin nail {
-    height: 15px;
-    width: 15px;
-    background-color: lightgray;
-    border-radius: 50%;
-    position: absolute;
-}
+@import './mixin';

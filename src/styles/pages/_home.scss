@@ -1,97 +1,80 @@
-.headerHome {
-    z-index: 1;
-    position: absolute;
-    right: 0;
+.bloc-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &:before {
+        content: "";
+        background-color: $blue;
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    h1 {
+        color: $red;
+        font-weight: 700;
+        mix-blend-mode: exclusion;
+        margin-block: 75px;
+        font-size: 16px;
+
+        &:hover {
+            color: $red;
+        }
+
+        &::selection {
+            background-color: transparent;
+        }
+
+        @media only screen and (max-width: 425px) {
+            font-size: 13px;
+        }
+    }
 
     a {
-        display: none;
-    }
-}
+        text-decoration: none;
+        padding-bottom: 75px;
+        font-size: 160px;
+        font-weight: 900;
+        color: #DFE0E9;
+        font-family: 'Montserrat', 'Open Sans', sans-serif;
+        mix-blend-mode: luminosity;
+        @include select-text;
 
-.bloc-home {
-    .home-menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @media only screen and (max-width: 1305px) {
+            font-size: 120px;
+        }
 
-        p {
+        @media only screen and (max-width: 835px) {
+            font-size: 75px;
+        }
+
+        @media only screen and (max-width: 425px) {
+            font-size: 50px;
+        }
+
+        &:hover {
             color: $red;
-            font-weight: 700;
-            mix-blend-mode: exclusion;
-            margin-block: 75px;
-
-            &:hover {
-                color: $red;
-            }
-
-            &::selection {
-                background-color: transparent;
-            }
         }
 
-        a {
-            text-decoration: none;
-            padding-bottom: 75px;
-            font-size: 160px;
-            font-weight: 900;
-            color: #DFE0E9;
-            font-family: 'Montserrat', 'Open Sans', sans-serif;
-            mix-blend-mode: luminosity;
-            @include select-text;
-
-            @media only screen and (max-width: 1305px) {
-                font-size: 120px;
-            }
-
-            @media only screen and (max-width: 835px) {
-                font-size: 75px;
-            }
-
-            @media only screen and (max-width: 425px) {
-                font-size: 50px;
-            }
-
-            &:hover {
-                color: $red;
-            }
-
-            &:last-child {
-                padding-bottom: 0;
-            }
-
-            &::selection {
-                color: $red;
-            }
+        &:last-child {
+            padding-bottom: 0;
         }
 
-        &:before {
-            content: "";
-            background-color: #253068;
-            height: 1300px;
-            width: 50vw;
-            position: absolute;
-            right: 0;
-            top: 0;
-
-            @media only screen and (max-width: 1305px) {
-                height: 1100px;
-            }
-
-            @media only screen and (max-width: 835px) {
-                height: 900px;
-            }
-
-            @media only screen and (max-width: 425px) {
-                height: 775px;
-            }
+        &::selection {
+            color: $red;
         }
+
     }
 
     .copyright-home {
-        display: flex;
-        transform: rotate(270deg);
         position: absolute;
-        bottom: 80px;
+        left: 0;
+        transform: rotate(270deg);
+        bottom: 50%;
         font-weight: 900;
         font-size: 13px;
         color: $blue;
@@ -100,8 +83,7 @@
             position: relative;
             transform: rotate(0deg);
             bottom: 0;
-            margin-top: 50px;
-            justify-content: center;
+            margin-block: 50px;
             mix-blend-mode: exclusion;
             color: $red;
         }

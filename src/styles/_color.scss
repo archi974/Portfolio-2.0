@@ -1,0 +1,31 @@
+/* RED & BLUE THEME */
+
+/* COLOR */
+$color3: #D6372E;
+$color2: #253068;
+$color1: #fff;
+$gradientRed: rgb(214, 55, 46, 0.5);
+// $gradientColor3: rgba(red($color3), green($color3), blue($color3), $opacity);
+$lightBlue: lighten($color2, 60%);
+
+@mixin setColors($c1, $c2, $c3) {
+  $color1: $c1;
+  $color2: $c2;
+  $color3: $c3;
+}
+
+.yellowMode {
+  @include setColors(#fff, #0d1434, #ffde59);
+}
+
+.blueMode {
+    $blue: #253068;
+    $color1: #fff;
+}
+// $color3: #D6372E;
+
+// $opacity: 0.5;
+
+
+// $blue: #0d1434;
+// $red: #ffde59;

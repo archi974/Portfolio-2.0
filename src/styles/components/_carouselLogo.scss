@@ -19,7 +19,7 @@
             cursor: pointer;
 
             svg {
-                fill: #fff;
+                fill: $color1;
 
                 @media only screen and (max-width: 620px) {
                     width: 50px;
@@ -35,7 +35,7 @@
             margin-bottom: 20px;
 
             h2 {
-                color: #fff;
+                color: $color1;
                 font-size: 2rem;
             }
         }
