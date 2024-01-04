@@ -110,4 +110,8 @@
     background-color: lightgray;
     border-radius: 50%;
     position: absolute;
+
+    @media only screen and (max-width: 620px) {
+        display: none;
+    }
 }
