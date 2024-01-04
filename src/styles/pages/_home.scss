@@ -1,3 +1,11 @@
+.headerHome {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    a {
+        display: none;
+    }
+}
 .bloc-home {
     display: flex;
     flex-direction: column;
@@ -6,23 +14,24 @@
 
     &:before {
         content: "";
-        background-color: $blue;
+        background-color: $color2;
         height: 100%;
         width: 50%;
         position: absolute;
         right: 0;
         top: 0;
+        z-index: -1;
     }
 
     h1 {
-        color: $red;
+        color: $color3;
         font-weight: 700;
-        mix-blend-mode: exclusion;
+        // mix-blend-mode: exclusion;
         margin-block: 75px;
         font-size: 16px;
 
         &:hover {
-            color: $red;
+            color: $color3;
         }
 
         &::selection {
@@ -41,7 +50,7 @@
         font-weight: 900;
         color: #DFE0E9;
         font-family: 'Montserrat', 'Open Sans', sans-serif;
-        mix-blend-mode: luminosity;
+        // mix-blend-mode: luminosity;
         @include select-text;
 
         @media only screen and (max-width: 1305px) {
@@ -57,7 +66,7 @@
         }
 
         &:hover {
-            color: $red;
+            color: $color3;
         }
 
         &:last-child {
@@ -65,7 +74,7 @@
         }
 
         &::selection {
-            color: $red;
+            color: $color3;
         }
 
     }
@@ -77,7 +86,7 @@
         bottom: 50%;
         font-weight: 900;
         font-size: 13px;
-        color: $blue;
+        color: $color2;
 
         @media only screen and (max-width: 768px) {
             position: relative;
@@ -85,7 +94,7 @@
             bottom: 0;
             margin-block: 50px;
             mix-blend-mode: exclusion;
-            color: $red;
+            color: $color3;
         }
     }
 }

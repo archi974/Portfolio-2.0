@@ -10,7 +10,7 @@
 }
 
 .bloc-form {
-    background-color: $blue;
+    background-color: $color2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,11 +78,11 @@
             border-radius: 25px;
             width: 150px;
             cursor: pointer;
-            color: $blue;
+            color: $color2;
 
             &:hover {
                 background-color: #dfe0e9;
-                color: $red;
+                color: $color3;
             }
         }
     }

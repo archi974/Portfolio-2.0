@@ -7,16 +7,17 @@ header {
     .nav-menu {
         font-weight: 700;
         text-decoration: none;
+        color: $color2;
 
         &:hover {
-            color: $red;
+            color: $color3;
         }
     }
 
     .language-toggle {
         display: flex;
         margin-left: 5px;
-        background-color: $red;
+        background-color: $color3;
         color: $color1;
         border-radius: 20px;
         width: 65px;
@@ -49,7 +50,7 @@ header {
                 border-radius: 50%;
                 padding: 5px;
                 width: 27.5px;
-                color: $blue;
+                color: $color2;
                 cursor: pointer;
             }
         }
@@ -61,7 +62,7 @@ header {
 }
 
 footer {
-    background-color: $blue;
+    background-color: $color2;
     padding-block: 160px 65px;
 
     @media only screen and (max-width: 768px) {
@@ -91,7 +92,7 @@ footer {
             border-radius: 50%;
 
             .logo {
-                fill: $blue;
+                fill: $color2;
             }
 
             &:hover {
@@ -118,7 +119,7 @@ footer {
             border-radius: 50%;
 
             .logo-linkedin {
-                fill: $blue;
+                fill: $color2;
             }
 
             &:hover {
