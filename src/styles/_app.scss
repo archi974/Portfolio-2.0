@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import './mixin';
-// @import './color;'
-
-/* COLOR */
-$color1: #fff;
-$color2: #253068;
-$color3: #D6372E;
-$gradientRed: rgb(214, 55, 46, 0.5);
+@import './color';
 
 /* TITLE SIZE */
 $font-size-large: 250px;
@@ -26,6 +20,10 @@ $font-size-xs: 50px;
     flex-direction: column;
     height: 100vh;
     justify-content: flex-start;
+}
+
+body {
+    background-color: $color1;
 }
 
 main {
