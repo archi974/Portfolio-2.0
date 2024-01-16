@@ -20,7 +20,7 @@ export default function Contact({ language }) {
                 </section>
                 <section className="contact-section">
                     <h2>CONTACT</h2>
-                    <p>vincent.k.97480@gmail.com</p>
+                    <p>vincent.kbidi.974@gmail.com</p>
                 </section>
             </div>
             <GoogleMapComponent />
