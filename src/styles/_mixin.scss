@@ -2,7 +2,7 @@
 
 @mixin select-text {
     &::selection {
-        color: $color3;
+        color: var(--color3);
         background-color: transparent;
     }
 }
@@ -10,7 +10,7 @@
 @mixin custom-style-title($font-size) {
     font-size: $font-size;
     font-weight: 700;
-    color: $color2;
+    color: var(--color2);
     display: flex;
     justify-content: center;
     @include select-text;
@@ -29,12 +29,12 @@
 
     &:after {
         content: str-slice(".", -1);
-        color: $color3;
+        color: var(--color3);
     }
 }
 
 @mixin aboutMeText {
-    color: $color2;
+    color: var(--color2);
     display: flex;
     flex-direction: column;
 

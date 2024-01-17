@@ -1,57 +1,109 @@
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 30px;
 
-    .nav-menu {
-        font-weight: 700;
-        text-decoration: none;
-        color: $color2;
-
-        &:hover {
-            color: $color3;
-        }
-    }
-
-    .language-toggle {
+    .color-toggle {
+        border: none;
         display: flex;
         margin-left: 5px;
-        background-color: $color3;
-        color: $color1;
+        background-color: var(--color3);
+        color: var(--color1);
         border-radius: 20px;
         width: 65px;
         padding-right: 5px;
         cursor: pointer;
 
-        &.button-fr {
+        &.red-color {
+            // Styles pour l'animation en mode red
             .animate-translate {
-                transform: translateX(0);
+                transform: translateX(0%);
             }
         }
-        
-        &.button-en {
+
+        &.yellow-color {
+            // Styles pour l'animation en mode yellow
             .animate-translate {
                 transform: translateX(100%);
             }
         }
-        
+
         .animate-translate {
             transition: transform .7s ease;
             margin: 5px;
+
             
-            .language-button {
+
+            .color-button {
                 display: flex;
                 justify-content: center;
                 border: none;
                 font-size: 1rem;
                 font-weight: 900;
-                background-color: $color1;
+                background-color: var(--color1);
                 border-radius: 50%;
                 padding: 5px;
                 width: 27.5px;
-                color: $color2;
+                color: var(--color2);
                 cursor: pointer;
+            }
+        }
+    }
+
+    .block-nav-language {
+        display: flex;
+        align-items: center;
+
+        .nav-menu {
+            font-weight: 700;
+            text-decoration: none;
+            color: var(--color2);
+
+            &:hover {
+                color: var(--color3);
+            }
+        }
+
+        .language-toggle {
+            display: flex;
+            margin-left: 5px;
+            background-color: var(--color3);
+            color: var(--color1);
+            border-radius: 20px;
+            width: 65px;
+            padding-right: 5px;
+            cursor: pointer;
+
+            &.button-fr {
+                .animate-translate {
+                    transform: translateX(0);
+                }
+            }
+
+            &.button-en {
+                .animate-translate {
+                    transform: translateX(100%);
+                }
+            }
+
+            .animate-translate {
+                transition: transform .7s ease;
+                margin: 5px;
+
+                .language-button {
+                    display: flex;
+                    justify-content: center;
+                    border: none;
+                    font-size: 1rem;
+                    font-weight: 900;
+                    background-color: var(--color1);
+                    border-radius: 50%;
+                    padding: 5px;
+                    width: 27.5px;
+                    color: var(--color2);
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -62,7 +114,7 @@ header {
 }
 
 footer {
-    background-color: $color2;
+    background-color: var(--color2);
     padding-block: 160px 65px;
 
     @media only screen and (max-width: 768px) {
@@ -87,19 +139,20 @@ footer {
         }
 
         .logo-bloc {
-            background-color: $color1;
+            background-color: var(--color1);
             padding: 25px;
             border-radius: 50%;
+            display: flex;
 
             .logo {
-                fill: $color2;
+                fill: var(--color3);
             }
 
             &:hover {
-                background-color: $gradientColor3;
+                background-color: var(--gradientColor3);
 
                 .logo {
-                    fill: $color1;
+                    fill: var(--color1);
                 }
             }
 
@@ -114,19 +167,19 @@ footer {
         }
 
         .logo-linkedin-bloc {
-            background-color: $color1;
+            background-color: var(--color1);
             padding: 25px;
             border-radius: 50%;
 
             .logo-linkedin {
-                fill: $color2;
+                fill: var(--color2);
             }
 
             &:hover {
-                background-color: $gradientColor3;
+                background-color: var(--gradientColor3);
 
                 .logo-linkedin {
-                    fill: $color1;
+                    fill: var(--color1);
                 }
             }
 
@@ -147,7 +200,7 @@ footer {
         align-items: center;
 
         p {
-            color: $color1;
+            color: var(--color1);
             font-size: 13px;
             font-weight: 900;
         }

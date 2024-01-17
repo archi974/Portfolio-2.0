@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $color2;
+    background-color: var(--color2);
     margin-top: 85px;
     padding-block: 35px;
     position: absolute;
@@ -19,10 +19,10 @@
             cursor: pointer;
 
             svg {
-                fill: $color1;
+                fill: var(--color1);
 
                 &:hover {
-                    fill: $color3;
+                    fill: var(--color3);
                 }
 
                 @media only screen and (max-width: 620px) {
@@ -39,7 +39,7 @@
             margin-bottom: 20px;
 
             h2 {
-                color: $color1;
+                color: var(--color1);
                 font-size: 2rem;
             }
         }

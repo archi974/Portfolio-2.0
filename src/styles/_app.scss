@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import './mixin';
 @import './color';
+@import './mixin';
 
 /* TITLE SIZE */
 $font-size-large: 250px;
@@ -23,7 +23,7 @@ $font-size-xs: 50px;
 }
 
 body {
-    background-color: $color1;
+    background-color: var(--color1);
 }
 
 main {

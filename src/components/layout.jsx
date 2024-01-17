@@ -1,22 +1,34 @@
 import { NavLink, useLocation } from "react-router-dom";
 
-const Layout = ({ children, toggleLanguage, language, styleButton }) => {
+const Layout = ({ children, languageButtonText, toggleLanguage, languageStyleButton, toggleColor, colorStyleButton }) => {
+
   const location = useLocation();
   const isHomePage = location.pathname === "/";
-  const headerStyle = isHomePage ? "headerHome" : "";
-  const footerStyle = isHomePage ? "footerHome" : "";
+  const headerStyle = isHomePage ? "header-home" : "";
+  const footerStyle = isHomePage ? "footer-home" : "";
 
   return (
     <>
       <header className={`header ${headerStyle}`}>
-        <NavLink to="/" className="nav-menu">
-          Menu //
-        </NavLink>
-        <div onClick={toggleLanguage} className={`language-toggle ${styleButton}`}>
+        <div onClick={toggleColor} className={`color-toggle ${colorStyleButton}`}>
           <div className={`animate-translate`}>
-            <button className="language-button">
-              {language}
+            <button className={`color-button`}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 21q-3.75 0-6.375-2.625T3 12q0-3.75 2.625-6.375T12 3q.35 0 .688.025t.662.075q-1.025.725-1.638 1.888T11.1 7.5q0 2.25 1.575 3.825T16.5 12.9q1.375 0 2.525-.613T20.9 10.65q.05.325.075.662T21 12q0 3.75-2.625 6.375T12 21" />
+              </svg>
             </button>
+          </div>
+        </div>
+        <div className="block-nav-language">
+          <NavLink to="/" className="nav-menu">
+            Menu //
+          </NavLink>
+          <div onClick={toggleLanguage} className={`language-toggle ${languageStyleButton}`}>
+            <div className={`animate-translate`}>
+              <button className="language-button">
+                {languageButtonText}
+              </button>
+            </div>
           </div>
         </div>
       </header>
@@ -31,7 +43,7 @@ const Layout = ({ children, toggleLanguage, language, styleButton }) => {
             </div>
           </a>
           <div className="footer-logo-cv">
-            <a href="/Curriculum_Vitae_Vincent_K_BIDI.pdf" target="_blank" rel="noreferrer" aria-label="Curriculum vitae">
+            <a href="/Curriculum_Vitae_Vincent_K_BIDI.pdf" target="_blank" rel="noreferrer" aria-label="Curriculum vitae au format pdf">
               <div className="logo-bloc">
                 <svg className="logo" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 512 512">
                   <path d="M249.18 328.324c-9.788 15.384-19.179 30.434-40.222 45.055c-11.256 7.89-37.164 23.306-73.99 23.306C64.709 396.685 8 345.605 8 255.801c0-78.486 53.345-140.486 128.466-140.486c30.434 0 57.474 10.521 77.387 26.304c18.414 14.65 27.038 29.304 34.563 42.456l-52.58 26.273c-3.762-8.626-8.29-17.649-19.913-27.406c-12.784-10.155-25.54-13.152-36.46-13.152c-42.821 0-65.364 39.825-65.364 84.145c0 58.238 29.7 87.143 65.364 87.143c34.563 0 48.48-24.042 57.474-39.426l52.243 26.673zm184.194-204.75H504l-92.037 265.22h-67.597l-90.904-265.22h70.625l54.843 188.6z" />

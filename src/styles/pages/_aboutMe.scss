@@ -51,23 +51,28 @@
 
         img {
             width: 425px;
-            height: auto;
+            height: 425px;
             border-radius: 50%;
+            object-fit: cover;
 
             @media only screen and (max-width: 1184px) {
                 width: 375px;
+                height: 375px;
             }
 
             @media only screen and (max-width: 919px) {
                 width: 275px;
+                height: 275px
             }
 
             @media only screen and (max-width: 720px) {
                 width: 225px;
+                height: 225px;
             }
 
             @media only screen and (max-width: 510px) {
                 width: 200px;
+                height: 200px;
             }
         }
     }

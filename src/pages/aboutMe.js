@@ -12,7 +12,7 @@ export default function AboutMe({ language }) {
         <article className={`bloc-about-me ${frenchBloc}`}>
             <h1>{other[language].titleAboutMe}</h1>
             <div className="about-me_img">
-                <img src={other.photoAboutMe.src} alt={other.photoAboutMe.alt} />
+                <img src="../images/photo_profile_1470x1470.webp" alt={other.photoAboutMe.alt} />
             </div>
             <div className="about-me_content">
                 <div className="about-me_description-left">

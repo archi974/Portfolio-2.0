@@ -1,7 +1,8 @@
-.headerHome {
+.header-home {
     position: absolute;
     right: 0;
     z-index: 1;
+    width: 100%;
     a {
         display: none;
     }
@@ -14,7 +15,7 @@
 
     &:before {
         content: "";
-        background-color: $color2;
+        background-color: var(--color2);
         height: 100%;
         width: 50%;
         position: absolute;
@@ -24,14 +25,14 @@
     }
 
     h1 {
-        color: $color3;
+        color: var(--color3);
         font-weight: 700;
         // mix-blend-mode: exclusion;
         margin-block: 75px;
         font-size: 16px;
 
         &:hover {
-            color: $color3;
+            color: var(--color3);
         }
 
         &::selection {
@@ -66,7 +67,7 @@
         }
 
         &:hover {
-            color: $color3;
+            color: var(--color3);
         }
 
         &:last-child {
@@ -74,7 +75,7 @@
         }
 
         &::selection {
-            color: $color3;
+            color: var(--color3);
         }
 
     }
@@ -86,7 +87,7 @@
         bottom: 50%;
         font-weight: 900;
         font-size: 13px;
-        color: $color2;
+        color: var(--color2);
 
         @media only screen and (max-width: 768px) {
             position: relative;
@@ -94,11 +95,11 @@
             bottom: 0;
             margin-block: 50px;
             mix-blend-mode: exclusion;
-            color: $color3;
+            color: var(--color3);
         }
     }
 }
 
-.footerHome {
+.footer-home {
     display: none;
 }

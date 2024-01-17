@@ -1,18 +1,20 @@
-/* RED & BLUE THEME */
+// /* COLOR */
 
-/* COLOR */
-$color1: #fff;
-$color2: #253068;
-$color3: #D6372E;
-$gradientColor3: rgba(red($color3), green($color3), blue($color3), 0.5);
-$lightBlue: lighten($color2, 60%);
+// :root {
+//   --color1: rgb(255, 255, 255);
+//   --color2: rgb(37, 48, 104);
+//   --color3: rgb(214, 55, 46);
+//   --gradientColor3: rgba(red(var(--color3)), green(var(--color3)), blue(var(--color3)), 0.5);
+// }
 
-@mixin setColors($c1, $c2, $c3) {
-  $color1: $c1;
-  $color2: $c2;
-  $color3: $c3;
-}
+// .redMode {
+//   --color1: #fff;
+//   --color2: #253068;
+//   --color3: #D6372E;
+// }
 
-.yellowMode {
-  @include setColors(#fff, #0d1434, #ffde59);
-}
+// .yellowMode {
+//   --color1: #fff;
+//   --color2: rgb(13, 20, 52);
+//   --color3: rgb(255, 222, 89);
+// }
