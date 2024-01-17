@@ -1,11 +1,28 @@
+import React, { useEffect } from 'react';
 import { NavLink, useLocation } from "react-router-dom";
+import otherFixture from "../fixture/other.json";
 
-const Layout = ({ children, languageButtonText, toggleLanguage, languageStyleButton, toggleColor, colorStyleButton }) => {
+const Layout = ({ children, languageButtonText, toggleLanguage, languageStyleButton, toggleColor, colorStyleButton, toggleIcon}) => {
 
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   const headerStyle = isHomePage ? "header-home" : "";
   const footerStyle = isHomePage ? "footer-home" : "";
+
+  useEffect(() => {
+    console.log("________-1-________");
+    console.log(languageButtonText); //en
+    console.log("________-2-________");
+    console.log(toggleLanguage); // function
+    console.log("________-3-________");
+    console.log(languageStyleButton); // button-fr
+    console.log("________-4-________");
+    console.log(toggleColor); // function
+    console.log("________-5-________");
+    console.log(colorStyleButton); // darkmode
+    console.log("________-6-________");
+    console.log(toggleIcon); //darkmode
+}, [])
 
   return (
     <>
@@ -13,9 +30,7 @@ const Layout = ({ children, languageButtonText, toggleLanguage, languageStyleBut
         <div onClick={toggleColor} className={`color-toggle ${colorStyleButton}`}>
           <div className={`animate-translate`}>
             <button className={`color-button`}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M12 21q-3.75 0-6.375-2.625T3 12q0-3.75 2.625-6.375T12 3q.35 0 .688.025t.662.075q-1.025.725-1.638 1.888T11.1 7.5q0 2.25 1.575 3.825T16.5 12.9q1.375 0 2.525-.613T20.9 10.65q.05.325.075.662T21 12q0 3.75-2.625 6.375T12 21" />
-              </svg>
+              <div className="color-logo" dangerouslySetInnerHTML={{__html: toggleIcon === 'darkMode' ? otherFixture.darkModeLogo : otherFixture.lightModeLogo}} />
             </button>
           </div>
         </div>

@@ -20,6 +20,7 @@ function App() {
 
   const toggleLanguage = () => {
     setLanguage(language === 'fr' ? 'en' : 'fr');
+    // setColorMode(colorMode === 'fr' ? otherFixture.darkMode : otherFixture.lightModeLogo);
   };
 
   useEffect(() => {
@@ -35,9 +36,9 @@ function App() {
   }, [language, colorMode]);
   
   const styleButton = language === 'fr' ? 'button-fr' : 'button-en';
-  const languageButtonText = language === 'fr' ? 'en' : 'fr';
+  const languageButtonText = language === 'fr' ? 'fr' : 'en';
 
-  const colorButton = colorMode === 'lightMode' ? 'red-color' : 'yellow-color';
+  const colorButton = colorMode === 'lightMode' ? 'light-mode' : 'dark-mode';
 
   return (
     <Router>
@@ -47,6 +48,7 @@ function App() {
         languageStyleButton={styleButton}
         toggleColor={toggleColorMode}
         colorStyleButton={colorButton}
+        toggleIcon={colorMode}
       >
         <Routes>
           <Route path="/" exact element={<Home language={language} />} />
