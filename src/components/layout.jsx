@@ -1,28 +1,20 @@
-import React, { useEffect } from 'react';
 import { NavLink, useLocation } from "react-router-dom";
 import otherFixture from "../fixture/other.json";
 
-const Layout = ({ children, languageButtonText, toggleLanguage, languageStyleButton, toggleColor, colorStyleButton, toggleIcon}) => {
+const Layout = (
+  { children,
+    languageButtonText,
+    toggleLanguage,
+    languageStyleButton,
+    toggleColor,
+    colorStyleButton,
+    toggleIcon
+  }) => {
 
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   const headerStyle = isHomePage ? "header-home" : "";
   const footerStyle = isHomePage ? "footer-home" : "";
-
-  useEffect(() => {
-    console.log("________-1-________");
-    console.log(languageButtonText); //en
-    console.log("________-2-________");
-    console.log(toggleLanguage); // function
-    console.log("________-3-________");
-    console.log(languageStyleButton); // button-fr
-    console.log("________-4-________");
-    console.log(toggleColor); // function
-    console.log("________-5-________");
-    console.log(colorStyleButton); // darkmode
-    console.log("________-6-________");
-    console.log(toggleIcon); //darkmode
-}, [])
 
   return (
     <>
@@ -30,7 +22,10 @@ const Layout = ({ children, languageButtonText, toggleLanguage, languageStyleBut
         <div onClick={toggleColor} className={`color-toggle ${colorStyleButton}`}>
           <div className={`animate-translate`}>
             <button className={`color-button`}>
-              <div className="color-logo" dangerouslySetInnerHTML={{__html: toggleIcon === 'darkMode' ? otherFixture.darkModeLogo : otherFixture.lightModeLogo}} />
+              <div
+                className="color-logo"
+                dangerouslySetInnerHTML={{ __html: toggleIcon === 'darkMode' ? otherFixture.darkModeLogo : otherFixture.lightModeLogo }}
+              />
             </button>
           </div>
         </div>
