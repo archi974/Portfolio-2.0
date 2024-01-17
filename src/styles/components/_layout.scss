@@ -5,7 +5,6 @@ header {
     padding: 30px;
 
     .color-toggle {
-        border: none;
         display: flex;
         margin-left: 5px;
         background-color: var(--color3);
@@ -59,7 +58,6 @@ header {
         align-items: center;
 
         @media only screen and (max-width: 425px) {
-            width: 100%;
             justify-content: space-between;
             margin-left: 10px;
         }
@@ -148,17 +146,18 @@ footer {
         }
 
         .logo-bloc {
-            background-color: var(--color1);
+            background: linear-gradient(45deg, var(--color1) 70%, var(--gradientColor3));
             padding: 25px;
             border-radius: 50%;
             display: flex;
+            box-shadow: 0 10px 20px rgba(0,0,0,.5);
 
             .logo {
                 fill: var(--color3);
             }
 
             &:hover {
-                background-color: var(--gradientColor3);
+                background: linear-gradient(45deg, var(--color3) 5%, var(--gradientColor3) 65%);
 
                 .logo {
                     fill: var(--color1);
