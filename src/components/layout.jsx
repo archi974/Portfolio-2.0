@@ -8,7 +8,8 @@ const Layout = (
     languageStyleButton,
     toggleColor,
     colorStyleButton,
-    toggleIcon
+    ColorIndex,
+    toggleColorMode
   }) => {
 
   const location = useLocation();
@@ -24,7 +25,14 @@ const Layout = (
             <button className={`color-button`}>
               <div
                 className="color-logo"
-                dangerouslySetInnerHTML={{ __html: toggleIcon === 'darkMode' ? otherFixture.darkModeLogo : otherFixture.lightModeLogo }}
+                dangerouslySetInnerHTML={{
+                  __html:
+                    toggleColorMode[ColorIndex] === 'darkMode'
+                      ? otherFixture.darkModeLogo
+                      : toggleColorMode[ColorIndex] === 'lightMode'
+                        ? otherFixture.lightModeLogo
+                        : otherFixture.automaticModeLogo
+                }}
               />
             </button>
           </div>

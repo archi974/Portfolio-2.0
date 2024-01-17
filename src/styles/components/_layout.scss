@@ -20,6 +20,12 @@ header {
             }
         }
 
+        &.automatic-mode {
+            .animate-translate {
+                transform: translateX(50%);
+            }
+        }
+
         &.dark-mode {
             .animate-translate {
                 transform: translateX(100%);
