@@ -16,14 +16,12 @@ header {
         cursor: pointer;
 
         &.red-color {
-            // Styles pour l'animation en mode red
             .animate-translate {
                 transform: translateX(0%);
             }
         }
 
         &.yellow-color {
-            // Styles pour l'animation en mode yellow
             .animate-translate {
                 transform: translateX(100%);
             }
@@ -54,6 +52,12 @@ header {
     .block-nav-language {
         display: flex;
         align-items: center;
+
+        @media only screen and (max-width: 425px) {
+            width: 100%;
+            justify-content: space-between;
+            margin-left: 10px;
+        }
 
         .nav-menu {
             font-weight: 700;
