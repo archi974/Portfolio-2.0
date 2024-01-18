@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Home from './pages/home';
 import Projects from './pages/projects';
@@ -13,13 +13,11 @@ function App() {
   const initialColor = localStorage.getItem('theme') || 'darkMode';
   const [language, setLanguage] = useState(initialLanguage);
   const [colorMode, setColorMode] = useState(initialColor);
-  const [automaticMode, setAutomaticMode] = useState('lightMode');
-  const [modeIndex, setModeIndex] = useState(0);
-  const modes = ['lightMode', 'automatic', 'darkMode'];
+  const modes = useMemo(() => ['darkMode', 'automaticMode', 'lightMode'], []);
+  const [modeIndex, setModeIndex] = useState(modes.indexOf(initialColor));
 
   const styleButton = language === 'fr' ? 'button-fr' : 'button-en';
   const languageButtonText = language === 'fr' ? 'fr' : 'en';
-  const colorButton = modes[modeIndex] === 'lightMode' ? 'light-mode' : modes[modeIndex] === 'darkMode' ? 'dark-mode' : 'automatic-mode';
 
   // Fonction pour obtenir le fuseau horaire actuel
   // const getTimezone = () => {
@@ -27,24 +25,23 @@ function App() {
   //   return offset / 60;
   // };
 
+  const nextIndex = (modeIndex + 1) % modes.length;
 
   const toggleColorMode = () => {
-    const nextIndex = (modeIndex + 1) % modes.length;
     setModeIndex(nextIndex);
 
-    if (modes[nextIndex] === 'automatic') {
+    if (modes[nextIndex] === 'automaticMode') {
       const timezone = new Date().getHours();
 
       if (timezone >= 17 || timezone < 6) {
-        setAutomaticMode('darkMode');
+        setColorMode('darkMode');
       } else {
-        setAutomaticMode('lightMode');
+        setColorMode('lightMode');
       }
-
-      setColorMode(automaticMode);
     } else {
       setColorMode(modes[nextIndex]);
     }
+    localStorage.setItem('value', modes[nextIndex]);
   };
 
   const toggleLanguage = () => {
@@ -59,16 +56,24 @@ function App() {
     root.style.setProperty('--gradientColor3', colorMode === 'lightMode' ? 'rgba(0, 216, 254, .5)' : 'rgba(255, 222, 89, .5)');
 
     localStorage.setItem('language', language);
+    localStorage.setItem('theme', colorMode);
     document.querySelector('html').lang = language;
-    
-    if (colorMode === "automaticMode") {
+
+    if (modeIndex === 1) {
       const timezone = new Date().getHours();
       if (timezone >= 17 || timezone < 6) {
-        return localStorage.setItem('theme', 'darkMode')
+        localStorage.setItem('theme', 'darkMode')
+      } else {
+        localStorage.setItem('theme', 'lightMode')
       }
-      return localStorage.setItem('theme', 'lightMode')
     }
-    localStorage.setItem('theme', colorMode)
+
+    const intervalId = setInterval(() => {
+      // actualiser la page après une heure
+      window.location.reload();
+    }, 60 * 60 * 1000);
+
+    return () => clearInterval(intervalId);
 
     // const decideColorMode = () => {
     //   const timezone = new Date().getTimezoneOffset() / 60;
@@ -90,7 +95,7 @@ function App() {
     // Nettoyez l'intervalle lorsque le composant est démonté
     // return () => clearInterval(intervalId);
 
-  }, [language, colorMode]);
+  }, [language, colorMode, modeIndex, nextIndex]);
 
   return (
     <Router>
@@ -99,9 +104,6 @@ function App() {
         toggleLanguage={toggleLanguage}
         languageStyleButton={styleButton}
         toggleColor={toggleColorMode}
-        colorStyleButton={colorButton}
-        ColorIndex={modeIndex}
-        toggleColorMode={modes}
       >
         <Routes>
           <Route path="/" exact element={<Home language={language} />} />

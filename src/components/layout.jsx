@@ -6,30 +6,34 @@ const Layout = (
     languageButtonText,
     toggleLanguage,
     languageStyleButton,
-    toggleColor,
-    colorStyleButton,
-    ColorIndex,
-    toggleColorMode
+    toggleColor
   }) => {
 
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   const headerStyle = isHomePage ? "header-home" : "";
   const footerStyle = isHomePage ? "footer-home" : "";
+  const buttonValue = localStorage.getItem('value');
 
   return (
     <>
       <header className={`header ${headerStyle}`}>
-        <div onClick={toggleColor} className={`color-toggle ${colorStyleButton}`}>
+        <div
+          onClick={toggleColor}
+          className={`color-toggle
+            ${buttonValue === 'darkMode' ? 'dark-mode' : ''}
+            ${buttonValue === 'lightMode' ? 'light-mode' : ''}
+            ${buttonValue === 'automaticMode' ? 'automatic-mode' : ''}
+          `}>
           <div className={`animate-translate`}>
             <button className={`color-button`}>
               <div
                 className="color-logo"
                 dangerouslySetInnerHTML={{
                   __html:
-                    toggleColorMode[ColorIndex] === 'darkMode'
+                  buttonValue === 'darkMode'
                       ? otherFixture.darkModeLogo
-                      : toggleColorMode[ColorIndex] === 'lightMode'
+                      : buttonValue === 'lightMode'
                         ? otherFixture.lightModeLogo
                         : otherFixture.automaticModeLogo
                 }}
