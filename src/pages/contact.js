@@ -2,8 +2,10 @@ import React, { useEffect } from 'react';
 import GoogleMapComponent from '../components/googleMap';
 import FormMail from '../components/formMail';
 import other from "../fixture/other.json";
+import AutoTypingText from '../components/autoTypingText';
 
 export default function Contact({ language }) {
+    const textToDisplay = "Contact";
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -11,7 +13,7 @@ export default function Contact({ language }) {
 
     return (
         <article className="bloc-contact">
-            <h1>Contact</h1>
+            <AutoTypingText text={textToDisplay} />
             <div className="adress-section-bloc">
                 <section className="adress-section">
                     <h2>{other[language].titleAdressContact}</h2>

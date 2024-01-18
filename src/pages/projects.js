@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import ProjectModal from '../components/projectModal';
 import projectsFixture from '../fixture/projects.json';
+import AutoTypingText from '../components/autoTypingText';
 
 export default function Projects({ language }) {
     const [showModal, setShowModal] = useState(false);
@@ -8,6 +9,7 @@ export default function Projects({ language }) {
     // eslint-disable-next-line
     const [scrollY, setScrollY] = useState(0);
     const [springs, setSprings] = useState([]);
+    const textToDisplay = projectsFixture[language][0].title;
 
     const openModal = (project) => {
         setShowModal(true);
@@ -33,7 +35,7 @@ export default function Projects({ language }) {
     return (
         <>
             <article className="bloc-projects">
-                <h1>{projectsFixture[language][0].title}</h1>
+                <AutoTypingText text={textToDisplay} />
                 <div className="bloc-projects-container">
                     {projectsFixture[language].map((project, i) => (
                         <section

@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
 import skills from '../fixture/skills.json';
 import LogoCarousel from '../components/carouselLogo';
+import AutoTypingText from '../components/autoTypingText';
 
 export default function Skills({ language }) {
     const frenchBloc = language === "fr" ? "french-bloc_skills" : "";
+    const textToDisplay = skills[language].titlePage;
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -11,7 +13,7 @@ export default function Skills({ language }) {
 
     return (
         <article className={`bloc-skills ${frenchBloc}`}>
-            <h1>{skills[language].titlePage}</h1>
+            <AutoTypingText text={textToDisplay} />
             <LogoCarousel />
             <div className="skills-section-content">
                 <section className="bloc-skills_section">
