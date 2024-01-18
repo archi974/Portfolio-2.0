@@ -12,6 +12,7 @@
         align-items: center;
         margin-bottom: 100px;
         display: block;
+        width: 850px;
 
         @media only screen and (max-width: 660px) {
             text-align: center;
@@ -111,6 +112,7 @@
 .french-bloc_aboutMe {
 
     h1 {
+        width: auto;
         @media only screen and (max-width: 1339px) {
             font-size: $font-size-medium;
         }

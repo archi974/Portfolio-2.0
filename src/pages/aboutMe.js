@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
 import other from "../fixture/other.json";
+import AutoTypingText from '../components/autoTypingText';
 
 export default function AboutMe({ language }) {
-    const frenchBloc = language === "fr" ? "french-bloc_aboutMe" : ""; 
+    const frenchBloc = language === "fr" ? "french-bloc_aboutMe" : "";
+    const textToDisplay = other[language].titleAboutMe;
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -10,7 +12,7 @@ export default function AboutMe({ language }) {
 
     return (
         <article className={`bloc-about-me ${frenchBloc}`}>
-            <h1>{other[language].titleAboutMe}</h1>
+            <AutoTypingText text={textToDisplay} />
             <div className="about-me_img">
                 <img src="../images/photo_profile_1470x1470.webp" alt={other.photoAboutMe.alt} />
             </div>
