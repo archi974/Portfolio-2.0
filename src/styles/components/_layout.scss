@@ -14,7 +14,7 @@ header {
         padding-right: 5px;
         cursor: pointer;
 
-        &.light-mode {
+        &.dark-mode {
             .animate-translate {
                 transform: translateX(0%);
             }
@@ -26,7 +26,7 @@ header {
             }
         }
 
-        &.dark-mode {
+        &.light-mode {
             .animate-translate {
                 transform: translateX(100%);
             }
