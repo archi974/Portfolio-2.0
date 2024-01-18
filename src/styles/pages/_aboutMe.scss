@@ -12,11 +12,16 @@
         align-items: center;
         margin-bottom: 100px;
         display: block;
-        width: 850px;
+        width: 875px;
+
+        @media only screen and (max-width: 1184px) {
+            width: auto;
+        }
 
         @media only screen and (max-width: 660px) {
             text-align: center;
         }
+
 
         @media only screen and (max-width: 510px) {
             font-size: $font-size-xs;
