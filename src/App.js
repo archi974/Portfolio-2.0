@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { DateTime } from 'luxon';
 import Home from './pages/home';
 import Projects from './pages/projects';
 import Skills from './pages/skills';
@@ -19,21 +20,18 @@ function App() {
   const styleButton = language === 'fr' ? 'button-fr' : 'button-en';
   const languageButtonText = language === 'fr' ? 'fr' : 'en';
 
-  // Fonction pour obtenir le fuseau horaire actuel
-  // const getTimezone = () => {
-  //   const offset = new Date().getTimezoneOffset();
-  //   return offset / 60;
-  // };
-
   const nextIndex = (modeIndex + 1) % modes.length;
 
   const toggleColorMode = () => {
     setModeIndex(nextIndex);
 
     if (modes[nextIndex] === 'automaticMode') {
-      const timezone = new Date().getHours();
 
-      if (timezone >= 17 || timezone < 6) {
+      // Obtenez l'heure local avec Luxon
+      const allTime = DateTime.local();
+      const localTime = allTime.c.hour;
+
+      if (localTime < 6 || localTime >= 17) {
         setColorMode('darkMode');
       } else {
         setColorMode('lightMode');
@@ -46,6 +44,7 @@ function App() {
 
   const toggleLanguage = () => {
     setLanguage(language === 'fr' ? 'en' : 'fr');
+    window.location.reload();
   };
 
   useEffect(() => {
@@ -59,8 +58,10 @@ function App() {
     localStorage.setItem('theme', colorMode);
     document.querySelector('html').lang = language;
 
+    // automatique vaut 1
     if (modeIndex === 1) {
       const timezone = new Date().getHours();
+
       if (timezone >= 17 || timezone < 6) {
         localStorage.setItem('theme', 'darkMode')
       } else {
@@ -74,26 +75,6 @@ function App() {
     }, 60 * 60 * 1000);
 
     return () => clearInterval(intervalId);
-
-    // const decideColorMode = () => {
-    //   const timezone = new Date().getTimezoneOffset() / 60;
-
-    //   if (colorMode === 'automaticMode') {
-    //     // Utilisez le fuseau horaire pour décider du mode (par exemple, si c'est la nuit)
-    //     if (timezone < 0 || timezone > 6) {
-    //       setColorMode('darkMode'); // Mode sombre la nuit
-    //     } else {
-    //       setColorMode('lightMode'); // Mode clair le jour
-    //     }
-    //   }
-    // };
-    // // Vérifiez le fuseau horaire toutes les heures et mettez à jour le mode
-    // const intervalId = setInterval(() => {
-    //   decideColorMode();
-    // }, 60 * 60 * 1000); // toutes les heures
-
-    // Nettoyez l'intervalle lorsque le composant est démonté
-    // return () => clearInterval(intervalId);
 
   }, [language, colorMode, modeIndex, nextIndex]);
 
