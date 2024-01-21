@@ -27,11 +27,34 @@
             .logo {
                 width: 100px;
                 text-align: center;
+                padding-top: 10px;
+                
+
+                &:hover {
+                    background: linear-gradient(180deg, var(--color1) 85%, var(--gradientColor3));
+                    box-shadow: 0 10px 20px var(--color1);
+
+                    & button {
+                        color: var(--color3);
+                    }
+                }
 
                 svg {
                     width: 75px;
-                    height: 195px;
+                    height: 105px;
                 }
+
+                button {
+                    color: var(--color1);
+                    font-weight: 900;
+                    margin-bottom: 20px;
+                    padding-block: 10px;
+                    width: 100%;
+                    border: none;
+                    background-color: unset;
+                    transition: color 0.5s ease-in-out;
+                }
+
             }
 
         }
