@@ -20,6 +20,11 @@ function App() {
   const styleButton = language === 'fr' ? 'button-fr' : 'button-en';
   const languageButtonText = language === 'fr' ? 'fr' : 'en';
 
+  const toggleLanguage = () => {
+    setLanguage(language === 'fr' ? 'en' : 'fr');
+    window.location.reload();
+  };
+
   const nextIndex = (modeIndex + 1) % modes.length;
 
   const toggleColorMode = () => {
@@ -42,16 +47,13 @@ function App() {
     localStorage.setItem('value', modes[nextIndex]);
   };
 
-  const toggleLanguage = () => {
-    setLanguage(language === 'fr' ? 'en' : 'fr');
-    window.location.reload();
-  };
-
   useEffect(() => {
     const root = document.documentElement;
     root.style.setProperty('--color1', colorMode === 'lightMode' ? 'rgb(255, 255, 255)' : 'rgb(13, 20, 52)');
     root.style.setProperty('--color2', colorMode === 'lightMode' ? 'rgb(37, 48, 104)' : 'rgb(142, 202, 230)');
     root.style.setProperty('--color3', colorMode === 'lightMode' ? 'rgb(0, 216, 254)' : 'rgb(255, 222, 89)');
+    root.style.setProperty('--gradientColor1', colorMode === 'lightMode' ? 'rgba(255, 255, 255, .5)' : 'rgba(13, 20, 52, .5)');
+    root.style.setProperty('--gradientColor2', colorMode === 'lightMode' ? 'rgba(37, 48, 104, .5)' : 'rgba(142, 202, 230, .5)');
     root.style.setProperty('--gradientColor3', colorMode === 'lightMode' ? 'rgba(0, 216, 254, .5)' : 'rgba(255, 222, 89, .5)');
 
     localStorage.setItem('language', language);
