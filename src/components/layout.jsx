@@ -26,12 +26,16 @@ const Layout = (
             ${buttonValue === 'automaticMode' ? 'automatic-mode' : ''}
           `}>
           <div className={`animate-translate`}>
-            <button className={`color-button`}>
+            <button
+              className={`color-button`}
+              aria-label="Basculer entre les modes de thème"
+              data-theme="auto"
+            >
               <div
                 className="color-logo"
                 dangerouslySetInnerHTML={{
                   __html:
-                  buttonValue === 'darkMode'
+                    buttonValue === 'darkMode'
                       ? otherFixture.darkModeLogo
                       : buttonValue === 'lightMode'
                         ? otherFixture.lightModeLogo
