@@ -22,10 +22,9 @@ Ce projet a pour but de préparer au mieux votre recherche d’emploi de dévelo
 
 #### Modification prévu :
 
-- Amélioration de l'animation (parallax)
-- Rendre le carouselle plus design
 - Ajout de TypeScript
-- Mode nuit (basé sur fuseaux horaire si possible)
+- Curser personnalisé
+- Rassembler About me et Skill
 
 ## Instruction d’installation et d’utilisation :
 
