@@ -24,6 +24,10 @@
             display: flex;
             justify-content: space-between;
 
+            a {
+                cursor: pointer;
+            }
+
             .logo {
                 width: 100px;
                 text-align: center;
@@ -37,9 +41,14 @@
                     & button {
                         color: var(--color3);
                     }
+
+                    & svg {
+                        color: var(--color3);
+                    }
                 }
 
                 svg {
+                    color: var(--color1);
                     width: 75px;
                     height: 105px;
                 }
