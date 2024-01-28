@@ -32,7 +32,7 @@ const FormMail = ({subject, button}) => {
                 <h2>Mail</h2>
                 <input type="email" name="from_email" placeholder="E-mail" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required />
                 <input type="text" name="from_subject" placeholder={subject} required />
-                <textarea className="textAreaMail" placeholder="Message" name="message" cols="30" rows="10" required></textarea>
+                <textarea className="textAreaMail" placeholder="Message" name="message" cols="30" rows="10" required />
                 <ReCAPTCHA className="form-recaptcha" hl="en" sitekey={process.env.REACT_APP_RECAPTCHA_KEY} />
                 <button className="sendButtonMail" type="submit">{button}</button>
             </section>

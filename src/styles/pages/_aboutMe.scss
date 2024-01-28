@@ -61,6 +61,10 @@
             border-radius: 50%;
             object-fit: cover;
 
+            &:hover {
+                box-shadow: 0 10px 20px var(--color3 );
+            }
+
             @media only screen and (max-width: 1184px) {
                 width: 375px;
                 height: 375px;

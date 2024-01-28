@@ -26,10 +26,12 @@
             flex-direction: column;
 
             h2 {
+                @include select-text(var(--color3));
                 color: var(--color2);
             }
 
             p {
+                @include select-text(var(--color3));
                 color: var(--color2);
                 font-size: 1.25rem;
             }

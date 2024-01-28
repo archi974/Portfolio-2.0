@@ -25,6 +25,9 @@ Ce projet a pour but de préparer au mieux votre recherche d’emploi de dévelo
 - Ajout de TypeScript
 - Curser personnalisé
 - Rassembler About me et Skill
+- Ajouter un message pour validé l'envoi de mail / dark thème / hl fr ou en
+- Ajouter les messages d'alerte en anglais (formMail)
+- display flex un label au click de l'input avec fond position absolute
 
 ## Instruction d’installation et d’utilisation :
 

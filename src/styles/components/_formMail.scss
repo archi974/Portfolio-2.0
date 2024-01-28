@@ -7,6 +7,8 @@
     width: 100%;
     height: auto;
     background-color: var(--color1);
+    color: var(--color2);
+    caret-color: var(--color3);
 }
 
 .bloc-form {
@@ -51,6 +53,7 @@
         }
 
         h2 {
+            @include select-text(var(--color3));
             font-size: 1.5em;
             font-weight: 900;
             color: var(--color1);
@@ -59,14 +62,32 @@
 
         input {
             @include formStyle;
+            @include select-text(var(--color3));
             height: 40px;
+
+            &:focus {
+                outline: 3px solid var(--color3)
+            }
+
+            &::placeholder {
+                color: var(--gradientColor2)
+            }
         }
 
         .textAreaMail {
             @include formStyle;
+            @include select-text(var(--color3));
             resize: vertical;
             border-end-end-radius: 0;
             min-height: 280px;
+
+            &:focus {
+                outline: 3px solid var(--color3);
+            }
+
+            &::placeholder {
+                color: var(--gradientColor2)
+            }
         }
 
         .form-recaptcha {
@@ -74,15 +95,17 @@
         }
 
         .sendButtonMail {
+            @include select-text(var(--color1));
             @include formStyle;
+            background: linear-gradient(45deg, var(--color1) 70%, var(--gradientColor3));
+            color: var(--color3);
             border-radius: 25px;
             width: 150px;
             cursor: pointer;
-            color: var(--color2);
 
             &:hover {
-                background-color: #dfe0e9;
-                color: var(--color3);
+                background: linear-gradient(45deg, var(--color3) 5%, var(--gradientColor3) 65%);
+                color: var(--color1);
             }
         }
     }

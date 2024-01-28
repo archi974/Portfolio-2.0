@@ -156,7 +156,7 @@ footer {
             padding: 25px;
             border-radius: 50%;
             display: flex;
-            box-shadow: 0 10px 20px rgba(0,0,0,.5);
+            box-shadow: 0 10px 20px var(--color3);
 
             .logo {
                 fill: var(--color3);
@@ -214,6 +214,7 @@ footer {
         align-items: center;
 
         p {
+            @include select-text(var(--color3));
             color: var(--color1);
             font-size: 13px;
             font-weight: 900;

@@ -1,8 +1,8 @@
 /* MIXIN */
 
-@mixin select-text {
+@mixin select-text($color) {
     &::selection {
-        color: var(--color3);
+        color: $color;
         background-color: transparent;
     }
 }
@@ -13,7 +13,7 @@
     color: var(--color2);
     display: flex;
     justify-content: center;
-    @include select-text;
+    @include select-text(var(--color3));
 
     @media only screen and (max-width: 1184px) {
         font-size: $font-size-medium;
@@ -39,6 +39,7 @@
     flex-direction: column;
 
     p {
+        @include select-text(var(--color3));
         width: 650px;
         padding-bottom: 20px;
         font-size: 1rem;
@@ -83,6 +84,7 @@
         text-decoration: none;
 
         p {
+            @include select-text(var(--color2));
             font-size: 1rem;
             font-weight: 900;
             color: $color;
@@ -90,6 +92,7 @@
         }
 
         svg {
+            @include select-text(var(--color2));
             fill: $color;
         }
 

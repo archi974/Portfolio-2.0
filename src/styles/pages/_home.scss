@@ -52,7 +52,7 @@
         color: #DFE0E9;
         font-family: 'Montserrat', 'Open Sans', sans-serif;
         // mix-blend-mode: luminosity;
-        @include select-text;
+        @include select-text(var(--color3));
 
         @media only screen and (max-width: 1305px) {
             font-size: 120px;

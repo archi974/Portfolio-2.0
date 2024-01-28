@@ -86,7 +86,7 @@ const Layout = (
           </a>
         </div>
         <div className="footer-copyright">
-          <p>vincent.k.97480@gmail.com</p>
+          <p>vincent.kbidi.974@gmail.com</p>
           <p>Vincent K/BIDI © Portfolio 2023</p>
         </div>
       </footer>
