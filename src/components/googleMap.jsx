@@ -16,7 +16,7 @@ const defaultZoom = 13;
 function GoogleMapComponent() {
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
+        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS
     })
 
     // eslint-disable-next-line
