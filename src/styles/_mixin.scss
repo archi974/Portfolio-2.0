@@ -37,6 +37,7 @@
     color: var(--color2);
     display: flex;
     flex-direction: column;
+    text-align: justify;
 
     p {
         @include select-text(var(--color3));
@@ -50,16 +51,11 @@
         }
 
         @media only screen and (max-width: 1184px) {
-            width: 500px;
-        }
-
-        @media only screen and (max-width: 1104px) {
             width: 450px;
         }
 
         @media only screen and (max-width: 740px) {
             width: 350px;
-            text-align: justify;
         }
 
         @media only screen and (max-width: 660px) {
@@ -69,6 +65,10 @@
         @media only screen and (max-width: 510px) {
             font-size: .75rem;
         }
+    }
+
+    @media only screen and (max-width: 845px) {
+        align-items: center;
     }
 }
 
