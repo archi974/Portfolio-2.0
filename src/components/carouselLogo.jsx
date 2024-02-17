@@ -3,26 +3,40 @@ import skills from '../fixture/skills.json';
 
 const LogoCarousel = () => {
     const logos = skills.logo.map((item) => ({ image: item.image, name: item.name, link: item.link }));
-    const [leftOffset, setLeftOffset] = useState(0);
+    const [leftOffset, setOffset] = useState(0);
     const initialScrollSpeed = 2;
-    const [leftScrollSpeed, setLeftScrollSpeed] = useState(initialScrollSpeed);
+    const [scrollSpeed, setScrollSpeed] = useState(initialScrollSpeed);
     const totalLogoWidth = logos.length * (100);
 
     const handleMouseEnter = () => {
-        setLeftScrollSpeed(0.5);
+        setScrollSpeed(0.5);
     };
 
     const handleMouseLeave = () => {
-        setLeftScrollSpeed(initialScrollSpeed);
+        setScrollSpeed(initialScrollSpeed);
+    };
+
+    // increases the number of tables per screen size
+    const getNumberOfBlocks = () => {
+        const width = window.innerWidth;
+        if (width <= 1023) {
+            return 2;
+        } else if (width <= 1920) {
+            return 3;
+        } else if (width <= 2560) {
+            return 4;
+        } else {
+            return 5;
+        }
     };
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setLeftOffset((prevOffset) => prevOffset <= -totalLogoWidth ? 0 : prevOffset - leftScrollSpeed);
+            setOffset((prevOffset) => prevOffset <= -totalLogoWidth ? 0 : prevOffset - scrollSpeed);
         }, 1000 / 40); // 60 FPS
 
         return () => clearInterval(interval);
-    }, [leftScrollSpeed, totalLogoWidth]);
+    }, [scrollSpeed, totalLogoWidth]);
 
 
     return (
@@ -32,7 +46,7 @@ const LogoCarousel = () => {
             onMouseLeave={handleMouseLeave}
         >
             <div className="all-logo">
-                {[...Array(3)].map((_, blockIndex) => (
+                {[...Array(getNumberOfBlocks())].map((_, blockIndex) => (
                     <div
                         key={blockIndex}
                         className="block-logo"
