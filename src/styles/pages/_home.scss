@@ -88,6 +88,7 @@
         font-weight: 900;
         font-size: 13px;
         color: var(--color2);
+        @include select-text(var(--color3));
 
         @media only screen and (max-width: 768px) {
             position: relative;

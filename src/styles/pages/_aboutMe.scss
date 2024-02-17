@@ -34,10 +34,6 @@
                 var(--color1) 100%);
     }
 
-    @media only screen and (max-width: 425px) {
-        margin-inline: 20px;
-    }
-
     h1 {
         @include custom-style-title($font-size-large);
         align-items: center;
@@ -150,6 +146,10 @@
             border-radius: 10px;
         }
 
+    }
+
+    @media only screen and (max-width: 425px) {
+        padding-inline: 20px;
     }
 }
 

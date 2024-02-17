@@ -159,14 +159,15 @@ footer {
             box-shadow: 0 10px 20px var(--color3);
 
             .logo {
-                fill: var(--color3);
+                color: var(--color3);
+                transition: color .5s ease-in;
             }
 
             &:hover {
                 background: linear-gradient(45deg, var(--color3) 5%, var(--gradientColor3) 65%);
 
                 .logo {
-                    fill: var(--color1);
+                    color: var(--color1);
                 }
             }
 
