@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import skills from '../fixture/skills.json';
+import other from '../fixture/other.json';
 
 const LogoCarousel = () => {
-    const logos = skills.logo.map((item) => ({ image: item.image, name: item.name, link: item.link }));
+    const logos = other.logo.map((item) => ({ image: item.image, name: item.name, link: item.link }));
     const [leftOffset, setOffset] = useState(0);
     const initialScrollSpeed = 2;
     const [scrollSpeed, setScrollSpeed] = useState(initialScrollSpeed);

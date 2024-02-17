@@ -16,7 +16,7 @@ export default function Contact({ language }) {
             <AutoTypingText text={textToDisplay} />
             <div className="adress-section-bloc">
                 <section className="adress-section">
-                    <h2>{other[language].titleAdressContact}</h2>
+                    <h2>{other[language].contactPage.titleAdress}</h2>
                     <p>saint maur-des-fossées</p>
                     <p>94100</p>
                 </section>
@@ -27,7 +27,7 @@ export default function Contact({ language }) {
             </div>
             <GoogleMapComponent />
             <section className="email-section">
-                <FormMail subject={other[language].formSubjectContact} button={other[language].formButtonContact} />
+                <FormMail subject={other[language].contactPage.formSubject} button={other[language].contactPage.formButton} />
             </section>
         </article>
     )

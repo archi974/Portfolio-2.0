@@ -1,7 +1,38 @@
 .bloc-about-me {
-    height: 100%;
-    margin-inline: 50px;
+    padding-inline: 50px;
     padding-bottom: 100px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1050px;
+        background-image: url("./assets/wallpaper_aboutMe_1920x1080.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        object-fit: contain;
+        z-index: -1;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1050px;
+        z-index: -1;
+        background-image: linear-gradient(to bottom,
+                var(--color1) 0%,
+                var(--gradientColor1) 20%,
+                rgba(255, 255, 255, 0) 50%,
+                var(--gradientColor1) 70%,
+                var(--color1) 100%);
+    }
 
     @media only screen and (max-width: 425px) {
         margin-inline: 20px;
@@ -18,7 +49,7 @@
             width: auto;
         }
 
-        @media only screen and (max-width: 660px) {
+        @media only screen and (max-width: 845px) {
             text-align: center;
         }
 
@@ -38,15 +69,11 @@
             top: 275px;
         }
 
-        @media only screen and (max-width: 919px) {
+        @media only screen and (max-width: 950px) {
             top: 250px;
         }
 
-        @media only screen and (max-width: 740px) {
-            top: 300px;
-        }
-
-        @media only screen and (max-width: 660px) {
+        @media only screen and (max-width: 845px) {
             position: relative;
             text-align: center;
             width: 100%;
@@ -60,10 +87,10 @@
             height: 425px;
             border-radius: 50%;
             object-fit: cover;
-
-            &:hover {
-                box-shadow: 0 10px 20px var(--color3 );
-            }
+            padding: 10px;
+            background-image: linear-gradient(to bottom,
+                    var(--color2) 0%,
+                    rgba(255, 255, 255, 0) 100%);
 
             @media only screen and (max-width: 1184px) {
                 width: 375px;
@@ -93,6 +120,8 @@
 
         .about-me_description-left {
             @include aboutMeText;
+            align-items: flex-start;
+            flex-wrap: nowrap;
             margin-bottom: 150px;
 
             @media only screen and (max-width: 660px) {
@@ -108,11 +137,17 @@
             p {
                 text-align: right;
 
-                @media only screen and (max-width: 740px) {
-                    text-align: justify;
+                @media only screen and (max-width: 845px) {
+                    text-align: left;
                 }
 
             }
+        }
+
+        .description-background {
+            background-color: var(--gradientColor1);
+            padding: 20px;
+            border-radius: 10px;
         }
 
     }
@@ -122,6 +157,7 @@
 
     h1 {
         width: auto;
+
         @media only screen and (max-width: 1339px) {
             font-size: $font-size-medium;
         }
@@ -130,21 +166,17 @@
             font-size: $font-size-small;
         }
 
-        @media only screen and (max-width: 829px) {
+        @media only screen and (max-width: 1190px) {
             text-align: center;
         }
     }
 
     .about-me_img {
         @media only screen and (max-width: 1339px) {
-            top: 320px;
+            top: 250px;
         }
 
-        @media only screen and (max-width: 919px) {
-            top: 350px;
-        }
-
-        @media only screen and (max-width: 829px) {
+        @media only screen and (max-width: 1190px) {
             position: relative;
             text-align: center;
             width: 100%;
@@ -181,5 +213,110 @@
                 }
             }
         }
+    }
+}
+
+.bloc-skills {
+    display: flex;
+    padding-bottom: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .bloc-skills_section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: var(--color2);
+        border-radius: 15px;
+        padding: 30px;
+        height: fit-content;
+        margin: 50px;
+        width: 530px;
+        position: relative;
+
+        .nail-top {
+            @include nail;
+            top: 10px;
+        }
+
+        .nail-bottom {
+            @include nail;
+            bottom: 10px;
+        }
+
+        .left {
+            left: 10px;
+        }
+
+        .right {
+            right: 10px;
+        }
+
+        .skills-professional,
+        .skills-academic {
+            @include select-text(var(--color3));
+            color: var(--color1);
+            font-size: 2rem;
+
+        }
+
+        .skills-academic {
+            @media only screen and (max-width: 620px) {
+                color: var(--color3);
+            }
+        }
+
+        .professional-bloc,
+        .academic-bloc {
+            margin-block: 15px;
+
+            h3 {
+                @include select-text(var(--color1));
+                color: var(--color3);
+                margin-bottom: 10px;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    @include select-text(var(--color3));
+                    color: var(--color1);
+                    font-weight: 600;
+                    overflow-wrap: break-word;
+
+                    @media only screen and (max-width: 425px) {
+                        font-size: .75rem;
+                    }
+                }
+            }
+        }
+
+        .academic-bloc {
+            ul {
+                li {
+                    @media only screen and (max-width: 620px) {
+                        color: var(--color2);
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 620px) {
+            margin: 0;
+            width: 100%;
+            border-radius: 0;
+            padding: 100px 30px 30px 30px;
+
+            &:last-child {
+                background-color: var(--color1);
+            }
+        }
+    }
+
+    @media only screen and (max-width: 620px) {
+        margin-top: 375px;
     }
 }
