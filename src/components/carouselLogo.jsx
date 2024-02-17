@@ -3,39 +3,37 @@ import skills from '../fixture/skills.json';
 
 const LogoCarousel = () => {
     const logos = skills.logo.map((item) => ({ image: item.image, name: item.name, link: item.link }));
-    const initialScrollSpeed = 2; // Décalage de défilement en pixels à chaque microseconde
-    const interval = 15; // Intervalle en millisecondes entre chaque défilement (60 images par seconde)
-    const widthOccurence = window.innerWidth / 2; // récupère la moitier de l'écran
-
-    const [leftOffset, setLeftOffset] = useState(100 * logos.length);
+    const [leftOffset, setLeftOffset] = useState(0);
+    const [middleOffset, setMiddleOffset] = useState(0);
     const [rightOffset, setRightOffset] = useState(0);
-    const [scrollSpeed, setScrollSpeed] = useState(initialScrollSpeed);
-
-    useEffect(() => {
-        const animateScroll = () => {
-            setLeftOffset((prevOffset) => {
-                const newOffset = prevOffset - scrollSpeed;
-                return newOffset < -widthOccurence ? widthOccurence : newOffset;
-            });
-            setRightOffset((prevOffset) => {
-                const newOffset = prevOffset - scrollSpeed;
-                return newOffset < -widthOccurence ? widthOccurence : newOffset;
-            });
-        };
-        const intervalId = setInterval(animateScroll, interval);
-
-        return () => {
-            clearInterval(intervalId)
-        };
-    }, [logos.length, scrollSpeed, interval, widthOccurence]);
+    const initialScrollSpeed = 2;
+    const [leftScrollSpeed, setLeftScrollSpeed] = useState(initialScrollSpeed);
+    const [middleScrollSpeed, setMiddleScrollSpeed] = useState(initialScrollSpeed);
+    const [rightScrollSpeed, setRightScrollSpeed] = useState(initialScrollSpeed);
+    const totalLogoWidth = logos.length * (100);
 
     const handleMouseEnter = () => {
-        setScrollSpeed(0);
+        setLeftScrollSpeed(0.5);
+        setMiddleScrollSpeed(0.5);
+        setRightScrollSpeed(0.5);
     };
 
     const handleMouseLeave = () => {
-        setScrollSpeed(initialScrollSpeed);
+        setLeftScrollSpeed(initialScrollSpeed);
+        setMiddleScrollSpeed(initialScrollSpeed);
+        setRightScrollSpeed(initialScrollSpeed);
     };
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setLeftOffset((prevOffset) => prevOffset <= -totalLogoWidth ? 0 : prevOffset - leftScrollSpeed);
+            setMiddleOffset((prevOffset) => prevOffset <= -totalLogoWidth ? 0 : prevOffset - middleScrollSpeed);
+            setRightOffset((prevOffset) => prevOffset <= -totalLogoWidth ? 0 : prevOffset - rightScrollSpeed);
+        }, 1000 / 40); // 60 FPS
+
+        return () => clearInterval(interval);
+    }, [leftScrollSpeed, middleScrollSpeed, rightScrollSpeed, totalLogoWidth]);
+
 
     return (
         <div
@@ -62,12 +60,27 @@ const LogoCarousel = () => {
                 <div
                     className="block-logo"
                     style={{
-                        transform: `translateX(${rightOffset}px)`,
+                        transform: `translateX(${middleOffset}px)`,
                     }}
                 >
                     {logos.map((logo, index) => (
                         <a key={index} href={logo.link} target="_blank" rel="noreferrer">
                             <div className="logo" key={index}>
+                                <div dangerouslySetInnerHTML={{ __html: logo.image }} />
+                                <button>{logo.name}</button>
+                            </div>
+                        </a>
+                    ))}
+                </div>
+                <div
+                    className="block-logo"
+                    style={{
+                        transform: `translateX(${rightOffset}px)`,
+                    }}
+                >
+                    {logos.map((logo, index) => (
+                        <a key={index} href={logo.link} target="_blank" rel="noreferrer">
+                            <div className="logo">
                                 <div dangerouslySetInnerHTML={{ __html: logo.image }} />
                                 <button>{logo.name}</button>
                             </div>

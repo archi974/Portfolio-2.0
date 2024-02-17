@@ -32,6 +32,7 @@
                 &:hover {
                     background: linear-gradient(180deg, var(--color1) 85%, var(--gradientColor3));
                     box-shadow: 0 10px 20px var(--color1);
+                    // background-color: red;
 
                     & button {
                         color: var(--color3);
@@ -40,6 +41,17 @@
                     & svg {
                         color: var(--color3);
                     }
+
+                    /* Logo précédent */
+                    &~:not(:hover):last-child {
+                        background-color: red;
+                    }
+
+                    /* Logo suivant */
+                    &~:not(:hover):first-child {
+                        background-color: red;
+                    }
+
                 }
 
                 svg {

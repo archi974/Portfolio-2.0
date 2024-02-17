@@ -51,7 +51,7 @@
         font-weight: 900;
         color: #DFE0E9;
         font-family: 'Montserrat', 'Open Sans', sans-serif;
-        // mix-blend-mode: luminosity;
+        mix-blend-mode: luminosity;
         @include select-text(var(--color3));
 
         @media only screen and (max-width: 1305px) {
