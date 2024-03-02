@@ -49,8 +49,8 @@
             "medias": {
                 "desktop": {
                     "video": "https://www.youtube.com/embed/edBAQN8gEvA?showinfo=0&rel=0&autoplay=1&mute=1",
-                    "imgSrc": "https://cdn.discordapp.com/attachments/1019304376193532035/1137050790373101659/Capture_decran_2023-08-04_a_16.55.06.png",
-                    "imgAlt": "/images/img-location-immobiliere.webp"
+                    "imgSrc": "/images/img-location-immobiliere.webp",
+                    "imgAlt": "Real estate sales site"
                 },
                 "mobile": {
                     "video": null,
@@ -276,8 +276,8 @@
             "medias": {
                 "desktop": {
                     "video": "https://www.youtube.com/embed/edBAQN8gEvA?showinfo=0&rel=0&autoplay=1&mute=1",
-                    "imgSrc": "https://cdn.discordapp.com/attachments/1019304376193532035/1137050790373101659/Capture_decran_2023-08-04_a_16.55.06.png",
-                    "imgAlt": "/images/img-location-immobiliere.webp"
+                    "imgSrc": "/images/img-location-immobiliere.webp",
+                    "imgAlt": "Site de vente immobilière"
                 },
                 "mobile": {
                     "video": null,
